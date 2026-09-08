@@ -46,13 +46,18 @@
 
 ## 2. 待办/发现（2026-09-08 侦察）
 
-### A. 铁匠铺/酒馆真 bug（P1 待修）
-- **强化负银两 bug**：`blacksmith_page._doReinforce` 用 `addSilver(-cost)` 而非 `spendSilver(cost)`，无余额检查，可强化到负银两。（tag: silver-bug）
-- **合成产物空词缀**：`_doSynth` 生成 `affixesJson: '[]'` 且未接 drop_engine——3 件暗金合出空词缀神品=血亏。应接 drop_engine 按品质生成词缀。（tag: synth-affix）
-- 酒馆赌博/静心丸已闭环（100/50 银两），此前评估"银两无消耗点"已修正。
+### A. 铁匠铺/酒馆 bug — ✅ 已全部修复
+- ✅ **强化负银两**：`_doReinforce` 改 `spendSilver(cost)` 带余额检查
+- ✅ **合成空词缀**：`DropEngine.synthesizeDrop(quality)` 按品质正常 roll 词缀 + `LootPersistence.persistDrops` 写库；产物 itemLevel=材料最高
+- 酒馆赌博/静心丸已闭环（100/50 银两）
 
-### B. 架构拆分（等三视角评估报告定稿）
-- 三个评估代理后台跑着（游戏系统架构师/工程实践/可测性），结论回来后拍板。
+### B. 架构拆分 — ✅ 四批次完成
+- ✅ 批次0 测试安全网：damage_formula_test(平砍恒24手算断言) + rng_snapshot_test(RecordingRandom逐位快照)
+- ✅ 批次1 平移：models/combatant.dart(StatusEffectType+StatusEffect+Combatant) + models/bd_archetype.dart + engine/battle_runtime.dart(BattleRuntimeState+EquipmentBonusesCache)；battle_engine 2082→1673行，export 兼容
+- ✅ 批次2 DropResult 下沉 models/drop_result.dart；models/ 零 engine import
+- ✅ 批次3 去重复：executeBattle 唯一入口 initRuntime，_executeCrushBattle 收 st 复用战斗体
+- Git: 已 init + GitHub remote(zhang-arvin/dark-wuxia, public)；test/engine/ 32 用例全绿
+- 遗留(记债)：config_loader 1250 行未切；stat_pipeline 未建；Equipment.sockets 未占位(schemaVersion=2 未动)
 
 **C. 掉落延迟结算层（lib/database/daos/loot_persistence.dart，新增）**
 - `LootPersistence.persistDrops(List<DropResult>, ConfigLoader?)`：装备+掉落记录写库
