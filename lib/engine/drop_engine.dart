@@ -25,47 +25,11 @@ import '../models/equipment.dart';
 import '../models/drop.dart';
 import '../models/unique_effect.dart';
 import '../models/session_mods.dart';
+import '../models/drop_result.dart';
 import 'config_loader.dart';
 import 'quality_scorer.dart';
 
-/// 掉落结果（一次掉落的完整信息）
-class DropResult {
-  /// 生成的装备实例
-  final Equipment equipment;
-
-  /// 掉落记录
-  final DropRecord record;
-
-  /// 掉落闪光等级
-  final DropFlashLevel flashLevel;
-
-  /// 更新后的保底计数器
-  final PityCounter updatedPity;
-
-  /// 是否触发了保底
-  final bool isPityTriggered;
-
-  /// 暗金效果描述（如品质为暗金以上）
-  final String? uniqueEffectDesc;
-
-  /// 是否词缀翻倍惊喜（5% 概率，独立于品质判定）
-  final bool isJackpot;
-
-  const DropResult({
-    required this.equipment,
-    required this.record,
-    required this.flashLevel,
-    required this.updatedPity,
-    this.isPityTriggered = false,
-    this.uniqueEffectDesc,
-    this.isJackpot = false,
-  });
-
-  @override
-  String toString() =>
-      'DropResult(${equipment.name} [${equipment.quality.displayName}] flash=${flashLevel.displayName}'
-      '${isPityTriggered ? " [保底]" : ""})';
-}
+export '../models/drop_result.dart' show DropResult;
 
 /// 掉落引擎（DESIGN.md 3.3 装备系统 / 3.9.1 福缘系统）
 ///

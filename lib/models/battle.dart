@@ -8,7 +8,7 @@
 // =============================================================================
 
 import 'enums.dart';
-import '../engine/drop_engine.dart' show DropResult;
+import 'drop_result.dart';
 
 /// 战斗动作（DESIGN.md 3.2.2 — 回合内多动作）
 ///
