@@ -1510,30 +1510,8 @@ class BattleEngine {
     PityCounter? pity,
     SessionMods mods = const SessionMods(),
   }) {
-    // 1. 敌人难度缩放（仅用于档位判定；initRuntime 内会再次确定性缩放）
-    final scaledEnemy = enemy.scaleByDifficulty(difficulty);
-
-    // 2. 判定战斗档位
-    final isBoss = enemy is Boss || enemy.isElite;
-    final tier = _determineTier(
-      playerPower: player.powerIndex,
-      enemyPower: scaledEnemy.powerIndex,
-      isBoss: isBoss,
-    );
-
-    // 3. 连刷模式：碾压档自动结算
-    if (isAutoRun && tier == BattleTier.crush) {
-      return _executeCrushBattle(
-        player: player,
-        enemy: scaledEnemy,
-        realmId: realmId,
-        layer: layer,
-        difficulty: difficulty,
-        pity: pity,
-      );
-    }
-
-    // 4. 初始化运行时状态
+    // 1. 初始化运行时（唯一入口：缩放/档位判定/战斗体构建全在此完成）
+    //    crush 档 _determineMaxTurns 无 RNG 消费，后续分支不影响 RNG 等价性
     final st = initRuntime(
       player: player,
       enemy: enemy,
@@ -1544,7 +1522,12 @@ class BattleEngine {
       mods: mods,
     );
 
-    // 5. 整场循环（turns.length+1 起，与旧实现 turnNum 从 1 起一致）
+    // 2. 连刷模式：碾压档走一句话自动结算
+    if (isAutoRun && st.tier == BattleTier.crush) {
+      return _executeCrushBattle(st);
+    }
+
+    // 3. 整场循环（turns.length+1 起，与旧实现 turnNum 从 1 起一致）
     for (var turnNum = st.turns.length + 1;
         turnNum <= st.maxTurns && !st.battleOver;
         turnNum++) {
@@ -1556,24 +1539,24 @@ class BattleEngine {
 
   /// 执行碾压档战斗（连刷模式，DESIGN.md 3.2.3）
   ///
-  /// 碾压档：0-1回合，1句话结算，自动战斗
-  BattleResult _executeCrushBattle({
-    required Character player,
-    required Enemy enemy,
-    required String realmId,
-    required int layer,
-    required Difficulty difficulty,
-    PityCounter? pity,
-  }) {
-    // 选择一个武功
-    final activeArts = player.martialArts.where((m) => m.isActive).toList();
-    final skill = activeArts.isNotEmpty
-        ? activeArts.first
-        : null;
+  /// 碾压档：0-1回合，1句话结算，自动战斗。
+  /// 接收已初始化的 [st]，不再重复做缩放与档位判定。
+  /// 注意：此类已随 mods 修正（血月之夜下碾压伤害按修正后属性结算）。
+  BattleResult _executeCrushBattle(BattleRuntimeState st) {
+    final player = st.player;
+    final enemy = st.enemy;
+    final realmId = st.realmId;
+    final layer = st.layer;
+    final difficulty = st.difficulty;
+    final pity = st.pity;
 
-    // 计算碾压伤害（一击必杀）
-    final playerCombatant = _buildPlayerCombatant(player);
-    final enemyCombatant = _buildEnemyCombatant(enemy);
+    // 选择一个武功（与旧实现一致：取第一个主动招式）
+    final activeArts = player.martialArts.where((m) => m.isActive).toList();
+    final skill = activeArts.isNotEmpty ? activeArts.first : null;
+
+    // 战斗体直接复用 initRuntime 构建结果
+    final playerCombatant = st.playerCombatant;
+    final enemyCombatant = st.enemyCombatant;
     final damage = _calcExternalDamage(
       attacker: playerCombatant,
       defender: enemyCombatant,
