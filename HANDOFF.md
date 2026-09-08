@@ -44,6 +44,16 @@
 - 连刷 `_runAutoBattle`：延迟结算——胜利 LootPersistence 写库，失败清空掉落行
 - `_fallbackEnemyFromRealm`：enemyPool[0]→bossId
 
+## 2. 待办/发现（2026-09-08 侦察）
+
+### A. 铁匠铺/酒馆真 bug（P1 待修）
+- **强化负银两 bug**：`blacksmith_page._doReinforce` 用 `addSilver(-cost)` 而非 `spendSilver(cost)`，无余额检查，可强化到负银两。（tag: silver-bug）
+- **合成产物空词缀**：`_doSynth` 生成 `affixesJson: '[]'` 且未接 drop_engine——3 件暗金合出空词缀神品=血亏。应接 drop_engine 按品质生成词缀。（tag: synth-affix）
+- 酒馆赌博/静心丸已闭环（100/50 银两），此前评估"银两无消耗点"已修正。
+
+### B. 架构拆分（等三视角评估报告定稿）
+- 三个评估代理后台跑着（游戏系统架构师/工程实践/可测性），结论回来后拍板。
+
 **C. 掉落延迟结算层（lib/database/daos/loot_persistence.dart，新增）**
 - `LootPersistence.persistDrops(List<DropResult>, ConfigLoader?)`：装备+掉落记录写库
 
