@@ -13,9 +13,17 @@ import 'package:dark_wuxia/models/drop.dart';
 import 'package:dark_wuxia/models/enums.dart';
 
 Future<ConfigLoader> _loadConfig() async {
+  // 完整加载（合成需要 affixes/equipment_base 供词缀 roll）
   final dropJson = await rootBundle.loadString('assets/config/drop_tables.json');
+  final affixesJson = await rootBundle.loadString('assets/config/affixes.json');
+  final equipmentJson =
+      await rootBundle.loadString('assets/config/equipment_base.json');
   final loader = ConfigLoader.forTesting();
-  loader.loadFromJsonMap({ConfigType.dropTables: dropJson});
+  loader.loadFromJsonMap({
+    ConfigType.dropTables: dropJson,
+    ConfigType.affixes: affixesJson,
+    ConfigType.equipmentBase: equipmentJson,
+  });
   return loader;
 }
 
@@ -113,6 +121,28 @@ void main() {
       expect(results.length, 3);
       // 每件更新后的保底计数单调（除非触发保底重置）
       expect(results[0].updatedPity.count, greaterThan(0));
+    });
+
+    test('synthesizeDrop 合成：品质指定+词缀非空+itemLevel继承', () async {
+      final loader = await _loadConfig();
+      final engine = DropEngine(loader, Random(99));
+
+      final result = engine.synthesizeDrop(
+        quality: Quality.rare, // 上品 3-4 词缀
+        dropTableId: 'drop_normal',
+        itemLevel: 42,
+        sourceId: 'synth_rare',
+      );
+      expect(result, isNotNull);
+      expect(result!.equipment.quality, Quality.rare);
+      expect(result.equipment.itemLevel, 42);
+      // 上品必带 3-4 条词缀（这是修复"合成空词缀"缺陷的核心断言）
+      expect(result.equipment.affixes.length,
+          greaterThanOrEqualTo(Quality.rare.minAffixes));
+      expect(result.record.sourceId, 'synth_rare');
+      expect(result.isPityTriggered, isFalse);
+      // 合成不触发保底/jackpot
+      expect(result.isJackpot, isFalse);
     });
   });
 }

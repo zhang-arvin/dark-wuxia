@@ -16,6 +16,8 @@ import '../router.dart';
 import '../widgets/equipment_card.dart';
 import '../widgets/quality_chip.dart';
 import '../../database/database.dart';
+import '../../database/daos/loot_persistence.dart';
+import '../../engine/providers.dart';
 import '../../models/enums.dart';
 import '../../models/equipment.dart';
 import '../../utils/app_logger.dart';
@@ -346,8 +348,13 @@ class _BlacksmithPageState extends ConsumerState<BlacksmithPage> {
       final nextLevel = eq.reinforceLevel + 1;
       final silverCost = nextLevel * 50;
 
+      // 余额检查（spendSilver 带余额校验，杜绝负银两）
+      final spent = await db.characterDao.spendSilver(silverCost);
+      if (!spent) {
+        _showError('银两不足，强化失败（需要 $silverCost 银两）');
+        return;
+      }
       await db.equipmentDao.updateReinforceLevel(eq.id, nextLevel);
-      await db.characterDao.addSilver(-silverCost);
 
       _showSuccess('强化成功！+${eq.reinforceLevel} → +$nextLevel');
       _loadData();
@@ -491,23 +498,32 @@ class _BlacksmithPageState extends ConsumerState<BlacksmithPage> {
       final db = AppDatabase.instance;
       final currentQuality = _synthQuality!;
       final nextQuality = _nextQuality(currentQuality);
+      // 产物等级 = 3 件材料中的最高物品等级
+      final maxItemLevel = _synthSelected
+          .map((e) => e.itemLevel)
+          .reduce((a, b) => a > b ? a : b);
 
-      // 删除3件
+      // 按合成后品质正常 roll 词缀（与掉落同规则，含品质分数保底）
+      final dropEngine = await ref.read(dropEngineProvider.future);
+      final config = ref.read(configLoaderProvider).valueOrNull;
+      final result = dropEngine.synthesizeDrop(
+        quality: nextQuality,
+        dropTableId: 'drop_normal', // 合成通用池（不绑定秘境）
+        itemLevel: maxItemLevel,
+        sourceId: 'synth_${nextQuality.name}',
+      );
+      if (result == null) {
+        _showError('合成失败：掉落表缺失');
+        return;
+      }
+
+      // 删除3件材料
       for (final eq in _synthSelected) {
         await db.equipmentDao.deleteById(eq.id);
       }
 
-      // 生成1件新装备（简化）
-      // 实际应调用 drop_engine 生成
-      await db.equipmentDao.create(
-        baseId: 'synth_${nextQuality.name}',
-        quality: nextQuality.name,
-        slot: 'weapon',
-        name: '合成${nextQuality.displayName}装备',
-        affixesJson: '[]',
-        reinforceLevel: 0,
-        itemLevel: _synthSelected.first.itemLevel,
-      );
+      // 产物经掉落持久化层写库（带词缀序列化+槽位推断）
+      await LootPersistence.persistDrops([result], config);
 
       _showSuccess('合成成功！获得${nextQuality.displayName}装备');
       setState(() {

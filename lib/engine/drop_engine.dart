@@ -535,6 +535,57 @@ class DropEngine {
     return results;
   }
 
+  /// 合成装备（铁匠铺「合成」：3 件同品质 → 1 件升级品质装备）
+  ///
+  /// 与掉落共用 `_generateNormalEquipment` 词缀 roll 管线（词缀数量/品质分数
+  /// 保底同掉落规则），但**不触发**保底/jackpot/福缘——品质由调用方指定。
+  ///
+  /// [quality] 合成后的目标品质（= 3 件材料的下一档）
+  /// [dropTableId] 装备池来源（沿用材料的掉落表；兜底 drop_normal）
+  /// [itemLevel] 产物等级（继承材料中最高者的 itemLevel）
+  /// [sourceId] 掉落记录来源标记（'synth_<quality>'）
+  DropResult? synthesizeDrop({
+    required Quality quality,
+    required String dropTableId,
+    required int itemLevel,
+    String realmId = 'realm_gumu',
+    int layer = 1,
+    String sourceId = 'synth',
+  }) {
+    final table = _config.getDropTable(dropTableId) ??
+        _config.getDropTable('drop_normal');
+    if (table == null) return null;
+
+    final equipment = _generateNormalEquipment(
+      table: table,
+      quality: quality,
+    );
+    // 覆盖为材料继承的 itemLevel（产物等级=投入材料的最高等级）
+    final finalEquipment = equipment.copyWith(itemLevel: itemLevel);
+
+    final record = DropRecord(
+      equipmentId: finalEquipment.id,
+      realmId: realmId,
+      layer: layer,
+      timestamp: DateTime.now(),
+      quality: quality,
+      sourceId: sourceId,
+      isAutoRun: false,
+    );
+
+    return DropResult(
+      equipment: finalEquipment,
+      record: record,
+      flashLevel: _getFlashLevel(quality),
+      updatedPity: PityCounter(
+        dropTableId: dropTableId,
+        count: 0,
+        threshold: table.pityThreshold,
+      ),
+      isPityTriggered: false,
+    );
+  }
+
   /// 生成掉落展示文本（DESIGN.md 3.2.4 掉落闪光）
   ///
   /// 根据闪光等级生成不同详细程度的展示文本。
