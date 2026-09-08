@@ -1,0 +1,543 @@
+[
+  {
+    "id": "narr_crush_001",
+    "tier": "crush",
+    "template": "你一招{skill}，{enemy}应声倒地。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_crush_002",
+    "tier": "crush",
+    "template": "{skill}随手一施，{enemy}便再无还手之力。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_crush_003",
+    "tier": "crush",
+    "template": "你连看都不看，反手一记{skill}，{enemy}已气绝身亡。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_crush_004",
+    "tier": "crush",
+    "template": "{enemy}尚未近身，便被你一招{skill}震退三丈，口吐鲜血倒地不起。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_crush_005",
+    "tier": "crush",
+    "template": "你拂袖而出{skill}，{enemy}如纸糊般碎裂开来。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_crush_006",
+    "tier": "crush",
+    "template": "仅一招{skill}，{enemy}便倒地不起，造成{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_crush_007",
+    "tier": "crush",
+    "template": "你信手施为{skill}，{enemy}甚至来不及反应便已倒下。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_crush_008",
+    "tier": "crush",
+    "template": "{skill}之势如泰山压顶，{enemy}瞬间被碾压成齑粉。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 65
+  },
+  {
+    "id": "narr_crush_009",
+    "tier": "crush",
+    "template": "你目光一凛，{skill}无声而出，{enemy}悄无声息地软倒在地。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 60
+  },
+  {
+    "id": "narr_crush_010",
+    "tier": "crush",
+    "template": "{enemy}拼死来犯，你一记{skill}便将其打飞数丈，再无生息。",
+    "requiredVars": [
+      "skill",
+      "enemy"
+    ],
+    "weight": 60
+  },
+  {
+    "id": "narr_norm_o_001",
+    "tier": "normal",
+    "template": "你沉腰坐马，一记{skill}轰然而出，{enemy}仓促格挡却被震得连退三步，受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_norm_o_002",
+    "tier": "normal",
+    "template": "你拳风呼啸，{skill}带着破空之声砸向{enemy}，对方闪避不及，肩头被拳风擦过，留下{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_norm_o_003",
+    "tier": "normal",
+    "template": "你手中兵器一旋，{skill}如银蛇吐信刺向{enemy}，对方勉强侧身避开要害，臂上被划出一道血口，损失{damage}点生命。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_norm_o_004",
+    "tier": "normal",
+    "template": "你暴喝一声，{skill}全力催发，{enemy}只觉一股排山倒海之力涌来，双臂发麻，硬生生受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_norm_o_005",
+    "tier": "normal",
+    "template": "你步步紧逼，{skill}连环施展，{enemy}左支右绌终于露出破绽，被你一击命中胸口，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_norm_o_006",
+    "tier": "normal",
+    "template": "你借势前冲，{skill}势大力沉劈向{enemy}，对方举臂硬接，脚下地面龟裂，闷哼一声受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_norm_o_007",
+    "tier": "normal",
+    "template": "你连出三招{skill}，一招快过一招，{enemy}疲于招架终于不支，被末招击中面门，{damage}点伤害将其打得踉跄后退。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 65
+  },
+  {
+    "id": "narr_norm_o_008",
+    "tier": "normal",
+    "template": "你侧身闪过{enemy}的反击，顺势一记{skill}反劈其后背，{enemy}吃痛前扑，{damage}点伤害令其身形一滞。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 60
+  },
+  {
+    "id": "narr_norm_i_001",
+    "tier": "normal",
+    "template": "你双掌一推，{skill}的真气凝成掌风隔空袭向{enemy}，对方只觉胸口一闷，内力被震散，受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_norm_i_002",
+    "tier": "normal",
+    "template": "你运起{skill}，掌心隐隐泛起寒光，{enemy}被真气侵入经脉，身形一僵，迟滞片刻间又受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_norm_i_003",
+    "tier": "normal",
+    "template": "你闭目凝神，{skill}内力无声涌出，{enemy}只觉一股阴寒之力渗入体内，气血翻涌，损失{damage}点生命。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_norm_i_004",
+    "tier": "normal",
+    "template": "你一指点出，{skill}凝成一线真气刺入{enemy}穴道，对方半身麻痹，硬吃了{damage}点伤害却动弹不得。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_norm_i_005",
+    "tier": "normal",
+    "template": "你周身真气流转，{skill}如潮水般涌向{enemy}，对方运功抵抗却挡不住这绵密之力，连退数步，受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_norm_i_006",
+    "tier": "normal",
+    "template": "你双掌连拍，{skill}一波接一波轰入{enemy}体内，对方内力紊乱，面露痛苦之色，{damage}点伤害入骨。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_norm_i_007",
+    "tier": "normal",
+    "template": "你运气周天，{skill}真气蓄满而后发，{enemy}见势不妙全力防御，仍被震得气血上涌，{damage}点伤害无可避免。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 65
+  },
+  {
+    "id": "narr_norm_l_001",
+    "tier": "normal",
+    "template": "你身形一晃使出{skill}，如鬼魅般绕至{enemy}身后，一击命中其后心，{damage}点伤害令其前扑倒地。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_norm_l_002",
+    "tier": "normal",
+    "template": "你足尖一点，{skill}令你身轻如燕掠过{enemy}头顶，落地时反手一击，对方来不及转身便受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_norm_l_003",
+    "tier": "normal",
+    "template": "你施展{skill}，身影化作数道残影，{enemy}分不清真身，挥刀乱砍却尽数落空，反被你一击命中，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_norm_l_004",
+    "tier": "normal",
+    "template": "你以{skill}闪过{enemy}的猛攻，借势从侧面切入，一掌拍在对方肋下，{damage}点伤害令其身形歪斜。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_norm_l_005",
+    "tier": "normal",
+    "template": "你步法飘忽使出{skill}，{enemy}几次出招皆扑空，气急败坏间露出破绽，你趁机一击，造成{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_norm_r_001",
+    "tier": "normal",
+    "template": "你以心法运功，{skill}化守为攻，{enemy}一拳打来反被你卸力反震，对方虎口发麻，反受了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_norm_r_002",
+    "tier": "normal",
+    "template": "你故意示弱引{enemy}来攻，待其招式用老，方才以{skill}后发先至，一击命中其破绽，{damage}点伤害令其大惊失色。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_norm_r_003",
+    "tier": "normal",
+    "template": "你以{skill}化解{enemy}攻势，借力打力反将其震退，对方踉跄后退间又吃了{damage}点伤害，攻守之势瞬间逆转。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_norm_r_004",
+    "tier": "normal",
+    "template": "{enemy}全力一击，你以{skill}护体硬接，反震之力透过兵器传入对方双臂，{damage}点伤害令其兵器险些脱手。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_norm_r_005",
+    "tier": "normal",
+    "template": "你故布破绽，待{enemy}深入，猛然以{skill}反击，对方收势不及反被你制住，{damage}点伤害入体方知中计。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_boss_p1_001",
+    "tier": "boss",
+    "template": "{boss}周身气势爆发，你一记{skill}迎面而上，两股力量轰然相撞，气浪四散。{boss}纹丝不动，你却被震得手臂发麻——此獠功力深厚，不可力敌！仅造成{damage}点伤害。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_p1_002",
+    "tier": "boss",
+    "template": "你全力以赴催动{skill}，招式精妙至极。{boss}冷笑一声，竟不闪不避硬接此招，仅衣袍被震起，纹丝不动。{damage}点伤害如泥牛入海，对方毫不在意。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_p1_003",
+    "tier": "boss",
+    "template": "你试探性出招{skill}，{boss}随手一挡便将你震退三步。对方功力远超预料，你暗暗心惊：此战怕是凶多吉少。{damage}点伤害仅算皮毛。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_p1_004",
+    "tier": "boss",
+    "template": "{boss}踏步而来，每一步都令地面震颤。你抢先出手以{skill}攻其不备，却被对方护体罡气弹开，仅留下一道白痕。{damage}点伤害，对方反怒目而视。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_p1_005",
+    "tier": "boss",
+    "template": "你运起{skill}全力一搏，{boss}以雄厚内力硬挡，两相交锋间你只觉对方内力如汪洋大海深不可测。{damage}点伤害，却未能撼动其分毫。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_boss_p2_001",
+    "tier": "boss",
+    "template": "久战之下{boss}终于露出疲态，你抓住战机一记{skill}轰入其胸膛，对方闷哼一声退了半步——终于破防！{damage}点伤害令其面露怒容，攻势愈发凌厉。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_p2_002",
+    "tier": "boss",
+    "template": "你{skill}连出三招，终于找到{boss}防御中的破绽，一击命中其旧伤之处。{boss}吃痛怒吼，周身气势暴涨三分，{damage}点伤害激起其凶性。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_p2_003",
+    "tier": "boss",
+    "template": "你与{boss}缠斗数十招，终于觅得空隙。{skill}全力而出，正中{boss}左肋！对方身形一歪，面露不可置信之色。{damage}点伤害入体，胜负之势开始逆转。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_p2_004",
+    "tier": "boss",
+    "template": "你越战越勇，{skill}势如破竹。{boss}被逼得连连后退，终于露出致命破绽。你趁机全力一击，{damage}点伤害令其口角溢出鲜血——此獠也不过如此！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_p2_005",
+    "tier": "boss",
+    "template": "{boss}攻势渐乱，你抓住破绽以{skill}反击成功。对方吃痛后退数步，面色由怒转狠：\"竖子敢尔！\"{damage}点伤害，但你知道——{boss}尚未用全力。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_boss_p3_001",
+    "tier": "boss",
+    "template": "{boss}身负重伤却突然仰天长啸，周身气势暴涨数倍——这是回光返照的拼命之势！你不敢大意，全力催动{skill}迎头痛击，{damage}点伤害入体，双方陷入殊死搏杀！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_p3_002",
+    "tier": "boss",
+    "template": "{boss}已强弩之末，却拼死反扑。你以{skill}正面迎击，两股力量轰然碰撞。你纹丝不动，{boss}却口喷鲜血倒飞而出——{damage}点致命伤害，胜负已分！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_p3_003",
+    "tier": "boss",
+    "template": "你看准{boss}力竭之机，{skill}全力一搏正中其要害！{boss}身形一滞，双目圆睁难以置信地看着你，{damage}点伤害彻底摧毁了其最后的战意。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_p3_004",
+    "tier": "boss",
+    "template": "{boss}狂态毕露，招招搏命。你稳扎稳打，待其旧力已尽新力未生之际，一记{skill}终结此战！{damage}点伤害贯穿其护体真气，{boss}轰然倒地不再起身。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_p3_005",
+    "tier": "boss",
+    "template": "最后一击！你将毕生所学凝于此招{skill}之中，{boss}拼尽全力格挡却终究力竭。{damage}点伤害彻底终结了这场鏖战，{boss}缓缓倒下，眼中满是不甘。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 75
+  }
+]

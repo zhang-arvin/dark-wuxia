@@ -1,0 +1,152 @@
+[
+  {
+    "id": "ma_inn_006",
+    "name": "易筋经",
+    "type": "inner",
+    "elementAffinity": "yang",
+    "tier": "大成",
+    "proficiencyBase": 50,
+    "description": "少林寺镇寺之宝，天下内功之首。修习者筋骨强健如铁、内力浑厚如海。易筋经以佛门禅理为基，化刚为柔、化柔为刚，修至大成可令断筋重续、碎骨重生。此经与洗髓经并称少林双璧，非少林嫡传不授。",
+    "source": "少林寺"
+  },
+  {
+    "id": "ma_inn_007",
+    "name": "纯阳无极功",
+    "type": "inner",
+    "elementAffinity": "yang",
+    "tier": "绝学",
+    "proficiencyBase": 55,
+    "description": "武当派至高内功，以道家纯阳真气为根基。修习者内力至纯至阳、绵绵不绝，可克制一切阴邪之气。纯阳无极功修至化境可百毒不侵、万邪不近，是阳刚内功的巅峰之作。非心性淡泊者不可修习，否则真气暴走、走火入魔。",
+    "source": "武当派"
+  },
+  {
+    "id": "ma_inn_008",
+    "name": "九阴真气",
+    "type": "inner",
+    "elementAffinity": "yin",
+    "tier": "绝学",
+    "proficiencyBase": 55,
+    "description": "古墓派至高内功，以极阴之地万年寒气淬炼而成。修习者内力阴寒彻骨、绵密如丝水。九阴真气可侵入对手经脉令其气血凝滞、身法迟滞。修至大成可凝水成冰、伤人于无形。与纯阳无极功并称阴阳双绝。",
+    "source": "古墓派"
+  },
+  {
+    "id": "ma_inn_009",
+    "name": "葵花宝典内功",
+    "type": "inner",
+    "elementAffinity": "yin",
+    "tier": "传说",
+    "proficiencyBase": 65,
+    "description": "日月神教镇教之宝，以极端之法修炼的至阴内功。修习者身法快如鬼魅、内力阴毒无比。此功以牺牲为代价换取极速与极阴之力，修成者天下鲜有敌手。然代价惨重，非心如死灰者不可修习。传闻此功残卷藏于轮回殿壁画之中。",
+    "source": "日月神教"
+  },
+  {
+    "id": "ma_inn_010",
+    "name": "先天功",
+    "type": "inner",
+    "elementAffinity": "neutral",
+    "tier": "大成",
+    "proficiencyBase": 45,
+    "description": "全真教至高内功，以先天一气为根基。修习者内力圆融无碍、阴阳相济，可兼容天下一切外功而无相克之虞。先天功修至大成可达先天之境，真气生生不息、百脉俱通。此功是中和型内功的典范，为双修流修士所推崇。",
+    "source": "全真教"
+  },
+  {
+    "id": "ma_out_004",
+    "name": "伏虎罗汉拳",
+    "type": "outer",
+    "elementAffinity": "yang",
+    "tier": "小成",
+    "proficiencyBase": 30,
+    "description": "少林寺伏虎堂绝学，以降龙伏虎之意为拳意。一拳出则虎威凛然、拳风呼啸如虎啸。此拳刚猛霸道，专克阴邪之力。十八式伏虎拳式式不同，但皆以雄厚内力催动。修至大成可一拳伏虎，拳力惊天。",
+    "source": "少林寺"
+  },
+  {
+    "id": "ma_out_005",
+    "name": "太极剑",
+    "type": "outer",
+    "elementAffinity": "neutral",
+    "tier": "绝学",
+    "proficiencyBase": 50,
+    "description": "武当派镇派剑法，以太极阴阳之理融入剑法。一剑出则刚柔并济、攻守一体。太极剑以慢打快、以柔克刚，后发先至。修至大成可达「无剑胜有剑」之境——手中无剑心中有剑，信手拈来皆可为剑。",
+    "source": "武当派"
+  },
+  {
+    "id": "ma_out_006",
+    "name": "玉女素心剑",
+    "type": "outer",
+    "elementAffinity": "yin",
+    "tier": "大成",
+    "proficiencyBase": 40,
+    "description": "古墓派绝学剑法，以素心玉女之意为剑意。剑招清丽飘逸、不染尘埃，一剑刺出如寒梅映雪、冷月照人。此剑法阴柔绵密、招招不离对手要害，修至大成可于数招之内取人性命而对手浑然不觉。",
+    "source": "古墓派"
+  },
+  {
+    "id": "ma_out_007",
+    "name": "逍遥游掌",
+    "type": "outer",
+    "elementAffinity": "neutral",
+    "tier": "绝学",
+    "proficiencyBase": 48,
+    "description": "逍遥派至高掌法，以逍遥自在之意为掌意。掌法飘忽不定、忽刚忽柔，一掌出则如闲庭信步却暗藏杀机。逍遥游掌以无招胜有招，掌路随心而变、不可捉摸。修至大成者于千军万马中如入无人之境，来去自如。",
+    "source": "逍遥派"
+  },
+  {
+    "id": "ma_out_008",
+    "name": "独孤九剑·破气式",
+    "type": "outer",
+    "elementAffinity": "neutral",
+    "tier": "绝学",
+    "proficiencyBase": 50,
+    "description": "独孤九剑之破气式，专破内功高手。此式以寻敌内力运转之破绽为核，一剑刺出可截断对手真气周天、令其内力紊乱。面对内功深厚的对手，破气式是最佳的应对之策。修习此式需极强悟性，非剑道天才不可领悟。",
+    "source": "华山派"
+  },
+  {
+    "id": "ma_lig_003",
+    "name": "梯云纵",
+    "type": "lightness",
+    "elementAffinity": "yang",
+    "tier": "大成",
+    "proficiencyBase": 40,
+    "description": "武当派绝顶轻功，以纯阳真气催动身法。施展时足尖一点可凌空数丈、空中变向如行云流水。梯云纵不仅速度极快，更可于空中短暂悬停、借力变向，是追击与逃跑的至高身法。修至大成可踏虚而行、如登云梯。",
+    "source": "武当派"
+  },
+  {
+    "id": "ma_lig_004",
+    "name": "飞燕回翔",
+    "type": "lightness",
+    "elementAffinity": "yin",
+    "tier": "大成",
+    "proficiencyBase": 38,
+    "description": "古墓派绝顶轻功，以极阴之气催动身法。施展时身形如飞燕回翔、飘忽不定，可于方寸之间连续变向。飞燕回翔不仅闪避极高，更可在闪避中反击——于回翔之际出招令对手防不胜防。修至大成可于千箭之中穿梭自如。",
+    "source": "古墓派"
+  },
+  {
+    "id": "ma_lig_005",
+    "name": "葵花身法",
+    "type": "lightness",
+    "elementAffinity": "yin",
+    "tier": "传说",
+    "proficiencyBase": 60,
+    "description": "日月神教至高身法，以极端之法修炼。修习者身法快至极致——快到肉眼不可辨、快到一息之间可出数招。葵花身法修成者于战斗中如同鬼魅，对手连影子都摸不着便已中招。此身法是天下第一快身法，然代价同样惨重。",
+    "source": "日月神教"
+  },
+  {
+    "id": "ma_man_006",
+    "name": "金刚不坏",
+    "type": "mantra",
+    "elementAffinity": "yang",
+    "tier": "绝学",
+    "proficiencyBase": 50,
+    "description": "少林寺至高心法，以佛门金刚之意护体。修成者周身罡气流转、刀枪不入。金刚不坏不仅大幅提升物理防御，更令反震之力大幅增强——来犯之力愈强，反震愈烈。此心法是反伤流修士的终极被动，改规则：受击自动反震。",
+    "source": "少林寺"
+  },
+  {
+    "id": "ma_man_007",
+    "name": "万物归元",
+    "type": "mantra",
+    "elementAffinity": "neutral",
+    "tier": "传说",
+    "proficiencyBase": 60,
+    "description": "道家至高心法，参悟万物归一之理。修成者可将一切伤害类型统一转化为内力伤害计算，无视物理/内功/元素之分。万物归元令修习者不再受任何伤害类型克制的困扰，是全属性BD的终极心法。改规则：伤害类型统一化。",
+    "source": "全真教"
+  }
+]

@@ -1,0 +1,327 @@
+[
+  {
+    "id": "eq_w_001",
+    "name": "青铜剑",
+    "slot": "weapon",
+    "baseDamage": 8,
+    "itemLevel": 10,
+    "requiredLevel": 1,
+    "affixPool": [
+      "prefix_sharp",
+      "prefix_bloodthirsty",
+      "prefix_heavy",
+      "suffix_strength",
+      "suffix_power",
+      "suffix_precision"
+    ]
+  },
+  {
+    "id": "eq_w_002",
+    "name": "雁翎刀",
+    "slot": "weapon",
+    "baseDamage": 12,
+    "itemLevel": 20,
+    "requiredLevel": 5,
+    "affixPool": [
+      "prefix_sharp",
+      "prefix_fierce",
+      "prefix_armor_breaking",
+      "prefix_chilling",
+      "suffix_strength",
+      "suffix_power",
+      "suffix_precision",
+      "suffix_tiger"
+    ]
+  },
+  {
+    "id": "eq_w_003",
+    "name": "铁枪",
+    "slot": "weapon",
+    "baseDamage": 16,
+    "itemLevel": 30,
+    "requiredLevel": 10,
+    "affixPool": [
+      "prefix_sharp",
+      "prefix_fierce",
+      "prefix_vicious",
+      "prefix_burning",
+      "suffix_strength",
+      "suffix_power",
+      "suffix_agility",
+      "suffix_tiger"
+    ]
+  },
+  {
+    "id": "eq_w_004",
+    "name": "九节鞭",
+    "slot": "weapon",
+    "baseDamage": 20,
+    "itemLevel": 40,
+    "requiredLevel": 15,
+    "affixPool": [
+      "prefix_fierce",
+      "prefix_vicious",
+      "prefix_thunder",
+      "prefix_swift",
+      "suffix_power",
+      "suffix_agility",
+      "suffix_precision",
+      "suffix_swiftness"
+    ]
+  },
+  {
+    "id": "eq_w_005",
+    "name": "铁骨扇",
+    "slot": "weapon",
+    "baseDamage": 24,
+    "itemLevel": 50,
+    "requiredLevel": 20,
+    "affixPool": [
+      "prefix_sharp",
+      "prefix_swift",
+      "prefix_chilling",
+      "prefix_penetrating",
+      "suffix_agility",
+      "suffix_precision",
+      "suffix_swiftness",
+      "suffix_dragon"
+    ]
+  },
+  {
+    "id": "eq_a_001",
+    "name": "粗布衣",
+    "slot": "armor",
+    "baseDefense": 5,
+    "itemLevel": 10,
+    "requiredLevel": 1,
+    "affixPool": [
+      "prefix_steadfast",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_iron_will"
+    ]
+  },
+  {
+    "id": "eq_a_002",
+    "name": "软甲",
+    "slot": "armor",
+    "baseDefense": 8,
+    "itemLevel": 20,
+    "requiredLevel": 5,
+    "affixPool": [
+      "prefix_steadfast",
+      "prefix_mystic",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_iron_will",
+      "suffix_reflection"
+    ]
+  },
+  {
+    "id": "eq_a_003",
+    "name": "铜鳞甲",
+    "slot": "armor",
+    "baseDefense": 12,
+    "itemLevel": 30,
+    "requiredLevel": 10,
+    "affixPool": [
+      "prefix_steadfast",
+      "prefix_heavy",
+      "prefix_mystic",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_iron_will",
+      "suffix_reflection",
+      "suffix_crane"
+    ]
+  },
+  {
+    "id": "eq_a_004",
+    "name": "金丝甲",
+    "slot": "armor",
+    "baseDefense": 16,
+    "itemLevel": 40,
+    "requiredLevel": 15,
+    "affixPool": [
+      "prefix_steadfast",
+      "prefix_heavy",
+      "prefix_mystic",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_iron_will",
+      "suffix_reflection",
+      "suffix_crane",
+      "suffix_tiger"
+    ]
+  },
+  {
+    "id": "eq_a_005",
+    "name": "天蚕丝衣",
+    "slot": "armor",
+    "baseDefense": 20,
+    "itemLevel": 50,
+    "requiredLevel": 20,
+    "affixPool": [
+      "prefix_steadfast",
+      "prefix_mystic",
+      "prefix_heavy",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_iron_will",
+      "suffix_reflection",
+      "suffix_crane",
+      "suffix_swiftness"
+    ]
+  },
+  {
+    "id": "eq_c_001",
+    "name": "翠玉佩",
+    "slot": "accessory",
+    "baseDefense": 2,
+    "itemLevel": 10,
+    "requiredLevel": 1,
+    "affixPool": [
+      "prefix_soul_seizing",
+      "suffix_wisdom",
+      "suffix_fortune",
+      "suffix_agility"
+    ]
+  },
+  {
+    "id": "eq_c_002",
+    "name": "毒珠",
+    "slot": "accessory",
+    "baseDefense": 3,
+    "itemLevel": 20,
+    "requiredLevel": 5,
+    "affixPool": [
+      "prefix_chilling",
+      "prefix_leech",
+      "suffix_fortune",
+      "suffix_wisdom",
+      "suffix_spirit",
+      "suffix_swiftness"
+    ]
+  },
+  {
+    "id": "eq_c_003",
+    "name": "暗器匣",
+    "slot": "accessory",
+    "baseDefense": 4,
+    "itemLevel": 30,
+    "requiredLevel": 10,
+    "affixPool": [
+      "prefix_swift",
+      "prefix_thunder",
+      "prefix_chilling",
+      "suffix_agility",
+      "suffix_precision",
+      "suffix_swiftness",
+      "suffix_fortune"
+    ]
+  },
+  {
+    "id": "eq_c_004",
+    "name": "护心镜",
+    "slot": "accessory",
+    "baseDefense": 5,
+    "itemLevel": 40,
+    "requiredLevel": 15,
+    "affixPool": [
+      "prefix_steadfast",
+      "prefix_mystic",
+      "suffix_iron_will",
+      "suffix_vitality",
+      "suffix_constitution",
+      "suffix_reflection",
+      "suffix_crane"
+    ]
+  },
+  {
+    "id": "eq_c_005",
+    "name": "灵珠",
+    "slot": "accessory",
+    "baseDefense": 6,
+    "itemLevel": 50,
+    "requiredLevel": 20,
+    "affixPool": [
+      "prefix_soul_seizing",
+      "prefix_mystic",
+      "prefix_swift",
+      "suffix_wisdom",
+      "suffix_fortune",
+      "suffix_spirit",
+      "suffix_swiftness",
+      "suffix_dragon"
+    ]
+  },
+  {
+    "id": "eq_t_001",
+    "name": "回气丹",
+    "slot": "treasure",
+    "baseDefense": 0,
+    "itemLevel": 10,
+    "requiredLevel": 1,
+    "affixPool": [
+      "suffix_fortune",
+      "suffix_wisdom",
+      "suffix_spirit"
+    ]
+  },
+  {
+    "id": "eq_t_002",
+    "name": "金创药",
+    "slot": "treasure",
+    "baseDefense": 0,
+    "itemLevel": 20,
+    "requiredLevel": 5,
+    "affixPool": [
+      "suffix_fortune",
+      "suffix_spirit",
+      "suffix_crane"
+    ]
+  },
+  {
+    "id": "eq_t_003",
+    "name": "定心丹",
+    "slot": "treasure",
+    "baseDefense": 0,
+    "itemLevel": 30,
+    "requiredLevel": 10,
+    "affixPool": [
+      "suffix_fortune",
+      "suffix_wisdom",
+      "suffix_spirit",
+      "suffix_iron_will"
+    ]
+  },
+  {
+    "id": "eq_t_004",
+    "name": "神行符",
+    "slot": "treasure",
+    "baseDefense": 0,
+    "itemLevel": 40,
+    "requiredLevel": 15,
+    "affixPool": [
+      "suffix_fortune",
+      "suffix_swiftness",
+      "suffix_agility",
+      "suffix_wisdom"
+    ]
+  },
+  {
+    "id": "eq_t_005",
+    "name": "洗髓丹",
+    "slot": "treasure",
+    "baseDefense": 0,
+    "itemLevel": 50,
+    "requiredLevel": 20,
+    "affixPool": [
+      "suffix_fortune",
+      "suffix_wisdom",
+      "suffix_constitution",
+      "suffix_spirit",
+      "suffix_dragon"
+    ]
+  }
+]

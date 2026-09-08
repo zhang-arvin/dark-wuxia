@@ -1,0 +1,991 @@
+{
+  "meridians": [
+    {
+      "id": "mer_yang_1",
+      "name": "少阳经",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "少阳穴",
+          "baseStat": "body",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "太阳穴",
+          "baseStat": "body",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "外关穴",
+          "baseStat": "outerDamagePct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "内关穴",
+          "baseStat": "critPct",
+          "statValue": 3
+        },
+        {
+          "index": 5,
+          "name": "少冲穴",
+          "baseStat": "outerDamagePct",
+          "statValue": 8
+        }
+      ],
+      "description": "少阳主阳刚之气，贯通臂力与外功，刚猛无匹。适合外功输出型修士。",
+      "tier": 1,
+      "primaryStat": "outerDamagePct",
+      "secondaryStat": "critPct",
+      "conflictMeridians": [
+        "mer_yin_1"
+      ],
+      "synergyMeridians": [
+        "mer_yang_3"
+      ],
+      "requirementPower": 0
+    },
+    {
+      "id": "mer_yang_2",
+      "name": "太阳经",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "睛明穴",
+          "baseStat": "maxHp",
+          "statValue": 30
+        },
+        {
+          "index": 2,
+          "name": "攒竹穴",
+          "baseStat": "maxHp",
+          "statValue": 50
+        },
+        {
+          "index": 3,
+          "name": "天柱穴",
+          "baseStat": "innerDefensePct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "大柱穴",
+          "baseStat": "maxHp",
+          "statValue": 80
+        },
+        {
+          "index": 5,
+          "name": "玉枕穴",
+          "baseStat": "hpRegen",
+          "statValue": 5
+        }
+      ],
+      "description": "太阳主气血充盈，壮体魄，固内防。血厚防高，适合坦克续航流。",
+      "tier": 1,
+      "primaryStat": "maxHp",
+      "secondaryStat": "innerDefensePct",
+      "conflictMeridians": [
+        "mer_yin_2"
+      ],
+      "synergyMeridians": [
+        "mer_wei_yin"
+      ],
+      "requirementPower": 0
+    },
+    {
+      "id": "mer_yang_3",
+      "name": "督阳经",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "命门穴",
+          "baseStat": "body",
+          "statValue": 4
+        },
+        {
+          "index": 2,
+          "name": "腰阳穴",
+          "baseStat": "outerDamagePct",
+          "statValue": 6
+        },
+        {
+          "index": 3,
+          "name": "至阳穴",
+          "baseStat": "critDamagePct",
+          "statValue": 10
+        },
+        {
+          "index": 4,
+          "name": "神道穴",
+          "baseStat": "outerDamagePct",
+          "statValue": 10
+        },
+        {
+          "index": 5,
+          "name": "百会穴",
+          "baseStat": "body",
+          "statValue": 8
+        }
+      ],
+      "description": "督脉阳支，贯通百会至命门，外功暴伤双修。需少阳经为基础方可修习。",
+      "tier": 2,
+      "primaryStat": "outerDamagePct",
+      "secondaryStat": "critDamagePct",
+      "conflictMeridians": [
+        "mer_yin_3"
+      ],
+      "synergyMeridians": [
+        "mer_yang_1",
+        "mer_du_branch"
+      ],
+      "requirementPower": 500
+    },
+    {
+      "id": "mer_yin_1",
+      "name": "太阴经",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "太渊穴",
+          "baseStat": "agi",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "尺泽穴",
+          "baseStat": "agi",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "列缺穴",
+          "baseStat": "dodgePct",
+          "statValue": 3
+        },
+        {
+          "index": 4,
+          "name": "经渠穴",
+          "baseStat": "initiativeBonus",
+          "statValue": 5
+        },
+        {
+          "index": 5,
+          "name": "鱼际穴",
+          "baseStat": "dodgePct",
+          "statValue": 5
+        }
+      ],
+      "description": "太阴主柔巧身法，闪避为先，先手制敌。适合闪避先手流修士。",
+      "tier": 1,
+      "primaryStat": "dodgePct",
+      "secondaryStat": "initiativeBonus",
+      "conflictMeridians": [
+        "mer_yang_1"
+      ],
+      "synergyMeridians": [
+        "mer_qiao_yang"
+      ],
+      "requirementPower": 0
+    },
+    {
+      "id": "mer_yin_2",
+      "name": "少阴经",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "涌泉穴",
+          "baseStat": "maxInner",
+          "statValue": 20
+        },
+        {
+          "index": 2,
+          "name": "然谷穴",
+          "baseStat": "maxInner",
+          "statValue": 30
+        },
+        {
+          "index": 3,
+          "name": "太溪穴",
+          "baseStat": "innerRecoveryPct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "复溜穴",
+          "baseStat": "innerDamagePct",
+          "statValue": 5
+        },
+        {
+          "index": 5,
+          "name": "阴谷穴",
+          "baseStat": "maxInner",
+          "statValue": 50
+        }
+      ],
+      "description": "少阴主真气内力，内功修为之根本。真气充沛，适合内功输出流。",
+      "tier": 1,
+      "primaryStat": "maxInner",
+      "secondaryStat": "innerDamagePct",
+      "conflictMeridians": [
+        "mer_yang_2"
+      ],
+      "synergyMeridians": [
+        "mer_qiao_yin"
+      ],
+      "requirementPower": 0
+    },
+    {
+      "id": "mer_yin_3",
+      "name": "任阴经",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "会阴穴",
+          "baseStat": "con",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "气海穴",
+          "baseStat": "innerRecoveryPct",
+          "statValue": 8
+        },
+        {
+          "index": 3,
+          "name": "膻中穴",
+          "baseStat": "innerDefensePct",
+          "statValue": 8
+        },
+        {
+          "index": 4,
+          "name": "天突穴",
+          "baseStat": "innerDamagePct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "璇玑穴",
+          "baseStat": "con",
+          "statValue": 6
+        }
+      ],
+      "description": "任脉阴支，贯通会阴至璇玑，内防与恢复兼修。需少阴经为基础方可修习。",
+      "tier": 2,
+      "primaryStat": "innerDefensePct",
+      "secondaryStat": "innerRecoveryPct",
+      "conflictMeridians": [
+        "mer_yang_3"
+      ],
+      "synergyMeridians": [
+        "mer_dai",
+        "mer_dai_branch"
+      ],
+      "requirementPower": 500
+    },
+    {
+      "id": "mer_qiao_yang",
+      "name": "阳跷脉",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "申脉穴",
+          "baseStat": "hitRatePct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "跗阳穴",
+          "baseStat": "hitRatePct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "仆参穴",
+          "baseStat": "dodgePct",
+          "statValue": 3
+        },
+        {
+          "index": 4,
+          "name": "跗阳穴",
+          "baseStat": "hitRatePct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "申脉穴",
+          "baseStat": "dodgePct",
+          "statValue": 5
+        }
+      ],
+      "description": "阳跷主目明足捷，命中与闪避兼修，灵动如风。攻守兼备，适合精准闪避流。",
+      "tier": 2,
+      "primaryStat": "hitRatePct",
+      "secondaryStat": "dodgePct",
+      "conflictMeridians": [
+        "mer_qiao_yin"
+      ],
+      "synergyMeridians": [
+        "mer_yin_1",
+        "mer_wei_yin"
+      ],
+      "requirementPower": 800
+    },
+    {
+      "id": "mer_qiao_yin",
+      "name": "阴跷脉",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "照海穴",
+          "baseStat": "maxInner",
+          "statValue": 20
+        },
+        {
+          "index": 2,
+          "name": "然谷穴",
+          "baseStat": "maxInner",
+          "statValue": 30
+        },
+        {
+          "index": 3,
+          "name": "交信穴",
+          "baseStat": "innerRecoveryPct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "气穴",
+          "baseStat": "maxInner",
+          "statValue": 50
+        },
+        {
+          "index": 5,
+          "name": "筑宾穴",
+          "baseStat": "innerRecoveryPct",
+          "statValue": 8
+        }
+      ],
+      "description": "阴跷通涌泉至阴谷，真气上限大增，恢复如泉涌。适合真气续航型修士。",
+      "tier": 2,
+      "primaryStat": "maxInner",
+      "secondaryStat": "innerRecoveryPct",
+      "conflictMeridians": [
+        "mer_qiao_yang"
+      ],
+      "synergyMeridians": [
+        "mer_yin_2"
+      ],
+      "requirementPower": 800
+    },
+    {
+      "id": "mer_wei_yang",
+      "name": "阳维脉",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "附分穴",
+          "baseStat": "armorPenPct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "阳交穴",
+          "baseStat": "armorPenPct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "臑俞穴",
+          "baseStat": "trueDamagePct",
+          "statValue": 3
+        },
+        {
+          "index": 4,
+          "name": "臂臑穴",
+          "baseStat": "armorPenPct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "臑会穴",
+          "baseStat": "trueDamagePct",
+          "statValue": 5
+        }
+      ],
+      "description": "阳维主破甲穿防，真伤无惧防御，专克铁壁流。高阶经脉，需督阳经为基础。",
+      "tier": 3,
+      "primaryStat": "armorPenPct",
+      "secondaryStat": "trueDamagePct",
+      "conflictMeridians": [
+        "mer_wei_yin"
+      ],
+      "synergyMeridians": [
+        "mer_chong",
+        "mer_yang_1"
+      ],
+      "requirementPower": 1500
+    },
+    {
+      "id": "mer_wei_yin",
+      "name": "阴维脉",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "筑宾穴",
+          "baseStat": "lifeStealPct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "腹哀穴",
+          "baseStat": "lifeStealPct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "期门穴",
+          "baseStat": "hpRegen",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "天泉穴",
+          "baseStat": "lifeStealPct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "库房穴",
+          "baseStat": "hpRegen",
+          "statValue": 8
+        }
+      ],
+      "description": "阴维主以血养血，吸血续命，愈战愈勇。适合续航吸血流修士。",
+      "tier": 3,
+      "primaryStat": "lifeStealPct",
+      "secondaryStat": "hpRegen",
+      "conflictMeridians": [
+        "mer_wei_yang"
+      ],
+      "synergyMeridians": [
+        "mer_yang_2",
+        "mer_qiao_yang"
+      ],
+      "requirementPower": 1500
+    },
+    {
+      "id": "mer_dai",
+      "name": "带脉",
+      "type": "neutral",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "带脉穴",
+          "baseStat": "reflectPct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "五枢穴",
+          "baseStat": "statusResistPct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "维道穴",
+          "baseStat": "reflectPct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "居髎穴",
+          "baseStat": "statusResistPct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "带脉穴",
+          "baseStat": "reflectPct",
+          "statValue": 8
+        }
+      ],
+      "description": "带脉环绕腰腹，以守代攻，反伤外敌，百毒不侵。适合反伤抗性流修士。",
+      "tier": 2,
+      "primaryStat": "reflectPct",
+      "secondaryStat": "statusResistPct",
+      "conflictMeridians": [
+        "mer_chong"
+      ],
+      "synergyMeridians": [
+        "mer_yin_3",
+        "mer_dai_branch"
+      ],
+      "requirementPower": 1000
+    },
+    {
+      "id": "mer_chong",
+      "name": "冲脉",
+      "type": "neutral",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "气冲穴",
+          "baseStat": "comboChancePct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "横骨穴",
+          "baseStat": "comboChancePct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "大赫穴",
+          "baseStat": "extraAttackPct",
+          "statValue": 3
+        },
+        {
+          "index": 4,
+          "name": "四满穴",
+          "baseStat": "comboChancePct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "中注穴",
+          "baseStat": "extraAttackPct",
+          "statValue": 5
+        }
+      ],
+      "description": "冲脉上行下达，连击如潮，攻击概率追加一击。适合连击爆发流修士。",
+      "tier": 2,
+      "primaryStat": "comboChancePct",
+      "secondaryStat": "extraAttackPct",
+      "conflictMeridians": [
+        "mer_dai",
+        "mer_dai_branch"
+      ],
+      "synergyMeridians": [
+        "mer_wei_yang",
+        "mer_yang_1"
+      ],
+      "requirementPower": 1000
+    },
+    {
+      "id": "mer_dai_branch",
+      "name": "带脉·反伤支",
+      "type": "neutral",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "章门穴",
+          "baseStat": "reflectPct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "京门穴",
+          "baseStat": "reflectPct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "带脉穴",
+          "baseStat": "defensePct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "五枢穴",
+          "baseStat": "reflectPct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "居髎穴",
+          "baseStat": "reflectPct",
+          "statValue": 10
+        }
+      ],
+      "description": "带脉支脉，专精反伤之道，受击反震倍增。需带脉为基础方可修习。",
+      "tier": 3,
+      "primaryStat": "reflectPct",
+      "secondaryStat": "defensePct",
+      "conflictMeridians": [
+        "mer_chong"
+      ],
+      "synergyMeridians": [
+        "mer_dai",
+        "mer_yin_3"
+      ],
+      "requirementPower": 1500
+    },
+    {
+      "id": "mer_ren_branch",
+      "name": "任脉·福缘支",
+      "type": "yin",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "中脘穴",
+          "baseStat": "magicFindPct",
+          "statValue": 3
+        },
+        {
+          "index": 2,
+          "name": "关元穴",
+          "baseStat": "magicFindPct",
+          "statValue": 5
+        },
+        {
+          "index": 3,
+          "name": "气海穴",
+          "baseStat": "luckDropPct",
+          "statValue": 5
+        },
+        {
+          "index": 4,
+          "name": "神阙穴",
+          "baseStat": "magicFindPct",
+          "statValue": 8
+        },
+        {
+          "index": 5,
+          "name": "中极穴",
+          "baseStat": "luckDropPct",
+          "statValue": 8
+        }
+      ],
+      "description": "任脉支脉，汇聚天地福缘，提升掉宝与奇遇概率。适合寻宝刷装流修士。",
+      "tier": 2,
+      "primaryStat": "magicFindPct",
+      "secondaryStat": "luckDropPct",
+      "conflictMeridians": [
+        "mer_du_branch"
+      ],
+      "synergyMeridians": [
+        "mer_yin_3",
+        "mer_yang_2"
+      ],
+      "requirementPower": 1000
+    },
+    {
+      "id": "mer_du_branch",
+      "name": "督脉·暴伤支",
+      "type": "yang",
+      "nodes": [
+        {
+          "index": 1,
+          "name": "至阳穴",
+          "baseStat": "critDamagePct",
+          "statValue": 5
+        },
+        {
+          "index": 2,
+          "name": "灵台穴",
+          "baseStat": "critDamagePct",
+          "statValue": 8
+        },
+        {
+          "index": 3,
+          "name": "神道穴",
+          "baseStat": "critPct",
+          "statValue": 3
+        },
+        {
+          "index": 4,
+          "name": "身柱穴",
+          "baseStat": "critDamagePct",
+          "statValue": 12
+        },
+        {
+          "index": 5,
+          "name": "陶道穴",
+          "baseStat": "critDamagePct",
+          "statValue": 15
+        }
+      ],
+      "description": "督脉支脉，专精暴击伤害，暴伤叠至极致。需督阳经为基础方可修习。",
+      "tier": 3,
+      "primaryStat": "critDamagePct",
+      "secondaryStat": "critPct",
+      "conflictMeridians": [
+        "mer_ren_branch"
+      ],
+      "synergyMeridians": [
+        "mer_yang_3",
+        "mer_yang_1"
+      ],
+      "requirementPower": 1500
+    }
+  ],
+  "meridianWords": [
+    {
+      "id": "mw_001",
+      "name": "任督贯通",
+      "description": "打通任脉与督脉之枢纽，内力恢复翻倍，内力上限提升。",
+      "sequence": [
+        {
+          "meridianId": "mer_yin_3",
+          "nodeIndex": 1,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_yin_3",
+          "nodeIndex": 3,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_yang_3",
+          "nodeIndex": 2,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_yang_3",
+          "nodeIndex": 4,
+          "seedId": "seed_neutral_1"
+        }
+      ],
+      "effect": "内力恢复速度×2，内力上限+20%",
+      "bonuses": {
+        "innerRecoveryPct": 100,
+        "maxInnerPct": 20
+      }
+    },
+    {
+      "id": "mw_002",
+      "name": "少阳通脉",
+      "description": "少阳经全脉贯通，外功伤害大增，臂力提升。",
+      "sequence": [
+        {
+          "meridianId": "mer_yang_1",
+          "nodeIndex": 1,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_yang_1",
+          "nodeIndex": 3,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_yang_1",
+          "nodeIndex": 5,
+          "seedId": "seed_yang_2"
+        }
+      ],
+      "effect": "外功伤害+30%，臂力+10",
+      "bonuses": {
+        "outerDamagePct": 30,
+        "body": 10
+      }
+    },
+    {
+      "id": "mw_003",
+      "name": "太阴遁形",
+      "description": "太阴经全脉贯通，身法大增，闪避与先手大幅提升。",
+      "sequence": [
+        {
+          "meridianId": "mer_yin_1",
+          "nodeIndex": 1,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_yin_1",
+          "nodeIndex": 3,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_yin_1",
+          "nodeIndex": 5,
+          "seedId": "seed_yin_2"
+        }
+      ],
+      "effect": "闪避率+20%，先手值+15，身法+8",
+      "bonuses": {
+        "dodgePct": 20,
+        "initiativeBonus": 15,
+        "agi": 8
+      }
+    },
+    {
+      "id": "mw_004",
+      "name": "阴阳交泰",
+      "description": "阴阳两脉交感，真气逆行不再触发，可同时修习阴阳经脉。",
+      "sequence": [
+        {
+          "meridianId": "mer_yang_1",
+          "nodeIndex": 2,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_yin_1",
+          "nodeIndex": 2,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_yang_3",
+          "nodeIndex": 1,
+          "seedId": "seed_yin_2"
+        },
+        {
+          "meridianId": "mer_yin_3",
+          "nodeIndex": 1,
+          "seedId": "seed_yang_2"
+        }
+      ],
+      "effect": "经脉相克不再触发真气逆行（解锁双修流），全属性+5",
+      "bonuses": {
+        "meridianConflictImmune": 1,
+        "body": 5,
+        "agi": 5,
+        "wis": 5,
+        "con": 5,
+        "luck": 5
+      }
+    },
+    {
+      "id": "mw_005",
+      "name": "天地桥梁",
+      "description": "督脉与任脉巅顶贯通，天地之气交汇，全属性大幅提升。",
+      "sequence": [
+        {
+          "meridianId": "mer_yang_3",
+          "nodeIndex": 5,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_yin_3",
+          "nodeIndex": 5,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_yang_2",
+          "nodeIndex": 3,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_yin_2",
+          "nodeIndex": 3,
+          "seedId": "seed_neutral_1"
+        }
+      ],
+      "effect": "全属性+10%",
+      "bonuses": {
+        "body": 10,
+        "agi": 10,
+        "wis": 10,
+        "con": 10,
+        "luck": 10
+      }
+    },
+    {
+      "id": "mw_006",
+      "name": "破甲连击",
+      "description": "冲脉与阳维脉交感，连击附带破甲效果，每次追击额外降低目标5%防御。",
+      "sequence": [
+        {
+          "meridianId": "mer_chong",
+          "nodeIndex": 2,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_chong",
+          "nodeIndex": 4,
+          "seedId": "seed_yang_2"
+        },
+        {
+          "meridianId": "mer_wei_yang",
+          "nodeIndex": 2,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_wei_yang",
+          "nodeIndex": 4,
+          "seedId": "seed_yang_2"
+        }
+      ],
+      "effect": "追击附带5%破甲（可叠加），破甲伤害+15%",
+      "bonuses": {
+        "comboArmorPenPct": 5,
+        "trueDamagePct": 15
+      }
+    },
+    {
+      "id": "mw_007",
+      "name": "福缘天赐",
+      "description": "任脉福缘支与太阳经交感，气血旺盛之人福报深厚，掉宝率倍增。",
+      "sequence": [
+        {
+          "meridianId": "mer_ren_branch",
+          "nodeIndex": 1,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_ren_branch",
+          "nodeIndex": 4,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_yang_2",
+          "nodeIndex": 2,
+          "seedId": "seed_neutral_1"
+        },
+        {
+          "meridianId": "mer_yang_2",
+          "nodeIndex": 4,
+          "seedId": "seed_yang_1"
+        }
+      ],
+      "effect": "掉宝率+30%，最大生命+10%",
+      "bonuses": {
+        "magicFindPct": 30,
+        "maxHpPct": 10
+      }
+    },
+    {
+      "id": "mw_008",
+      "name": "修罗血河",
+      "description": "督脉暴伤支与阴维脉交感，暴伤吸血合一，愈战愈强愈吸愈多。",
+      "sequence": [
+        {
+          "meridianId": "mer_du_branch",
+          "nodeIndex": 2,
+          "seedId": "seed_yang_1"
+        },
+        {
+          "meridianId": "mer_du_branch",
+          "nodeIndex": 5,
+          "seedId": "seed_yang_2"
+        },
+        {
+          "meridianId": "mer_wei_yin",
+          "nodeIndex": 2,
+          "seedId": "seed_yin_1"
+        },
+        {
+          "meridianId": "mer_wei_yin",
+          "nodeIndex": 4,
+          "seedId": "seed_yin_2"
+        }
+      ],
+      "effect": "暴击时吸血效果翻倍，吸血+15%，暴伤+20%",
+      "bonuses": {
+        "critLifeStealBonus": 15,
+        "critDamagePct": 20
+      }
+    }
+  ]
+}

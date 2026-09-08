@@ -1,0 +1,993 @@
+[
+  {
+    "id": "narr_boss_gumu_p1",
+    "tier": "boss",
+    "template": "玉面婆婆冷眼看你，周身阴寒之气流转。你一记{skill}攻去，她拂袖轻挡便将来招卸去。{damage}点伤害如泥牛入海，她面带讥讽：「就这？墓中枯骨尚比你强三分。」",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_gumu_p2",
+    "tier": "boss",
+    "template": "玉面婆婆面容骤变，阴气暴涨！她身形如鬼魅般掠来，连出数招{skill}竟无法招架。{damage}点伤害入体，你只觉经脉中阴寒之力肆虐——她动了真格！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_gumu_p3",
+    "tier": "boss",
+    "template": "玉面婆婆已近油尽灯枯却突然面目狰狞，周身阴气暴涨数倍——这是临死反扑的拼命之势！你全力催动{skill}迎击，{damage}点伤害入体，双方陷入殊死搏杀！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_cj_p1",
+    "tier": "boss",
+    "template": "你一记{skill}轰然劈向木人阵，却如击铜墙铁壁——木人周身金光流转，物理攻击尽数被弹开！{damage}点伤害毫毛未伤，木人双目铜光更盛。",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_cj_p2",
+    "tier": "boss",
+    "template": "木人阵金光忽敛，机关咔嚓作响。你趁机以{skill}攻入破绽，木人内功防御骤降！{damage}点伤害终于入体，木人微微颤动——然而下一阶段的变化即将来临……",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_cj_p3",
+    "tier": "boss",
+    "template": "木人阵全属性暴涨，铁臂如风车般旋转而来！你不敢大意，全力以{skill}正面迎击，两股力量轰然碰撞。{damage}点伤害入体——这是最后的决战！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_xm_p1",
+    "tier": "boss",
+    "template": "血魔教主端坐血祭坛上，周身血煞之气流转。你一记{skill}攻去，他掌心一翻便将来招化解，反以血祭之力吸取你气血。{damage}点伤害入体，他却恢复了等量生命——这魔头竟能以血养身！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_xm_p2",
+    "tier": "boss",
+    "template": "血魔教主仰天长啸，周身血气暴涨！他双手连拍血祭坛，数名血魔教徒自暗处现身助战。你全力以{skill}应对群敌，{damage}点伤害入体——但他仍在以血祭恢复！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_xm_p3",
+    "tier": "boss",
+    "template": "血魔教主化出血魔真身，浑身血色魔甲覆盖！你全力催动{skill}正攻其要害，{damage}点伤害入体，他却反震你同等伤害——这是血魔真身的终极形态！殊死一搏，在此一举！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_tj_p1",
+    "tier": "boss",
+    "template": "天机老人端坐机关台上，周身机关运转。你一记{skill}攻去，他轻触机关升起铜壁——攻击尽数被挡！{damage}点伤害未入分毫，天机老人面不改色：「机关术之道，岂是你能窥破的？」",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_tj_p2",
+    "tier": "boss",
+    "template": "天机老人身形一晃，千变万化——数种兵器路数在一招间转换！你以{skill}勉强应对，{damage}点伤害入体。他轻拍机关，铜人甲士自两侧现身助战，身法也被机关封锁！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_tj_p3",
+    "tier": "boss",
+    "template": "天机老人进入终极形态，机关全面爆发！铜臂如暴雨般连击，暗器如蝗虫般倾泻。你以{skill}全力搏杀，{damage}点伤害入体——他反震之力更胜从前，这是生死最后一战！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_lh_p1",
+    "tier": "boss",
+    "template": "轮回殿主端坐壁画之前，六道之力流转于身。你一记{skill}全力攻去，他掌心一推便以轮回之力化解来招。{damage}点伤害未入分毫，他微笑道：「六道轮回，你尚未参透。」",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_lh_p2",
+    "tier": "boss",
+    "template": "轮回殿主化出六道轮回相，前招天道阳刚、后招修罗阴煞，变化莫测！你以{skill}全力应对，{damage}点伤害入体——他却以轮回自愈恢复生命，又以内力吸取你真元！此獠之强，当世罕有！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_lh_p3",
+    "tier": "boss",
+    "template": "轮回殿主进入最终形态·万法归一，反震、吸血、召唤齐聚一身！你全力催动{skill}搏命一击，{damage}点伤害入体——他周身爆发出毁天灭地的力量，这是武林最后的决战！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_boss_extra_001",
+    "tier": "boss",
+    "template": "{boss}身形暴退，你趁势追击一记{skill}正中其后背！{damage}点伤害入体——然而{boss}回身之际竟面带笑意，似在试探你的实力。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_extra_002",
+    "tier": "boss",
+    "template": "你与{boss}正面交锋，{skill}与对方掌力轰然碰撞，气浪将周围碎石尽数震飞。{damage}点伤害入体，双方各退半步——棋逢对手，将遇良才！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_extra_003",
+    "tier": "boss",
+    "template": "你窥得{boss}招式间一处破绽，{skill}精准刺入！{damage}点伤害入体，{boss}面色微变——这是第一次令他动容的一击。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_boss_extra_004",
+    "tier": "boss",
+    "template": "{boss}连出数招皆被你以{skill}化解，他面露惊色——堂堂Boss竟被一个后辈逼到如此地步！{damage}点伤害入体，胜负之势正在逆转。",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_boss_extra_005",
+    "tier": "boss",
+    "template": "你将毕生修为灌注于{skill}之中，一招倾尽全力！{boss}周身护体真气龟裂，{damage}点致命伤害轰然入体——胜负，就在此一击之间！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_skill_hidden_001",
+    "tier": "normal",
+    "template": "你手腕一抖，{skill}的暗器破空而出，{enemy}只觉眼前银光一闪，肩头已中了一枚银梭。{damage}点伤害入体，暗器之毒缓缓渗入经脉。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_skill_hidden_002",
+    "tier": "normal",
+    "template": "你十指连弹，{skill}如暴雨梨花般齐射而出。{enemy}挥臂格挡却挡不住这密如骤雨的暗器，身上连中数枚，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_skill_brush_001",
+    "tier": "normal",
+    "template": "你双笔齐出，{skill}如判官判生死，一笔点向{enemy}穴道、一笔划向其咽喉。{enemy}闪避不及，肩井穴被点中，半身麻痹间又吃了{damage}点伤害。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_skill_whisk_001",
+    "tier": "normal",
+    "template": "你拂尘一扫，{skill}的拂丝如千手齐出，绵密真气裹挟其中。{enemy}被拂丝缠住臂膀，挣脱间又被真气侵入经脉，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_skill_staff_001",
+    "tier": "normal",
+    "template": "你禅杖横扫，{skill}带着千钧之力劈向{enemy}。对方举臂硬挡，脚下地面龟裂，闷哼一声被震退数步，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_skill_greatsword_001",
+    "tier": "normal",
+    "template": "你双手握剑过顶劈下，{skill}如开山巨斧。{enemy}横刀格挡却挡不住这劈山裂石之力，兵器脱手飞出，{damage}点伤害将其劈得踉跄后退。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_skill_combo_001",
+    "tier": "normal",
+    "template": "你{skill}连击而出，一招快过一招，如暴风骤雨般攻向{enemy}。对方疲于招架终于露出破绽，被末招击中胸口，{damage}点伤害入体。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_skill_charge_001",
+    "tier": "normal",
+    "template": "你运功数息，真气在体内翻涌积蓄。待蓄力至极，{skill}轰然爆发——这一招蕴含了你毕生修为，{enemy}全力防御仍被{damage}点伤害震飞数丈！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_skill_reflect_001",
+    "tier": "normal",
+    "template": "{enemy}全力一击，你以{skill}护体硬接，反震之力透过兵器传入对方双臂。{damage}点反震伤害令{enemy}虎口发麻，兵器险些脱手。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_skill_lifesteal_001",
+    "tier": "normal",
+    "template": "你{skill}命中{enemy}，掌心一吸便将对方气血引入己身。{damage}点伤害入体，你却恢复了等量生命——{enemy}面色骤白：「这……这是邪功！」",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_encounter_001",
+    "tier": "encounter",
+    "template": "你在{realm}的深处发现一卷泛黄的残卷，上面记载着失传已久的武学精要。细细研读之下，竟有所悟——获得了{reward}！",
+    "requiredVars": [
+      "realm",
+      "reward"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_encounter_002",
+    "tier": "encounter",
+    "template": "一处坍塌的角落里，你摸到一只暗藏的石匣。匣中是一套古朴的{reward}，虽经岁月侵蚀却仍坚韧如新——这是前朝武者用过的宝贝！",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_encounter_003",
+    "tier": "encounter",
+    "template": "你盘膝于{realm}一处偏僻角落运功调息，经脉中真气自行运转。片刻后只觉内力精进不少——获得了{reward}！",
+    "requiredVars": [
+      "realm",
+      "reward"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_encounter_004",
+    "tier": "encounter",
+    "template": "一名游方郎中路过，见你身上有伤便主动递来几枚丹药：「相逢即是有缘。」你接过丹药，丹香扑鼻——获得了{reward}！",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_encounter_005",
+    "tier": "encounter",
+    "template": "你在壁画前驻足参悟，六道轮回之理如泉涌般灌入识海。只觉经脉通畅、内力精进——{reward}自行打通了一处滞涩的穴道！",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_encounter_006",
+    "tier": "encounter",
+    "template": "你在一具破损的机关旁拾到几片精铜碎片，又从机关体内摸出一枚暗藏的灵珠。灵珠泛着温润光泽——获得了{reward}！",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_encounter_007",
+    "tier": "encounter",
+    "template": "你以小心破阵之法取走祭坛上的宝物，阵法纹路在你内力下悄然化解。{reward}入手时阵法未动——总算有惊无险！",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_encounter_008",
+    "tier": "encounter",
+    "template": "天机赌局的铜匣缓缓打开，里面是{reward}——天机赌局，你赌对了！机关术的精妙之处便在于此：各安天命。",
+    "requiredVars": [
+      "reward"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_lowpower_001",
+    "tier": "normal",
+    "template": "你使出{skill}，招式生涩却也算中规中矩。{enemy}挨了{damage}点伤害，虽不致命却也令其吃痛。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_lowpower_002",
+    "tier": "normal",
+    "template": "你咬牙硬撑，一记{skill}勉强打中{enemy}。{damage}点伤害不多，但至少证明你还有还手之力。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_lowpower_003",
+    "tier": "normal",
+    "template": "你沉腰坐马，一记{skill}虽力道不足却走对了路数。{enemy}被你击中，{damage}点伤害虽轻却令对方不敢轻视你。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_lowpower_004",
+    "tier": "crush",
+    "template": "你拼尽全力一记{skill}，{enemy}虽然接下却也被打得退了半步。{damage}点伤害——虽弱，但不屈。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_lowpower_005",
+    "tier": "normal",
+    "template": "你一记{skill}打中了{enemy}，{damage}点伤害虽然不多，但你的坚持令对手心生敬意。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 65
+  },
+  {
+    "id": "narr_lowpower_006",
+    "tier": "crush",
+    "template": "你{skill}勉强施展，{enemy}却如纸糊般倒地。{damage}点伤害——这秘境对你而言太过轻松了。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_highpower_001",
+    "tier": "normal",
+    "template": "你一记{skill}如天雷降世，拳风所过之处空气炸裂！{enemy}连看都没看清便被轰飞数丈，{damage}点伤害将其打得口喷鲜血——这便是绝世高手与凡夫的区别！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_highpower_002",
+    "tier": "normal",
+    "template": "你信手一记{skill}，看似随意却暗含天地至理。掌风无声而至，{enemy}只觉胸口一闷便已被震退三丈——{damage}点伤害，你甚至没有认真出手。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_highpower_003",
+    "tier": "normal",
+    "template": "你周身罡气流转，{skill}一出便如排山倒海。{enemy}全力防御却如螳臂当车，{damage}点伤害将其护体真气尽数震碎，口喷鲜血倒飞而出！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_highpower_004",
+    "tier": "crush",
+    "template": "你目光一凛，{skill}无声而出。{enemy}连惨叫都来不及便已气绝身亡——{damage}点伤害，这就是碾压之力。天下之大，能接你一招者屈指可数。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_highpower_005",
+    "tier": "normal",
+    "template": "你一步踏出，脚下地面龟裂。{skill}携万钧之势轰向{enemy}，对方双目圆睁——这种力量根本不是人力所能抵挡！{damage}点伤害将其连同兵器一并碾碎！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_highpower_006",
+    "tier": "crush",
+    "template": "你拂袖而过，{skill}真气无声弥漫。{enemy}身形一僵，缓缓低头看向自己胸口——{damage}点伤害已贯穿其要害。你甚至没有正眼看过他。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_crit_001",
+    "tier": "crit",
+    "template": "你{skill}精准命中{enemy}要害！这一击力透五脏，{damage}点暴击伤害将其打得口喷鲜血——经脉寸断，再难聚力！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_crit_002",
+    "tier": "crit",
+    "template": "你于电光火石间捕捉到{enemy}招式中的破绽，{skill}如毒蛇吐信般刺入！{damage}点暴击入体——这一击打断了对方的攻势节奏！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_crit_003",
+    "tier": "crit",
+    "template": "你真气灌注双臂，{skill}力透掌心轰然爆发！{enemy}护体真气如纸般碎裂，{damage}点暴击伤害直击其本源！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_crit_004",
+    "tier": "crit",
+    "template": "你以毕生修为催动{skill}，掌风裹挟着雷霆之势正中{enemy}天灵盖！{damage}点暴击伤害——这一掌足以碎石裂碑！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_crit_005",
+    "tier": "crit",
+    "template": "你{skill}走了一记刁钻路数，避开{enemy}所有防御直攻其命门！{damage}点暴击入体——这一击又快又准，对方甚至来不及反应！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_crit_006",
+    "tier": "crit",
+    "template": "天地之间似有感应，你{skill}一出便觉真气奔涌。{enemy}双目圆睁，{damage}点暴击伤害如雷轰顶——这是天人交感的一击！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_crit_007",
+    "tier": "crit",
+    "template": "你身形如幻影般掠过{enemy}身侧，{skill}反手一击正中其后心！{damage}点暴击伤害——攻敌不备，一击毙命之差！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_crit_008",
+    "tier": "crit",
+    "template": "你以丹田真气凝于一点，{skill}如利剑破竹般贯穿{enemy}护体罡气！{damage}点暴击入体，对方周身真气护罩瞬间瓦解！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_crit_009",
+    "tier": "crit",
+    "template": "你闭目凝神一瞬，再睁眼时{skill}已如闪电般打出！{enemy}尚未反应便已中招，{damage}点暴击入体——这一击快逾奔雷！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_crit_010",
+    "tier": "crit",
+    "template": "你以双掌交叠催动{skill}，掌力层层叠加如浪涌至！{enemy}被这股叠浪之力吞没，{damage}点暴击伤害将其震飞丈外！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_drop_001",
+    "tier": "drop",
+    "template": "{enemy}倒地之际，一道光华自其身畔浮起——你获得了{item}！暗淡的秘境中，这件宝物散发着诱人的光泽。",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_drop_002",
+    "tier": "drop",
+    "template": "你俯身查看{enemy}遗物，手指触碰{item}的刹那，一股温润真气自掌心涌入经脉——这是蕴含武学造诣的宝物！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_drop_003",
+    "tier": "drop",
+    "template": "{enemy}身形消散之处，一物自虚空中坠落叮当有声。你拾起一看，竟是{item}！冥冥中似有定数，此物与你缘分不浅。",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_drop_004",
+    "tier": "drop",
+    "template": "你从{enemy}身上搜出{item}，入手沉甸甸的，纹路古朴深邃。细看之下竟有前朝铭文——这是失传已久的珍品！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_drop_005",
+    "tier": "drop",
+    "template": "{enemy}倒下后周身阴气骤散，一物自其怀中跌出。{item}入手冰凉，隐有灵光流转——此物非寻常之物！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_drop_006",
+    "tier": "drop",
+    "template": "你斩杀{enemy}后，其身畔虚空微微震颤，{item}自裂缝中缓缓浮现。天降异宝，莫非此乃天意？",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_drop_007",
+    "tier": "drop",
+    "template": "你弯腰拾起{enemy}遗落的{item}，入手便觉不同凡响。纹路间似有真气流转，隐隐与你的内力产生共鸣——缘分已至！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_drop_008",
+    "tier": "drop",
+    "template": "空中飘散的灵光缓缓凝聚成实体——{item}！你伸手接住，掌心传来一阵暖意。{enemy}毕生修为似都凝于此物之中。",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_drop_009",
+    "tier": "drop",
+    "template": "你从{enemy}的行囊中翻出{item}，入手便觉沉甸甸的。此物做工精良、纹路深奥，绝非等闲之物！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_drop_010",
+    "tier": "drop",
+    "template": "{enemy}化为飞灰之际，一物自灰烬中冲天而起，灵光耀目！你伸手一引，{item}落入掌中——天材地宝，机缘难得！",
+    "requiredVars": [
+      "enemy",
+      "item"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_battle_001",
+    "tier": "boss",
+    "template": "你与{boss}的战斗已至白热化！双方真气轰然碰撞，气浪将周围石壁震出蛛网般的裂痕。你以{skill}正面迎击，{damage}点伤害入体——这一战，你已无退路！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 95
+  },
+  {
+    "id": "narr_boss_battle_002",
+    "tier": "boss",
+    "template": "{boss}周身杀意如实质般压来，你只觉呼吸都变得沉重。咬牙催动{skill}强行破开其气势，{damage}点伤害入体——你以意志硬撼其威压！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_battle_003",
+    "tier": "boss",
+    "template": "你与{boss}交手已过百招，双方各有损伤。你以{skill}精准切入其攻势间隙，{damage}点伤害入体——生死搏杀间，你渐渐摸清了对方的路数！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_battle_004",
+    "tier": "boss",
+    "template": "{boss}一掌震退你数步，你踉跄间稳住身形反手以{skill}反击！{damage}点伤害入体——虽处于劣势却毫不退缩，这是武者的骨气！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_battle_005",
+    "tier": "boss",
+    "template": "你与{boss}对峙，双方真气在空气中碰撞出火花。你率先出手，{skill}如龙蛇般攻去！{damage}点伤害入体——先手即占得三分优势！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_battle_006",
+    "tier": "boss",
+    "template": "{boss}祭出杀招，你以{skill}硬接！两股力量轰然碰撞，周围碎石飞溅。{damage}点伤害入体——双方各退半步，势均力敌！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_boss_battle_007",
+    "tier": "boss",
+    "template": "你将真气催至极限，{skill}携破山裂石之势轰向{boss}！{damage}点伤害入体——对方周身护体真气终于出现了裂痕！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_battle_008",
+    "tier": "boss",
+    "template": "{boss}面露凝重之色，他感受到了真正的威胁。你趁势连出{skill}三击，{damage}点伤害入体——这一刻，猎人与猎物的角色正在反转！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_boss_battle_009",
+    "tier": "boss",
+    "template": "你与{boss}已斗至精疲力竭，双方皆在咬牙硬撑。最后一记{skill}倾尽真气，{damage}点伤害入体——谁能撑到最后，谁便是胜者！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_boss_battle_010",
+    "tier": "boss",
+    "template": "你以{skill}划破{boss}周身护体真气，{damage}点伤害直入其要害！{boss}身形剧震，面目上第一次浮现惊惧之色——胜负的天平已向你倾斜！",
+    "requiredVars": [
+      "boss",
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_qigong_001",
+    "tier": "qigongDeviation",
+    "template": "你催动{skill}时忽觉经脉一阵灼痛，真气不受控制地在体内乱窜！强行运功反令走火入魔——你口喷鲜血，{damage}点内伤入体！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_qigong_002",
+    "tier": "qigongDeviation",
+    "template": "真气在丹田中翻涌不止，你咬牙强压却适得其反。{skill}施展中途真气逆行，经脉似有火焰灼烧——{damage}点走火入魔之痛令你险些昏厥！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_qigong_003",
+    "tier": "qigongDeviation",
+    "template": "你催动{skill}过猛，阴气趁虚侵入识海。眼前幻象纷至沓来——心魔趁隙而入！{damage}点内伤反噬，你差点丧失神智！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_qigong_004",
+    "tier": "qigongDeviation",
+    "template": "丹田真气突然暴走，{skill}的力道远超你所能掌控！经脉承受不住这股力量而龟裂——{damage}点走火入魔，你口角溢出一缕鲜血。",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_qigong_005",
+    "tier": "qigongDeviation",
+    "template": "你催动{skill}之际，识海中忽然响起诡异低语。心神恍惚间真气逆行经脉，{damage}点内伤入体——这是走火入魔的前兆，必须速速收功！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_qigong_006",
+    "tier": "qigongDeviation",
+    "template": "阴寒之力自{enemy}攻来，你以{skill}硬抗却令真气紊乱。阳刚与阴寒在体内激烈碰撞——{damage}点走火入魔之伤！你只觉半身灼热半身冰冷，痛苦难当！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_qigong_007",
+    "tier": "qigongDeviation",
+    "template": "你连催{skill}数次，真气已近枯竭却仍强行运功。经脉不堪重负终于崩裂——{damage}点走火入魔反噬！这一时逞强，恐令根基受损！",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_qigong_008",
+    "tier": "qigongDeviation",
+    "template": "你以{skill}强攻{enemy}之际，体内真气忽然逆转流向。经脉中如万蚁噬咬，眼前一黑——{damage}点内伤入体，走火入魔的征兆已现！",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 75
+  },
+  {
+    "id": "narr_qigong_009",
+    "tier": "qigongDeviation",
+    "template": "你催功过急，{skill}的内力路径走偏了半寸。就这半寸之差，真气冲入岔脉——{damage}点走火入魔！你险些心智失控，以最后一点清明硬将真气逼回丹田。",
+    "requiredVars": [
+      "skill",
+      "damage"
+    ],
+    "weight": 70
+  },
+  {
+    "id": "narr_qigong_010",
+    "tier": "qigongDeviation",
+    "template": "一股外来邪力自{enemy}侵入你经脉，与{skill}的真气正面冲撞。两股力量在你体内厮杀，{damage}点走火入魔之伤！你面色骤变，嘴角溢出黑血。",
+    "requiredVars": [
+      "skill",
+      "enemy",
+      "damage"
+    ],
+    "weight": 80
+  },
+  {
+    "id": "narr_endless_001",
+    "tier": "endless",
+    "template": "虚空秘境第{layer}层——你踏入虚空，周围一片混沌。敌人之力随虚空法则增强，每一层都是全新的考验。",
+    "requiredVars": [
+      "layer"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_endless_002",
+    "tier": "endless",
+    "template": "第{layer}层的虚空震荡不止，{enemy}自虚空中浮现向你扑来！在这无尽深渊中，你已记不清这是第几场战斗……",
+    "requiredVars": [
+      "layer",
+      "enemy"
+    ],
+    "weight": 90
+  },
+  {
+    "id": "narr_endless_003",
+    "tier": "endless",
+    "template": "每深入一层，虚空之力便将你包裹得更紧。第{layer}层——你感到全身经脉都在承受着越来越大的压力，但退路早已不在。",
+    "requiredVars": [
+      "layer"
+    ],
+    "weight": 85
+  },
+  {
+    "id": "narr_endless_004",
+    "tier": "endless",
+    "template": "第{layer}层！Boss现身于虚空深处——{boss}的幻影被虚空之力重塑，比原体更为凶悍！无尽模式中的Boss，每一场都是硬仗！",
+    "requiredVars": [
+      "layer",
+      "boss"
+    ],
+    "weight": 100
+  },
+  {
+    "id": "narr_endless_005",
+    "tier": "endless",
+    "template": "你突破了第{layer}层！虚空裂开一道新的入口，更深处的未知在等待着……传说中深入百层者所见之物已非人间武学，你准备好继续了吗？",
+    "requiredVars": [
+      "layer"
+    ],
+    "weight": 95
+  }
+]

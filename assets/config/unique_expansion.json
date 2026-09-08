@@ -1,0 +1,1130 @@
+[
+  {
+    "id": "uq_w_003",
+    "name": "噬血饮魂刀",
+    "description": "传闻此刀以千年饮血凶兽之骨铸成，刀身暗红如凝血，刀刃处隐现鬼面纹路。持刀者杀意愈浓，刀气愈盛，每杀一人刀身便吞噬其精血，令持刀者战力暴涨。昔年一刀客持此刀连斩三十六寨，刀下亡魂无数，终因杀意过盛走火入魔，化为一具行尸。此刀此后被镇压于天机台深处，等待下一位能驾驭其杀意之人。",
+    "slot": "weapon",
+    "itemLevel": 55,
+    "uniqueEffects": [
+      {
+        "id": "fx_kill stacking_crit",
+        "description": "每击杀一个敌人，暴击率+5%，上限+30%；暴击伤害+10%，上限+50%",
+        "type": "stackingBurst",
+        "params": {
+          "killStat": "critPct",
+          "perKillBonus": 5,
+          "maxBonusPct": 30,
+          "critDamagePerKill": 10,
+          "maxCritDamageBonus": 50
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 15,
+        "maxVal": 25
+      },
+      {
+        "affixId": "prefix_vicious",
+        "minVal": 20,
+        "maxVal": 40
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "body": 28,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_w_004",
+    "name": "碧落黄泉笔",
+    "description": "冥府判官遗落人间的双笔，一笔书「碧落」、一笔书「黄泉」。笔锋以阴寒玄铁铸就，蘸墨即以真气书写生死判词。持笔者内力绵长不绝，一指点出可判人生死，一笔挥落可夺人魂魄。据传此笔曾判过十殿阎罗的生死簿，被贬入凡间后辗转流入轮回殿中，非悟性通天者不可驾驭。",
+    "slot": "weapon",
+    "itemLevel": 58,
+    "uniqueEffects": [
+      {
+        "id": "fx_inner_to_true_damage",
+        "description": "内功伤害的30%转化为真实伤害，无视目标内功防御",
+        "type": "damageConversion",
+        "params": {
+          "convertStat": "innerDamage",
+          "convertPct": 30,
+          "targetStat": "trueDamage",
+          "ignoreDefense": true
+        }
+      },
+      {
+        "id": "fx_inner_penetration_boost",
+        "description": "内力穿透+25%，内功伤害无视目标25%内功防御",
+        "type": "statBonus",
+        "params": {
+          "stat": "innerPenetrationPct",
+          "bonus": 25
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_penetrating",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 15,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_wisdom",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_dragon",
+        "minVal": 12,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "wis": 30,
+      "level": 23
+    }
+  },
+  {
+    "id": "uq_c_002",
+    "name": "阴阳玄冥鉴",
+    "description": "一面以阴阳双鱼为纹的玄铜古镜，镜面可映照出修习者经脉中阴阳真气的流转之相。持有此鉴者可同时运转阴阳两脉真气而互不相克，是双修流修士梦寐以求的至宝。据传此镜乃上古阴阳家所铸，后流入轮回殿壁画之中，非参透轮回之理者不可取出。",
+    "slot": "accessory",
+    "itemLevel": 55,
+    "uniqueEffects": [
+      {
+        "id": "fx_dual_meridian_immune_v2",
+        "description": "经脉相克不再触发真气逆行（解锁双修流基础）；同时修习阴阳两脉时，两脉加成效果+20%",
+        "type": "meridianConflictImmune",
+        "params": {
+          "immune": true,
+          "dualBonusPct": 20
+        }
+      },
+      {
+        "id": "fx_yin_yang_balance",
+        "description": "阳刚与阴柔内力同时生效，内功伤害+15%、外功伤害+15%",
+        "type": "statBonus",
+        "params": {
+          "innerDamagePct": 15,
+          "outerDamagePct": 15
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_wisdom",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_dragon",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "wis": 28,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_a_002",
+    "name": "万劫不灭体",
+    "description": "一套以上古玄铁与龙骨铸就的战甲，甲面刻满反伤符箓。此甲以「受击即反震」为核心理念，敌愈强则反震愈烈。昔年一位以反伤功法闻名的高僧身着此甲立于千军万马之前，敌军箭雨如蝗却尽数被甲面反弹，三军辟易。高僧圆寂后此甲不知所踪，直至天机台机关深处再度现世。",
+    "slot": "armor",
+    "itemLevel": 60,
+    "uniqueEffects": [
+      {
+        "id": "fx_full_reflect",
+        "description": "受到伤害时100%反弹30%伤害予攻击者；被暴击时反弹50%",
+        "type": "onHitReflect",
+        "params": {
+          "procChance": 1.0,
+          "reflectPercent": 30,
+          "critReflectPercent": 50
+        }
+      },
+      {
+        "id": "fx_damage_reduction_on_hit",
+        "description": "每次受击获得1层「不灭」减伤，每层减伤5%，上限5层（25%），持续3回合",
+        "type": "onHitShield",
+        "params": {
+          "perStackReductionPct": 5,
+          "maxStacks": 5,
+          "durationRounds": 3
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_steadfast",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 20,
+        "maxVal": 30
+      },
+      {
+        "affixId": "suffix_reflection",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_constitution",
+        "minVal": 20,
+        "maxVal": 30
+      }
+    ],
+    "requirements": {
+      "con": 30,
+      "level": 24
+    }
+  },
+  {
+    "id": "uq_w_005",
+    "name": "千手观音拂尘",
+    "description": "以观音千手法相为灵感铸就的拂尘，拂丝以千年冰蚕丝与天外陨丝混编。持此拂尘出招时，拂丝如千手齐出，一招之间可连击数次。据传此拂尘乃一代高尼以毕生修为所铸，拂出时如千手观音普度众生，连绵不绝。高尼飞升后拂尘被供奉于藏经阁深处，非有缘者不可得。",
+    "slot": "weapon",
+    "itemLevel": 52,
+    "uniqueEffects": [
+      {
+        "id": "fx_multi_strike",
+        "description": "每次攻击额外发动1次追击，追击伤害为主击的40%；连续命中同一目标时追击伤害递增",
+        "type": "comboDamage",
+        "params": {
+          "extraStrikes": 1,
+          "strikeDamagePct": 40,
+          "comboIncrementPct": 5,
+          "maxComboBonusPct": 30
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_swift",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 12,
+        "maxVal": 18
+      }
+    ],
+    "requirements": {
+      "wis": 25,
+      "level": 20
+    }
+  },
+  {
+    "id": "uq_t_002",
+    "name": "九转聚灵鼎",
+    "description": "一只以上古青铜铸就的小鼎，鼎身刻九转丹纹与聚灵阵法。此鼎可于战斗中自动吸纳天地灵气，蓄满后可催发一轮毁天灭地的内力爆发。与太玄残卷的蓄力机制不同，此鼎蓄满后不仅伤害翻倍，更可令下一招附带全体属性附加伤害。据传此鼎是上古丹道宗师的炼丹之物，后流入血魔窟深处。",
+    "slot": "treasure",
+    "itemLevel": 58,
+    "uniqueEffects": [
+      {
+        "id": "fx_qi_accumulation_v2",
+        "description": "每回合结束积蓄1层灵气，4层满后下一招伤害翻2.5倍并附加50%内功+外功附加伤害，然后清零",
+        "type": "stackingBurst",
+        "params": {
+          "maxStacks": 4,
+          "burstMultiplier": 2.5,
+          "bonusInnerPct": 50,
+          "bonusOuterPct": 50,
+          "clearOnBurst": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 20,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_dragon",
+        "minVal": 12,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_wisdom",
+        "minVal": 6,
+        "maxVal": 8
+      }
+    ],
+    "requirements": {
+      "wis": 30,
+      "level": 23
+    }
+  },
+  {
+    "id": "uq_w_006",
+    "name": "血饮魔刀",
+    "description": "以血魔教主精血淬炼百日的魔刀，刀身殷红如血，刀刃处隐有魔纹流转。持刀者每次出招皆可吸取敌人气血补己之身，且吸血效果随连续命中递增。据传此刀是血魔教主未修成血祭功法前所铸的本命魔兵，后因功法大成而弃之不用，刀灵却仍残留在刀中，等待下一个嗜血之人。",
+    "slot": "weapon",
+    "itemLevel": 55,
+    "uniqueEffects": [
+      {
+        "id": "fx_escalating_lifesteal",
+        "description": "攻击吸血15%，连续命中同一目标时吸血效果递增5%/层，上限+40%；击杀后吸血重置",
+        "type": "comboDamage",
+        "params": {
+          "baseLifestealPct": 15,
+          "perHitIncrement": 5,
+          "maxLifestealPct": 40,
+          "resetOnKill": true
+        }
+      },
+      {
+        "id": "fx_low_hp_enrage",
+        "description": "自身生命低于30%时，吸血效果翻倍，攻击力+20%",
+        "type": "conditional",
+        "params": {
+          "trigger": "self_30%hp",
+          "lifestealMultiplier": 2.0,
+          "atkBonusPct": 20
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_bloodthirsty",
+        "minVal": 8,
+        "maxVal": 12
+      },
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 15,
+        "maxVal": 20
+      }
+    ],
+    "requirements": {
+      "body": 26,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_a_003",
+    "name": "凌虚仙衣",
+    "description": "以天蚕丝与鲛人泪珠编织的仙衣，衣身轻若无物、薄如蝉翼，穿之者身轻如燕、飘忽如仙。此衣令闪避率大幅提升，且每次成功闪避后可获得「凌虚」状态——下一次攻击必中且暴击。据传此衣是隐仙谷一位飞升高人所留，衣中残留仙气令穿戴者步法飘逸出尘。",
+    "slot": "armor",
+    "itemLevel": 55,
+    "uniqueEffects": [
+      {
+        "id": "fx_dodge_to_crit",
+        "description": "闪避率+15%；每次成功闪避后获得「凌虚」状态：下次攻击必定暴击，暴击伤害+30%",
+        "type": "trigger",
+        "params": {
+          "dodgeBonusPct": 15,
+          "onDodgeBuff": "guaranteedCrit",
+          "critDamageBonusPct": 30
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_swift",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_swiftness",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "agi": 28,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_c_003",
+    "name": "虎啸雷音珠",
+    "description": "一枚以千年雷兽内丹为核心的珠子，珠中隐有虎啸雷鸣之声。持有此珠者外功暴击时可催发雷音虎啸，对周围敌人造成连锁雷属性伤害。据传此珠是天机老人以机关术与武学结合所铸，珠内封印着一头雷兽之魂，以虎啸为引可短暂释放雷兽之力。",
+    "slot": "accessory",
+    "itemLevel": 55,
+    "uniqueEffects": [
+      {
+        "id": "fx_crit_chain_lightning",
+        "description": "外功暴击时触发连锁雷击：对目标及周围2个敌人造成暴击伤害30%的雷属性伤害",
+        "type": "trigger",
+        "params": {
+          "trigger": "outerCrit",
+          "chainCount": 2,
+          "chainDamagePct": 30,
+          "element": "thunder"
+        }
+      },
+      {
+        "id": "fx_outer_crit_boost",
+        "description": "外功暴击率+10%，暴击伤害+20%",
+        "type": "statBonus",
+        "params": {
+          "outerCritPct": 10,
+          "critDamagePct": 20
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_thunder",
+        "minVal": 8,
+        "maxVal": 12
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "body": 25,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_c_004",
+    "name": "玄武镇灵印",
+    "description": "一枚以玄武龟甲与镇灵黑石铸就的印章，印面刻「镇」字篆文。此印兼具蓄力与反震之能——受击时积蓄灵力，蓄满后既可爆发伤害又可升起玄武护盾反弹一切来犯之力。据传此印是上古玄武大帝遗留之物，印中封印着玄武真灵，非根骨深厚者不可驾驭其镇灵之力。",
+    "slot": "accessory",
+    "itemLevel": 60,
+    "uniqueEffects": [
+      {
+        "id": "fx_reflect_stack_burst",
+        "description": "每次受击积蓄1层灵力，3层满后：下一招伤害翻2倍并升起玄武护盾（反震50%伤害，持续2回合）",
+        "type": "stackingBurst",
+        "params": {
+          "maxStacks": 3,
+          "burstMultiplier": 2.0,
+          "shieldReflectPct": 50,
+          "shieldDuration": 2,
+          "triggerOn": "hit"
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_steadfast",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_reflection",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_constitution",
+        "minVal": 15,
+        "maxVal": 25
+      }
+    ],
+    "requirements": {
+      "con": 28,
+      "level": 24
+    }
+  },
+  {
+    "id": "uq_c_005",
+    "name": "血魔珠",
+    "slot": "accessory",
+    "quality": "unique",
+    "itemLevel": 52,
+    "setId": "set_blood_demon",
+    "baseStats": {
+      "maxHp": 500,
+      "lifestealPct": 10
+    },
+    "description": "血魔教至宝，以历代教主精血凝炼百年而成。珠体殷红如凝血，内有血雾翻涌，隐现万千怨魂面孔。佩戴此珠者，每次出招皆有血雾自珠中溢出，附着于兵器之上，将敌人气血吸入己身。据传血魔教主曾以此珠独战正道八大门派围攻，越战越勇，气血生生不息，令正道群豪胆寒。后血魔教主渡劫失败，此珠坠入血魔窟深处，珠中怨魂等待下一个嗜血之人驾驭。",
+    "uniqueEffects": [
+      {
+        "id": "fx_lifesteal_base",
+        "description": "每次攻击吸血15%，将造成伤害的15%转化为自身生命",
+        "type": "lifesteal",
+        "params": {
+          "lifestealPct": 15,
+          "convertTo": "hp"
+        }
+      },
+      {
+        "id": "fx_blood_frenzy",
+        "description": "连续命中同一目标时吸血效果递增5%/层，上限+40%；切换目标后重置",
+        "type": "comboDamage",
+        "params": {
+          "baseLifestealPct": 15,
+          "perHitIncrement": 5,
+          "maxLifestealPct": 40,
+          "resetOnSwitchTarget": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_bloodthirsty",
+        "minVal": 8,
+        "maxVal": 12
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "con": 24,
+      "level": 20
+    }
+  },
+  {
+    "id": "uq_b_001",
+    "name": "空灵步云靴",
+    "slot": "boots",
+    "quality": "unique",
+    "itemLevel": 50,
+    "setId": "set_void_step",
+    "baseStats": {
+      "dodgePct": 15,
+      "agility": 10,
+      "speed": 5
+    },
+    "description": "以天蚕丝与凌虚草编织的轻靴，靴底刻有空灵步法阵纹。穿此靴者步法飘逸出尘，身形如鬼魅般飘忽不定，敌人攻击往往落空。且每次成功闪避后，空灵阵纹便会吸纳天地灵气反哺经脉，恢复一身真气。据传此靴乃隐仙谷轻功宗师飞升前所留，靴中残留仙气令穿戴者步履生风，踏雪无痕。后此靴流入藏经阁机关深处，非悟性通天者不可取。",
+    "uniqueEffects": [
+      {
+        "id": "fx_dodge_boost",
+        "description": "闪避率+30%，身法大幅提升",
+        "type": "statBonus",
+        "params": {
+          "dodgePct": 30,
+          "speed": 10
+        }
+      },
+      {
+        "id": "fx_dodge_restore_qi",
+        "description": "成功闪避后恢复20%最大真气，并提升下次攻击先手值10点",
+        "type": "trigger",
+        "params": {
+          "trigger": "successfulDodge",
+          "qiRestorePct": 20,
+          "initiativeBonus": 10
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_swift",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_swiftness",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      }
+    ],
+    "requirements": {
+      "agi": 26,
+      "level": 20
+    }
+  },
+  {
+    "id": "uq_c_006",
+    "name": "万魂令",
+    "slot": "accessory",
+    "quality": "unique",
+    "itemLevel": 55,
+    "setId": "set_ten_thousand_souls",
+    "baseStats": {
+      "spirit": 15,
+      "maxHp": 300,
+      "innerDamagePct": 10
+    },
+    "description": "一面以幽冥玄铁铸就的令牌，牌面刻「万魂」二字篆文，牌中封印着万千战死鬼卒之魂。持令者可吹动令牌，召唤两个鬼卒之魂现世辅助战斗。鬼卒虽无肉身，却以阴煞之气凝结成刃，斩人魂魄于无形。据传此令乃上古鬼将战死后，其麾下万千鬼卒自愿封魂入令，誓死追随主将。后此令流落幽冥教坛深处，非阴煞之体者不可持令。",
+    "uniqueEffects": [
+      {
+        "id": "fx_summon_ghost_soldiers",
+        "description": "战斗开始时召唤2个鬼卒辅助战斗，鬼卒继承持有者30%外功与内功属性，持续整场战斗",
+        "type": "summon",
+        "params": {
+          "summonCount": 2,
+          "summonType": "ghost_soldier",
+          "inheritStatPct": 30,
+          "durationRounds": -1,
+          "hpInheritPct": 20
+        }
+      },
+      {
+        "id": "fx_ghost_soul_link",
+        "description": "鬼卒存活时，持有者每回合恢复5%最大生命；鬼卒被消灭时，持有者获得「魂怒」增益，攻击力+15%持续3回合",
+        "type": "conditional",
+        "params": {
+          "hpRegenPct": 5,
+          "onSummonDeathBuff": "soulFury",
+          "atkBonusPct": 15,
+          "buffDuration": 3
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "wis": 26,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_w_007",
+    "name": "碎星弓",
+    "slot": "weapon",
+    "quality": "unique",
+    "itemLevel": 55,
+    "setId": "set_star_breaker",
+    "baseStats": {
+      "outerDamage": 80,
+      "critPct": 20,
+      "critDamageMultiplier": 2.0
+    },
+    "description": "以上古万年星陨铁铸就的长弓，弓身暗银如星夜，弦以天蚕丝绞鲛人泪丝而成，弦动时有星辉流转。此弓射出的箭矢可贯穿罡气护体，命中要穴时必为暴击。据传铸弓师曾观流星雨坠落，以落星之铁淬炼七七四十九日方成此弓。一箭射出可碎星辰之象，故名「碎星」。后铸弓师以此弓射杀为祸人间的妖龙，弓弦断绝，星陨铁流入天机台机关深处。",
+    "uniqueEffects": [
+      {
+        "id": "fx_crit_rate_boost",
+        "description": "暴击率+50%，暴击伤害倍率提升至3倍",
+        "type": "statBonus",
+        "params": {
+          "critPct": 50,
+          "critDamageMultiplier": 3.0
+        }
+      },
+      {
+        "id": "fx_crit_execute",
+        "description": "暴击命中时，若目标生命低于30%，额外造成50%真实伤害（处决效果）",
+        "type": "conditional",
+        "params": {
+          "trigger": "critHit",
+          "targetHpThreshold": 30,
+          "bonusTrueDamagePct": 50
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_precise",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "body": 25,
+      "agi": 22,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_c_007",
+    "name": "离火神鼎",
+    "slot": "accessory",
+    "quality": "unique",
+    "itemLevel": 55,
+    "setId": "set_blazing_flame",
+    "baseStats": {
+      "innerDamage": 30,
+      "fireDamagePct": 20,
+      "innerPenetrationPct": 10
+    },
+    "description": "一只以上古离火神铜铸就的袖珍小鼎，鼎身刻离火符纹，鼎中常年燃着一缕不灭神火。持有此鼎者，出招时鼎中神火便随真气溢出，附于兵刃或掌力之上，令火系功法威力大增，且灼烧敌人经脉。据传此鼎是上古火德星君炼丹遗物，鼎中神火乃天火余烬，可焚万物。后火德星君飞升，此鼎流落人间，辗转藏于血魔窟火脉深处，非火系功法大成者不可驾驭。",
+    "uniqueEffects": [
+      {
+        "id": "fx_fire_damage_boost",
+        "description": "火系伤害+40%，所有攻击附带灼烧效果：每回合造成目标最大生命10%的火属性伤害，持续3回合，可刷新不可叠加",
+        "type": "elementBonus",
+        "params": {
+          "element": "fire",
+          "damageBonusPct": 40,
+          "onHitEffect": "burn",
+          "burnDamageType": "maxHpPct",
+          "burnDamagePct": 10,
+          "burnDuration": 3,
+          "stackable": false,
+          "refreshable": true
+        }
+      },
+      {
+        "id": "fx_burn_spread",
+        "description": "灼烧目标死亡时，灼烧效果传播至周围2个敌人，伤害减半",
+        "type": "trigger",
+        "params": {
+          "trigger": "burnTargetDeath",
+          "spreadCount": 2,
+          "spreadDamageMultiplier": 0.5
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_flaming",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "wis": 26,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_o_001",
+    "name": "玄甲龙盾",
+    "slot": "offhand",
+    "quality": "unique",
+    "itemLevel": 58,
+    "setId": "set_dragon_shield",
+    "baseStats": {
+      "defense": 80,
+      "reflectPct": 30,
+      "damageReductionPct": 10
+    },
+    "description": "以真龙退甲与万年玄铁铸就的盾牌，盾面刻龙鳞纹与反震符箓，盾心嵌一颗龙髓珠。此盾可反震来犯之力，其反震之威更胜龙鳞宝甲，且盾面龙甲可令持有者受击减伤。据传此盾乃上古龙骑士所持，龙骑士以龙盾硬抗万军冲锋，反震之力令攻者自毙。龙骑士陨落后，此盾埋藏于龙脉深处龙窟之中，非体魄深厚如龙者不可举盾。",
+    "uniqueEffects": [
+      {
+        "id": "fx_enhanced_reflect",
+        "description": "受到伤害时100%反震50%伤害予攻击者；被暴击时反震75%",
+        "type": "onHitReflect",
+        "params": {
+          "procChance": 1.0,
+          "reflectPercent": 50,
+          "critReflectPercent": 75
+        }
+      },
+      {
+        "id": "fx_dragon_scale_reduction",
+        "description": "受击减伤20%，且每次受击获得1层「龙甲」：额外减伤3%/层，上限5层（共35%减伤），持续3回合",
+        "type": "onHitShield",
+        "params": {
+          "baseDamageReductionPct": 20,
+          "perStackReductionPct": 3,
+          "maxStacks": 5,
+          "durationRounds": 3
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_steadfast",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_reflection",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_constitution",
+        "minVal": 20,
+        "maxVal": 30
+      }
+    ],
+    "requirements": {
+      "con": 30,
+      "level": 23
+    }
+  },
+  {
+    "id": "uq_w_008",
+    "name": "苍龙逐日枪",
+    "slot": "weapon",
+    "quality": "unique",
+    "itemLevel": 58,
+    "setId": "set_dragon_chase",
+    "baseStats": {
+      "outerDamage": 90,
+      "body": 10,
+      "critPct": 10
+    },
+    "description": "以上古苍龙脊骨为枪杆、龙齿为枪尖铸就的长枪，枪身隐有苍龙纹路流转。持枪者每回合可积蓄龙罡之力，蓄满三层后一枪刺出，枪势如苍龙逐日，枪尖化为真实伤害，无视一切防御护体。据传此枪乃上古枪道宗师以毕生修为所铸，枪成之日苍龙虚影盘旋枪身，宗师持枪追日而走，七日不息。宗师坐化后此枪自行飞入天机台机关深处，等待下一个枪道通神之人。",
+    "uniqueEffects": [
+      {
+        "id": "fx_dragon_qi_stack",
+        "description": "每回合结束积蓄1层「龙罡」，蓄力3层后下一枪释放真实伤害：1.5倍外功伤害且无视一切防御，释放后清零",
+        "type": "stackingBurst",
+        "params": {
+          "maxStacks": 3,
+          "burstMultiplier": 1.5,
+          "burstType": "trueDamage",
+          "ignoreDefense": true,
+          "clearOnBurst": true,
+          "stackPerRound": 1
+        }
+      },
+      {
+        "id": "fx_stack_bonus_during_charge",
+        "description": "蓄力期间（未满层时），每层龙罡提供外功伤害+10%、暴击率+5%",
+        "type": "conditional",
+        "params": {
+          "trigger": "chargingState",
+          "perStackOuterDamagePct": 10,
+          "perStackCritPct": 5
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 15,
+        "maxVal": 25
+      },
+      {
+        "affixId": "prefix_sharp",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 12,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_strength",
+        "minVal": 6,
+        "maxVal": 8
+      }
+    ],
+    "requirements": {
+      "body": 30,
+      "level": 23
+    }
+  },
+  {
+    "id": "uq_w_009",
+    "name": "鬼步双刃",
+    "slot": "weapon",
+    "quality": "unique",
+    "itemLevel": 55,
+    "setId": "set_ghost_step",
+    "baseStats": {
+      "outerDamage": 60,
+      "agility": 8,
+      "attackCount": 2
+    },
+    "description": "一对以幽冥玄铁铸就的短刃，刃身薄如蝉翼，刃纹如鬼魅步法般流转不定。持双刃出招时，身形如鬼魅般闪现于敌身左右，一回合之内可连出两刀。第二刀虽力道减半，却因鬼步身法之诡变，往往出其不意命中要穴。据传此双刃乃幽冥教暗杀堂堂主所铸，堂主以鬼步身法配合双刃刺杀正道高手无数。后堂主伏诛，双刃被封于幽冥教坛暗室深处。",
+    "uniqueEffects": [
+      {
+        "id": "fx_double_strike",
+        "description": "每回合攻击2次，第二次伤害为主击的50%；两次攻击可分别触发其他装备的命中效果",
+        "type": "comboDamage",
+        "params": {
+          "attacksPerRound": 2,
+          "secondAttackPct": 50,
+          "triggersOnHitEffects": true
+        }
+      },
+      {
+        "id": "fx_ghost_step_combo",
+        "description": "两刀命中同一目标时，第二刀暴击率+20%，且叠加1层「鬼步」：下次连击伤害+5%/层，上限5层",
+        "type": "comboDamage",
+        "params": {
+          "sameTargetSecondHitCritPct": 20,
+          "stackName": "ghostStep",
+          "perStackBonusPct": 5,
+          "maxStacks": 5
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_swift",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "agi": 28,
+      "body": 20,
+      "level": 22
+    }
+  },
+  {
+    "id": "uq_w_010",
+    "name": "冰魄银针",
+    "slot": "weapon",
+    "quality": "unique",
+    "itemLevel": 52,
+    "setId": "set_ice_soul",
+    "baseStats": {
+      "outerDamage": 40,
+      "innerDamage": 30,
+      "iceDamagePct": 15
+    },
+    "description": "以万年冰魄淬炼的银针七枚，针身细如牛毛，寒气逼人。此针以暗器手法打出，命中穴道后冰魄寒气渗入经脉，令周身气血凝滞、无法动弹。据传此针乃古墓派先辈以冰魄寒晶所铸，一针可封人穴道，七针齐出可令高手僵立当场。古墓派覆灭后，此针封于古墓冰室深处，非阴寒之体者触碰即被反噬冻伤。",
+    "uniqueEffects": [
+      {
+        "id": "fx_freeze_on_hit",
+        "description": "命中后50%概率冰冻目标（无法行动1回合）；冰冻期间目标受到的火系伤害翻倍",
+        "type": "onHitDebuff",
+        "params": {
+          "effect": "freeze",
+          "procChance": 0.5,
+          "durationRounds": 1,
+          "noAction": true,
+          "weakToElement": "fire",
+          "weakMultiplier": 2.0
+        }
+      },
+      {
+        "id": "fx_ice_needle_precision",
+        "description": "冰冻状态下再次命中目标，暴击率+30%且冰冻延长1回合",
+        "type": "conditional",
+        "params": {
+          "trigger": "hitFrozenTarget",
+          "critPctBonus": 30,
+          "extendFreezeRounds": 1
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_chilling",
+        "minVal": 12,
+        "maxVal": 18
+      },
+      {
+        "affixId": "prefix_swift",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "agi": 25,
+      "wis": 20,
+      "level": 20
+    }
+  },
+  {
+    "id": "uq_c_008",
+    "name": "天机镜",
+    "slot": "accessory",
+    "quality": "unique",
+    "itemLevel": 50,
+    "setId": "set_heaven_mystery",
+    "baseStats": {
+      "fortune": 50,
+      "magicFind": 50,
+      "luck": 10
+    },
+    "description": "一面以天机铜铸就的八角铜镜，镜面刻天机星图，镜背铸天干地支。此镜可窥天机、察气运，佩戴者福缘大增，所获掉落之物品质皆上一层。据传此镜乃天机老人以毕生星象之学所铸，镜中映照的乃天机流转之相，可窥探一地一人的气运吉凶。天机老人坐化后此镜自行飞入天机台星象殿深处，非有缘者不可得镜。江湖传言：「得天机镜者，天命所归。」",
+    "uniqueEffects": [
+      {
+        "id": "fx_magic_find_boost",
+        "description": "福缘（MF）+100，所有掉落的物品品质+1级（普通→精良→稀有→暗金）",
+        "type": "statBonus",
+        "params": {
+          "magicFind": 100,
+          "dropQualityBonus": 1
+        }
+      },
+      {
+        "id": "fx_luck_crit",
+        "description": "福缘加持：暴击率+10%，且每场战斗开始时50%概率获得「天命」增益——本场战斗掉落率额外+50%",
+        "type": "conditional",
+        "params": {
+          "critPctBonus": 10,
+          "trigger": "battleStart",
+          "procChance": 0.5,
+          "buffName": "heavenMandate",
+          "extraMagicFindPct": 50
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_fortune",
+        "minVal": 15,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_wisdom",
+        "minVal": 6,
+        "maxVal": 8
+      }
+    ],
+    "requirements": {
+      "wis": 22,
+      "level": 20
+    }
+  }
+]

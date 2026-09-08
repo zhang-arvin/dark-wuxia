@@ -1,0 +1,272 @@
+[
+  {
+    "id": "prefix_sharp",
+    "name": "锋利的",
+    "type": "prefix",
+    "stat": "outerDamagePct",
+    "minVal": 10,
+    "maxVal": 20,
+    "weight": 100
+  },
+  {
+    "id": "prefix_bloodthirsty",
+    "name": "嗜血的",
+    "type": "prefix",
+    "stat": "lifeStealOnKillPct",
+    "minVal": 3,
+    "maxVal": 8,
+    "weight": 80
+  },
+  {
+    "id": "prefix_armor_breaking",
+    "name": "破甲的",
+    "type": "prefix",
+    "stat": "ignoreInnerDefensePct",
+    "minVal": 10,
+    "maxVal": 25,
+    "weight": 70
+  },
+  {
+    "id": "prefix_chilling",
+    "name": "阴寒的",
+    "type": "prefix",
+    "stat": "iceBonusDamage",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 60
+  },
+  {
+    "id": "prefix_fierce",
+    "name": "刚猛的",
+    "type": "prefix",
+    "stat": "outerCritPct",
+    "minVal": 10,
+    "maxVal": 25,
+    "weight": 75
+  },
+  {
+    "id": "prefix_burning",
+    "name": "炙阳的",
+    "type": "prefix",
+    "stat": "fireBonusDamage",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 60
+  },
+  {
+    "id": "prefix_swift",
+    "name": "迅捷的",
+    "type": "prefix",
+    "stat": "initiativeBonus",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 65
+  },
+  {
+    "id": "prefix_heavy",
+    "name": "沉重的",
+    "type": "prefix",
+    "stat": "body",
+    "minVal": 2,
+    "maxVal": 6,
+    "weight": 90
+  },
+  {
+    "id": "prefix_vicious",
+    "name": "狠辣的",
+    "type": "prefix",
+    "stat": "critDamagePct",
+    "minVal": 20,
+    "maxVal": 50,
+    "weight": 50
+  },
+  {
+    "id": "prefix_penetrating",
+    "name": "透骨的",
+    "type": "prefix",
+    "stat": "innerPenetrationPct",
+    "minVal": 10,
+    "maxVal": 20,
+    "weight": 55
+  },
+  {
+    "id": "prefix_steadfast",
+    "name": "稳固的",
+    "type": "prefix",
+    "stat": "maxHpPct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 85
+  },
+  {
+    "id": "prefix_mystic",
+    "name": "玄虚的",
+    "type": "prefix",
+    "stat": "maxInnerPct",
+    "minVal": 10,
+    "maxVal": 25,
+    "weight": 70
+  },
+  {
+    "id": "prefix_leech",
+    "name": "吸星的",
+    "type": "prefix",
+    "stat": "innerStealPct",
+    "minVal": 3,
+    "maxVal": 10,
+    "weight": 45
+  },
+  {
+    "id": "prefix_thunder",
+    "name": "惊雷的",
+    "type": "prefix",
+    "stat": "thunderBonusDamage",
+    "minVal": 5,
+    "maxVal": 12,
+    "weight": 50
+  },
+  {
+    "id": "prefix_soul_seizing",
+    "name": "摄魂的",
+    "type": "prefix",
+    "stat": "wis",
+    "minVal": 2,
+    "maxVal": 5,
+    "weight": 40
+  },
+  {
+    "id": "suffix_strength",
+    "name": "of 力量",
+    "type": "suffix",
+    "stat": "body",
+    "minVal": 3,
+    "maxVal": 8,
+    "weight": 100
+  },
+  {
+    "id": "suffix_wisdom",
+    "name": "of 悟性",
+    "type": "suffix",
+    "stat": "wis",
+    "minVal": 3,
+    "maxVal": 8,
+    "weight": 90
+  },
+  {
+    "id": "suffix_fortune",
+    "name": "of 福缘",
+    "type": "suffix",
+    "stat": "luckPct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 80
+  },
+  {
+    "id": "suffix_constitution",
+    "name": "of 根骨",
+    "type": "suffix",
+    "stat": "maxInnerPct",
+    "minVal": 10,
+    "maxVal": 30,
+    "weight": 75
+  },
+  {
+    "id": "suffix_agility",
+    "name": "of 身法",
+    "type": "suffix",
+    "stat": "agi",
+    "minVal": 3,
+    "maxVal": 8,
+    "weight": 85
+  },
+  {
+    "id": "suffix_vitality",
+    "name": "of 生命",
+    "type": "suffix",
+    "stat": "maxHpPct",
+    "minVal": 10,
+    "maxVal": 25,
+    "weight": 80
+  },
+  {
+    "id": "suffix_power",
+    "name": "of 威力",
+    "type": "suffix",
+    "stat": "outerDamagePct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 70
+  },
+  {
+    "id": "suffix_spirit",
+    "name": "of 灵韵",
+    "type": "suffix",
+    "stat": "innerRecoveryPct",
+    "minVal": 5,
+    "maxVal": 20,
+    "weight": 65
+  },
+  {
+    "id": "suffix_precision",
+    "name": "of 精准",
+    "type": "suffix",
+    "stat": "critPct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 60
+  },
+  {
+    "id": "suffix_reflection",
+    "name": "of 反震",
+    "type": "suffix",
+    "stat": "reflectPct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 45
+  },
+  {
+    "id": "suffix_swiftness",
+    "name": "of 迅影",
+    "type": "suffix",
+    "stat": "dodgePct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 55
+  },
+  {
+    "id": "suffix_iron_will",
+    "name": "of 铁心",
+    "type": "suffix",
+    "stat": "innerDefensePct",
+    "minVal": 5,
+    "maxVal": 20,
+    "weight": 60
+  },
+  {
+    "id": "suffix_tiger",
+    "name": "of 虎威",
+    "type": "suffix",
+    "stat": "bodyPct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 50
+  },
+  {
+    "id": "suffix_crane",
+    "name": "of 鹤寿",
+    "type": "suffix",
+    "stat": "hpRegen",
+    "minVal": 3,
+    "maxVal": 10,
+    "weight": 45
+  },
+  {
+    "id": "suffix_dragon",
+    "name": "of 龙气",
+    "type": "suffix",
+    "stat": "innerDamagePct",
+    "minVal": 5,
+    "maxVal": 15,
+    "weight": 55
+  }
+]

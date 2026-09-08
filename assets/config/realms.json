@@ -1,0 +1,245 @@
+[
+  {
+    "id": "realm_gumu",
+    "name": "古墓幽影",
+    "type": "linear",
+    "description": "终南山下，一座尘封千年的古墓渐现于月光之中。墓道幽暗，石壁上残刻的武学图谱依稀可辨，空气中弥漫着陈腐的气息与若有若无的寒气。据传此墓乃前朝一位绝世高人坐化之所，墓中机关重重，暗藏无数失传武学。新手侠客多来此历练，既为磨砺武艺，也为寻一线机缘。",
+    "layers": 10,
+    "recommendedPower": 500,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossId": "boss_gumu",
+    "bossDropTableId": "drop_boss_gumu",
+    "uniqueDropPool": [
+      "uq_w_001"
+    ],
+    "enemyPool": [
+      "enemy_gm_001",
+      "enemy_gm_002",
+      "enemy_gm_003",
+      "enemy_gm_004",
+      "elite_gm_001",
+      "elite_gm_002"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient"
+    ],
+    "minLevel": 1
+  },
+  {
+    "id": "realm_cangjing",
+    "name": "藏经阁",
+    "type": "maze",
+    "description": "少林寺后山藏经阁，天下武学之渊薮。阁内层层叠叠，书架如迷宫般排列，暗藏机关与阵法。每拐过一个转角，都可能遇见一本尘封的武学秘籍，也可能遭遇守护经卷的木人阵。阁中经卷蕴含佛门、道家、诸子百家的武学精要，是内功修习者梦寐以求的圣地。然阁中机关精妙，迷路其中数日不得出者比比皆是。",
+    "layers": 15,
+    "recommendedPower": 1500,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossId": "boss_cangjing",
+    "bossDropTableId": "drop_boss_cangjing",
+    "uniqueDropPool": [
+      "uq_c_001",
+      "uq_t_001"
+    ],
+    "enemyPool": [
+      "enemy_cj_001",
+      "enemy_cj_002",
+      "enemy_cj_003",
+      "enemy_cj_004",
+      "elite_cj_001",
+      "elite_cj_002"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient"
+    ],
+    "minLevel": 5
+  },
+  {
+    "id": "realm_xuemo",
+    "name": "血魔窟",
+    "type": "open",
+    "description": "幽冥教总坛深处，一座以血色岩石筑就的地下窟穴。空气中弥漫着浓重的血腥气，墙壁上凝结的暗红结晶在火光下闪烁如鬼眼。窟中血魔教徒修炼血祭邪功，以人血养蛊，以怨念铸魔。此地结构开阔，洞窟相连如蛛网，血魔教主坐镇深处，伺机吞噬来犯之敌。非战力深厚者不敢踏入半步。",
+    "layers": 20,
+    "recommendedPower": 3000,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossId": "boss_xuemo",
+    "bossDropTableId": "drop_boss_xuemo",
+    "uniqueDropPool": [
+      "uq_w_002"
+    ],
+    "enemyPool": [
+      "enemy_xm_001",
+      "enemy_xm_002",
+      "enemy_xm_003",
+      "enemy_xm_004",
+      "elite_xm_001",
+      "elite_xm_002"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient"
+    ],
+    "minLevel": 10
+  },
+  {
+    "id": "realm_tianji",
+    "name": "天机台",
+    "type": "challenge",
+    "description": "天机阁建于绝顶之巅，四面悬空，仅一线石桥相通。台上机关密布，铜人阵列、暗器机关、阵法陷阱层层相叠。天机老人坐镇于此，以机关术与武学结合，创出独步天下的天机武学。此台一关接着一关，每过一关更强一分，是真正的武学圣地与试炼场。能登上天机台顶者，天下屈指可数。",
+    "layers": 25,
+    "recommendedPower": 5000,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossId": "boss_tianji",
+    "bossDropTableId": "drop_boss_tianji",
+    "uniqueDropPool": [
+      "uq_a_001"
+    ],
+    "enemyPool": [
+      "enemy_tj_001",
+      "enemy_tj_002",
+      "enemy_tj_003",
+      "enemy_tj_004",
+      "elite_tj_001",
+      "elite_tj_002"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient"
+    ],
+    "minLevel": 15
+  },
+  {
+    "id": "realm_lunhui",
+    "name": "轮回殿",
+    "type": "challenge",
+    "description": "传说天地初开之时，一位参透轮回之秘的上古高人于此筑殿。殿中六道轮回壁画栩栩如生，似有无形之力引导来者步入轮回幻境。殿主参悟生死轮回之理，集天下武学之大成，可化身万千、变化莫测。此地机关、阵法、武学融为一体，每一层都是一次生死考验。踏入轮回殿者，须有向死而生的觉悟。",
+    "layers": 30,
+    "recommendedPower": 8000,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossId": "boss_lunhui",
+    "bossDropTableId": "drop_boss_lunhui",
+    "uniqueDropPool": [
+      "uq_w_001",
+      "uq_a_001",
+      "uq_t_001"
+    ],
+    "enemyPool": [
+      "enemy_lh_001",
+      "enemy_lh_002",
+      "enemy_lh_003",
+      "enemy_lh_004",
+      "elite_lh_001",
+      "elite_lh_002"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient"
+    ],
+    "minLevel": 20
+  },
+  {
+    "id": "endless_void",
+    "name": "虚空秘境",
+    "type": "endless",
+    "description": "传说中的无尽虚空，每层难度递增，无穷无尽的挑战。此处乃天地之外的混沌虚空，无日无月、无生无死。踏入此境者，将面对天下所有秘境中潜藏的敌人——墓道僵尸、藏经武僧、血魔邪修、天机铜人、轮回武灵，乃至各路Boss皆会在此重现。虚空之力令每层敌人属性乘以1.1倍，每5层遭遇一位Boss，愈深入愈凶险。传说有人深入百层以上，所见之物已非人间武学所能描述。",
+    "layers": 999,
+    "recommendedPower": 5000,
+    "difficultyOptions": [
+      "normal",
+      "hard",
+      "hell",
+      "inferno"
+    ],
+    "bossEveryNLayers": 5,
+    "difficultyScaling": "1.1^n",
+    "dropTableId": "endless_drop",
+    "enemyPool": [
+      "enemy_gm_001",
+      "enemy_gm_002",
+      "enemy_gm_003",
+      "enemy_gm_004",
+      "enemy_cj_001",
+      "enemy_cj_002",
+      "enemy_cj_003",
+      "enemy_cj_004",
+      "enemy_xm_001",
+      "enemy_xm_002",
+      "enemy_xm_003",
+      "enemy_xm_004",
+      "enemy_tj_001",
+      "enemy_tj_002",
+      "enemy_tj_003",
+      "enemy_tj_004",
+      "enemy_lh_001",
+      "enemy_lh_002",
+      "enemy_lh_003",
+      "enemy_lh_004",
+      "elite_gm_001",
+      "elite_gm_002",
+      "elite_cj_001",
+      "elite_cj_002",
+      "elite_xm_001",
+      "elite_xm_002",
+      "elite_tj_001",
+      "elite_tj_002",
+      "elite_lh_001",
+      "elite_lh_002",
+      "boss_gumu",
+      "boss_cangjing",
+      "boss_xuemo",
+      "boss_tianji",
+      "boss_lunhui"
+    ],
+    "bossPool": [
+      "boss_gumu",
+      "boss_cangjing",
+      "boss_xuemo",
+      "boss_tianji",
+      "boss_lunhui"
+    ],
+    "uniqueDropPool": [
+      "uq_w_001",
+      "uq_w_002",
+      "uq_a_001",
+      "uq_c_001",
+      "uq_t_001"
+    ],
+    "variants": [
+      "normal",
+      "cursed",
+      "ancient",
+      "void"
+    ],
+    "minLevel": 15
+  }
+]

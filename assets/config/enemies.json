@@ -1,0 +1,1507 @@
+[
+  {
+    "id": "enemy_gm_001",
+    "name": "墓道僵尸",
+    "title": "千年守墓者",
+    "realmId": "realm_gumu",
+    "type": "normal",
+    "powerIndex": 120,
+    "health": 50,
+    "externalAttack": 8,
+    "internalAttack": 2,
+    "defense": 3,
+    "initiative": 5,
+    "dodgeRate": 0,
+    "critRate": 2,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_gm_001_swarm",
+        "type": "groupAttack",
+        "description": "群体攻击：与同类僵尸共存时，攻击力提升10%",
+        "params": {
+          "buffPct": 10,
+          "condition": "sameTypeNearby"
+        }
+      }
+    ],
+    "enemyType": "亡灵",
+    "description": "墓道中游荡的僵尸，身着前朝武者服饰，虽已无神智却仍凭本能使出残缺的武学招式。拳脚笨拙但力道不弱，对付初入江湖的新手绰绰有余。"
+  },
+  {
+    "id": "enemy_gm_002",
+    "name": "石门守卫",
+    "title": "千斤石门之力",
+    "realmId": "realm_gumu",
+    "type": "normal",
+    "powerIndex": 180,
+    "health": 80,
+    "externalAttack": 12,
+    "internalAttack": 0,
+    "defense": 8,
+    "initiative": 3,
+    "dodgeRate": 0,
+    "critRate": 0,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_gm_002_heavy",
+        "type": "heavyStomp",
+        "description": "重击：每3回合施展千斤重拳，造成150%外功伤害",
+        "params": {
+          "intervalRounds": 3,
+          "damageMultiplier": 1.5
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "古墓石门处的机关守卫，以千斤石门为躯，铁臂铜拳。招式简单却刚猛，一拳之力可碎石裂碑。不惧痛觉、不知疲倦，是最不知进退的对手。"
+  },
+  {
+    "id": "enemy_gm_003",
+    "name": "盗墓贼",
+    "title": "见财起意之辈",
+    "realmId": "realm_gumu",
+    "type": "normal",
+    "powerIndex": 150,
+    "health": 60,
+    "externalAttack": 10,
+    "internalAttack": 5,
+    "defense": 5,
+    "initiative": 12,
+    "dodgeRate": 10,
+    "critRate": 8,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_gm_003_blind",
+        "type": "blindAttack",
+        "description": "石灰粉：首回合撒石灰粉，降低玩家闪避率15%持续2回合",
+        "params": {
+          "firstTurn": true,
+          "dodgeReductionPct": 15,
+          "durationRounds": 2
+        }
+      }
+    ],
+    "enemyType": "江湖匪类",
+    "description": "趁夜潜入古墓的盗墓贼，身手灵活、心术不正。擅使短刀与石灰粉，先撒迷眼再近身抹杀。虽非正道中人，江湖经验老到，不可轻敌。"
+  },
+  {
+    "id": "enemy_gm_004",
+    "name": "阴魂",
+    "title": "未散之执念",
+    "realmId": "realm_gumu",
+    "type": "normal",
+    "powerIndex": 200,
+    "health": 45,
+    "externalAttack": 3,
+    "internalAttack": 15,
+    "defense": 1,
+    "initiative": 15,
+    "dodgeRate": 20,
+    "critRate": 5,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_gm_004_phaseShift",
+        "type": "phaseShift",
+        "description": "虚实体：每回合有20%几率进入虚幻状态，免疫该回合所有伤害",
+        "params": {
+          "immuneChance": 20
+        }
+      }
+    ],
+    "enemyType": "亡灵",
+    "description": "古墓中未散的执念所化阴魂，半透明如薄雾，飘忽不定。物理攻击难以命中，专以内力侵入经脉，令人气血凝滞、心神恍惚。若无内功护体，极难应付。"
+  },
+  {
+    "id": "enemy_cj_001",
+    "name": "武僧",
+    "title": "护经罗汉",
+    "realmId": "realm_cangjing",
+    "type": "normal",
+    "powerIndex": 400,
+    "health": 150,
+    "externalAttack": 18,
+    "internalAttack": 10,
+    "defense": 10,
+    "initiative": 10,
+    "dodgeRate": 5,
+    "critRate": 5,
+    "elementAffinity": "yang",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_cj_001_counterstance",
+        "type": "counterStance",
+        "description": "罗汉反震：被近身攻击时有10%几率反弹5%外功伤害",
+        "params": {
+          "triggerChance": 10,
+          "counterPct": 5
+        }
+      }
+    ],
+    "enemyType": "少林弟子",
+    "description": "藏经阁值守武僧，精通罗汉拳与金刚掌。外功刚猛、下盘稳固，一拳一掌皆有千钧之力。虽是出家人，护经之心绝不手软，擅近身搏击。"
+  },
+  {
+    "id": "enemy_cj_002",
+    "name": "经卷木人",
+    "title": "机关守藏使",
+    "realmId": "realm_cangjing",
+    "type": "normal",
+    "powerIndex": 350,
+    "health": 200,
+    "externalAttack": 15,
+    "internalAttack": 5,
+    "defense": 15,
+    "initiative": 5,
+    "dodgeRate": 0,
+    "critRate": 0,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_cj_002_defBoost",
+        "type": "defenseBoost",
+        "description": "木体坚固：生命低于50%时防御力提升20%",
+        "params": {
+          "triggerHpPct": 50,
+          "defBoostPct": 20
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "藏经阁内的机关木人，以檀木与铜骨铸成，内置机关运转招式。动作虽慢却坚不可摧，普通刀剑难伤其分毫。专司守护珍贵经卷，不知疲倦。"
+  },
+  {
+    "id": "enemy_cj_003",
+    "name": "闯阁邪修",
+    "title": "盗经之徒",
+    "realmId": "realm_cangjing",
+    "type": "normal",
+    "powerIndex": 450,
+    "health": 130,
+    "externalAttack": 12,
+    "internalAttack": 20,
+    "defense": 8,
+    "initiative": 14,
+    "dodgeRate": 12,
+    "critRate": 8,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_cj_003_poison",
+        "type": "poisonNeedle",
+        "description": "毒针封穴：攻击附带毒性，令玩家每回合损失3%生命持续3回合",
+        "params": {
+          "poisonPct": 3,
+          "durationRounds": 3,
+          "stackMax": 3
+        }
+      }
+    ],
+    "enemyType": "邪修",
+    "description": "潜入藏经阁盗取武学秘籍的邪修，手段阴毒、招式诡异。擅使毒针与阴煞掌，先以毒针封穴再近身补掌。一身阴柔内力，专克阳刚外功修士。"
+  },
+  {
+    "id": "enemy_cj_004",
+    "name": "阵法铜人",
+    "title": "七星阵守",
+    "realmId": "realm_cangjing",
+    "type": "normal",
+    "powerIndex": 500,
+    "health": 180,
+    "externalAttack": 16,
+    "internalAttack": 12,
+    "defense": 12,
+    "initiative": 8,
+    "dodgeRate": 0,
+    "critRate": 3,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_cj_004_formation",
+        "type": "formationAura",
+        "description": "七星阵共鸣：与同类铜人共存时，防御互为援护提升15%",
+        "params": {
+          "buffPct": 15,
+          "condition": "sameTypeNearby"
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "藏经阁七星阵中的铜人守卫，以北斗七星方位排列，铜人之间互为援护。单个铜人不足为惧，七人成阵则攻防一体，须破阵方可各个击破。"
+  },
+  {
+    "id": "enemy_xm_001",
+    "name": "血魔教徒",
+    "title": "血祭行者",
+    "realmId": "realm_xuemo",
+    "type": "normal",
+    "powerIndex": 800,
+    "health": 300,
+    "externalAttack": 25,
+    "internalAttack": 18,
+    "defense": 12,
+    "initiative": 12,
+    "dodgeRate": 8,
+    "critRate": 6,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_xm_001_bloodlust",
+        "type": "bloodlust",
+        "description": "搏命打法：生命低于30%时攻击力提升25%但每回合自损5%生命",
+        "params": {
+          "triggerHpPct": 30,
+          "atkBoostPct": 25,
+          "selfDmgPct": 5
+        }
+      }
+    ],
+    "enemyType": "邪教弟子",
+    "description": "血魔教普通教徒，修炼血祭功法，以自身鲜血催动邪功。招式凶狠不求自保，搏命打法令人头疼。战至力竭仍不退缩，仿佛不知疼痛为何物。"
+  },
+  {
+    "id": "enemy_xm_002",
+    "name": "血蛊虫",
+    "title": "噬血之蛊",
+    "realmId": "realm_xuemo",
+    "type": "normal",
+    "powerIndex": 700,
+    "health": 200,
+    "externalAttack": 10,
+    "internalAttack": 28,
+    "defense": 5,
+    "initiative": 20,
+    "dodgeRate": 25,
+    "critRate": 10,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_xm_002_infect",
+        "type": "bloodParasite",
+        "description": "噬血蛊附体：攻击附带血蛊，令玩家内力恢复减半持续3回合",
+        "params": {
+          "innerRecoveryReductionPct": 50,
+          "durationRounds": 3
+        }
+      }
+    ],
+    "enemyType": "蛊虫",
+    "description": "血魔窟中培育的噬血蛊虫，体如拇指大小却剧毒无比。飞行无声、速度极快，专噬人面门要穴。中蛊者气血逆流、内力紊乱，若非及时驱蛊必有性命之忧。"
+  },
+  {
+    "id": "enemy_xm_003",
+    "name": "血尸",
+    "title": "血祭之躯",
+    "realmId": "realm_xuemo",
+    "type": "normal",
+    "powerIndex": 900,
+    "health": 400,
+    "externalAttack": 30,
+    "internalAttack": 5,
+    "defense": 20,
+    "initiative": 3,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_xm_003_ironSkin",
+        "type": "ironSkin",
+        "description": "铁石皮肉：受到的外功伤害减免15%",
+        "params": {
+          "physicalDamageReductionPct": 15
+        }
+      }
+    ],
+    "enemyType": "亡灵",
+    "description": "以血祭邪功炼制的血尸，皮肉坚如铁石，刀剑难入。力大无穷、拳重如锤，一拳可碎石裂地。虽行动迟缓，一旦近身则势不可挡，非以轻功周旋不可破之。"
+  },
+  {
+    "id": "enemy_xm_004",
+    "name": "幽冥鬼卒",
+    "title": "九幽之兵",
+    "realmId": "realm_xuemo",
+    "type": "normal",
+    "powerIndex": 850,
+    "health": 350,
+    "externalAttack": 22,
+    "internalAttack": 22,
+    "defense": 15,
+    "initiative": 15,
+    "dodgeRate": 12,
+    "critRate": 8,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_xm_004_phaseShift",
+        "type": "phaseShift",
+        "description": "虚实转换：每回合有30%几率转为虚幻状态免疫物理伤害",
+        "params": {
+          "immuneChance": 30,
+          "immuneType": "physical"
+        }
+      }
+    ],
+    "enemyType": "亡灵",
+    "description": "幽冥教以九幽阴气凝聚而成的鬼卒，半实体半虚幻，可虚可实。刀砍不入、拳打不着，须以内力灌注方能伤其根本。攻守兼备，是最难缠的对手。"
+  },
+  {
+    "id": "enemy_tj_001",
+    "name": "铜人甲士",
+    "title": "天机铜卫",
+    "realmId": "realm_tianji",
+    "type": "normal",
+    "powerIndex": 1500,
+    "health": 600,
+    "externalAttack": 35,
+    "internalAttack": 15,
+    "defense": 30,
+    "initiative": 8,
+    "dodgeRate": 0,
+    "critRate": 3,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_tj_001_weakPoint",
+        "type": "jointWeakPoint",
+        "description": "关节弱点：正面攻击减伤30%，但从背后攻击可造成双倍伤害",
+        "params": {
+          "frontReductionPct": 30,
+          "backCritMultiplier": 2.0
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "天机台第一关的铜人甲士，以精铜铸就，机关驱动。一拳之力足有千钧，铜臂铜腿坚不可摧。普通兵器难伤分毫，须找到关节弱点方可破之。"
+  },
+  {
+    "id": "enemy_tj_002",
+    "name": "暗器机关鸟",
+    "title": "天机飞梭",
+    "realmId": "realm_tianji",
+    "type": "normal",
+    "powerIndex": 1300,
+    "health": 350,
+    "externalAttack": 40,
+    "internalAttack": 10,
+    "defense": 8,
+    "initiative": 25,
+    "dodgeRate": 30,
+    "critRate": 15,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_tj_002_bombard",
+        "type": "aerialBombard",
+        "description": "空袭：飞行状态下攻击不受近身反击影响，每2回合额外投射铁蒺藜",
+        "params": {
+          "immuneMeleeCounter": true,
+          "extraAttackInterval": 2
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "天机台中的机关飞鸟，以精巧机关驱动飞行，腹中暗藏毒针铁蒺藜。飞行极快、攻击刁钻，专射面门与咽喉。若无轻功护身或盾牌格挡，极难应付。"
+  },
+  {
+    "id": "enemy_tj_003",
+    "name": "阵法石狮",
+    "title": "镇台瑞兽",
+    "realmId": "realm_tianji",
+    "type": "normal",
+    "powerIndex": 1600,
+    "health": 700,
+    "externalAttack": 38,
+    "internalAttack": 20,
+    "defense": 35,
+    "initiative": 6,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "yang",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_tj_003_dualGuard",
+        "type": "dualLink",
+        "description": "双狮互援：成双出现时互为援护，一方受击时另一方分担15%伤害",
+        "params": {
+          "shareDamagePct": 15,
+          "condition": "pairNearby"
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "天机台阵法中的石狮机关，以整块青石雕成，内置阵法驱动。狮口可喷火、狮爪可裂石。成双出现时互为援护，须同时击破方可破解阵法。"
+  },
+  {
+    "id": "enemy_tj_004",
+    "name": "天机弟子",
+    "title": "机关术传人",
+    "realmId": "realm_tianji",
+    "type": "normal",
+    "powerIndex": 1400,
+    "health": 500,
+    "externalAttack": 25,
+    "internalAttack": 30,
+    "defense": 15,
+    "initiative": 18,
+    "dodgeRate": 15,
+    "critRate": 10,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_tj_004_trap",
+        "type": "layTrap",
+        "description": "布设陷阱：首回合在战场布设铁蒺藜陷阱，玩家攻击时有10%几率踩中受伤",
+        "params": {
+          "trapChance": 10,
+          "trapDamagePct": 5
+        }
+      }
+    ],
+    "enemyType": "天机阁弟子",
+    "description": "天机阁培养的弟子，精通机关术与暗器，以奇巧胜人。一手铁蒺藜百发百中，又善布陷阱诱敌深入。虽外功不弱，更以内力驱动机关暗器见长，是智勇兼备的对手。"
+  },
+  {
+    "id": "enemy_lh_001",
+    "name": "轮回武灵",
+    "title": "六道之影",
+    "realmId": "realm_lunhui",
+    "type": "normal",
+    "powerIndex": 2500,
+    "health": 1000,
+    "externalAttack": 50,
+    "internalAttack": 40,
+    "defense": 30,
+    "initiative": 20,
+    "dodgeRate": 15,
+    "critRate": 10,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_lh_001_sixPaths",
+        "type": "sixPathShift",
+        "description": "六道轮转：每3回合切换六道之一，属性随机变化（阳刚/阴柔交替）",
+        "params": {
+          "intervalRounds": 3,
+          "modes": [
+            "tiandao_yang",
+            "xiuluo_yin"
+          ]
+        }
+      }
+    ],
+    "enemyType": "武灵",
+    "description": "轮回殿壁画中走出的武灵，六道轮回之影所化。兼具六道之能，招式变化莫测，前一招阳刚下一招阴柔，令人防不胜防。非对武学有极深领悟者不能应对。"
+  },
+  {
+    "id": "enemy_lh_002",
+    "name": "幻境心魔",
+    "title": "执念所化",
+    "realmId": "realm_lunhui",
+    "type": "normal",
+    "powerIndex": 2300,
+    "health": 800,
+    "externalAttack": 20,
+    "internalAttack": 55,
+    "defense": 10,
+    "initiative": 22,
+    "dodgeRate": 20,
+    "critRate": 12,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_lh_002_mindAttack",
+        "type": "mindAssault",
+        "description": "识海侵蚀：攻击专侵识海，令玩家暴击率降低10%持续整场战斗",
+        "params": {
+          "critReductionPct": 10,
+          "permanent": true
+        }
+      }
+    ],
+    "enemyType": "心魔",
+    "description": "轮回殿幻境中滋生的心魔，以来者内心执念为食。非实体之物，刀剑难伤，专以内力侵入识海，令人心神恍惚、走火入魔。若非心志坚毅者，一照面便已败北。"
+  },
+  {
+    "id": "enemy_lh_003",
+    "name": "上古石像",
+    "title": "千年守殿者",
+    "realmId": "realm_lunhui",
+    "type": "normal",
+    "powerIndex": 2800,
+    "health": 1500,
+    "externalAttack": 55,
+    "internalAttack": 25,
+    "defense": 50,
+    "initiative": 5,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_lh_003_crushingBlow",
+        "type": "crushingBlow",
+        "description": "碎裂重击：每4回合施展碎山一击，造成200%外功伤害",
+        "params": {
+          "intervalRounds": 4,
+          "damageMultiplier": 2.0
+        }
+      }
+    ],
+    "enemyType": "石像",
+    "description": "轮回殿入口处的上古石像，以上古大能以法力灌注而成。千年来守护殿门，坚不可摧。一拳可碎山裂地，虽有千年风化却仍不可轻侮。须以巧破之，不可力敌。"
+  },
+  {
+    "id": "enemy_lh_004",
+    "name": "轮回阵灵",
+    "title": "阵法之魂",
+    "realmId": "realm_lunhui",
+    "type": "normal",
+    "powerIndex": 2600,
+    "health": 1100,
+    "externalAttack": 45,
+    "internalAttack": 50,
+    "defense": 35,
+    "initiative": 18,
+    "dodgeRate": 10,
+    "critRate": 8,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_normal",
+    "mechanics": [
+      {
+        "id": "mec_lh_004_selfHeal",
+        "type": "formationHeal",
+        "description": "阵法自愈：借阵法之力每回合恢复3%生命",
+        "params": {
+          "perTurn": 0,
+          "pct": 3
+        }
+      }
+    ],
+    "enemyType": "阵灵",
+    "description": "轮回殿阵法中孕育的阵灵，非人非物，乃阵法运转千年所生之灵识。能调动阵法之力攻敌，又能借阵法之力自愈。破阵方可破灵，是轮回殿中最棘手的对手之一。"
+  },
+  {
+    "id": "elite_gm_001",
+    "name": "墓主之仆",
+    "title": "千年忠仆",
+    "realmId": "realm_gumu",
+    "type": "elite",
+    "powerIndex": 350,
+    "health": 200,
+    "externalAttack": 20,
+    "internalAttack": 15,
+    "defense": 12,
+    "initiative": 10,
+    "dodgeRate": 8,
+    "critRate": 10,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_gm_elite_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击时吸取生命，恢复造成伤害的15%",
+        "params": {
+          "pct": 15
+        }
+      }
+    ],
+    "enemyType": "亡灵",
+    "description": "古墓主人最忠诚的仆从，虽已化为亡灵却仍守墓主遗命。生前是江湖一流高手，死后阴气灌注反而功力更深。以血为食、以阴气养魂，越战越勇，是古墓中最危险的守卫。"
+  },
+  {
+    "id": "elite_gm_002",
+    "name": "机关铁臂",
+    "title": "千斤铁臂",
+    "realmId": "realm_gumu",
+    "type": "elite",
+    "powerIndex": 400,
+    "health": 300,
+    "externalAttack": 28,
+    "internalAttack": 5,
+    "defense": 25,
+    "initiative": 6,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_gm_elite_counter",
+        "type": "counterMelee",
+        "description": "近身攻击时反震30%物理伤害",
+        "params": {
+          "range": "melee",
+          "counterPct": 30,
+          "counterDamage": 0.3
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "古墓深处守护主墓室的机关铁臂，以玄铁铸成，臂力千钧。专守墓道狭窄处，一臂横扫千军莫开。近身搏击者皆被铁臂反震，须以远程内力攻之方可破。"
+  },
+  {
+    "id": "elite_cj_001",
+    "name": "护经首座",
+    "title": "金刚不坏之身",
+    "realmId": "realm_cangjing",
+    "type": "elite",
+    "powerIndex": 900,
+    "health": 500,
+    "externalAttack": 35,
+    "internalAttack": 25,
+    "defense": 30,
+    "initiative": 12,
+    "dodgeRate": 5,
+    "critRate": 8,
+    "elementAffinity": "yang",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_cj_elite_shield",
+        "type": "shield",
+        "description": "每3回合生成护体金刚罩，减免下次受到伤害50%",
+        "params": {
+          "intervalRounds": 3,
+          "damageReductionPct": 50
+        }
+      }
+    ],
+    "enemyType": "少林高僧",
+    "description": "藏经阁护经首座，少林寺武学造诣最深的高僧之一。修成金刚不坏之身，周身罡气护体，刀枪不入。掌力浑厚可碎石裂碑，又善运金刚罩卸力，是藏经阁第一道关卡。"
+  },
+  {
+    "id": "elite_cj_002",
+    "name": "盗经老魔",
+    "title": "百毒不侵",
+    "realmId": "realm_cangjing",
+    "type": "elite",
+    "powerIndex": 950,
+    "health": 450,
+    "externalAttack": 20,
+    "internalAttack": 40,
+    "defense": 15,
+    "initiative": 18,
+    "dodgeRate": 20,
+    "critRate": 12,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_cj_elite_innerdrain",
+        "type": "innerDrain",
+        "description": "每回合吸取玩家内力15点",
+        "params": {
+          "perTurn": 15
+        }
+      },
+      {
+        "id": "mec_cj_elite_heal",
+        "type": "continuousHeal",
+        "description": "每回合恢复5%生命",
+        "params": {
+          "perTurn": 0,
+          "pct": 5
+        }
+      }
+    ],
+    "enemyType": "邪修",
+    "description": "潜伏藏经阁数十年的老魔，以邪功窃取经卷无数，武学驳杂而阴毒。百毒不侵、内力绵长，又善以化功大法吸取对手内力。与之缠斗越久越不利，须速战速决。"
+  },
+  {
+    "id": "elite_xm_001",
+    "name": "血魔护法",
+    "title": "血祭大成",
+    "realmId": "realm_xuemo",
+    "type": "elite",
+    "powerIndex": 1800,
+    "health": 800,
+    "externalAttack": 45,
+    "internalAttack": 35,
+    "defense": 20,
+    "initiative": 15,
+    "dodgeRate": 10,
+    "critRate": 10,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_xm_elite_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击吸血25%，越战越勇",
+        "params": {
+          "pct": 25
+        }
+      },
+      {
+        "id": "mec_xm_elite_summon",
+        "type": "summon",
+        "description": "血量低于50%时召唤2只血魔教徒助战",
+        "params": {
+          "triggerHpPct": 50,
+          "summonIds": [
+            "enemy_xm_001"
+          ],
+          "count": 2
+        }
+      }
+    ],
+    "enemyType": "邪教护法",
+    "description": "血魔教四大护法之一，修炼血祭邪功至大成。以自身鲜血催动血魔功，攻击可吸敌气血补己之身。力竭之时更可血祭召唤教徒助战，是最难缠的对手。杀之须一击毙命，不可给其回血之机。"
+  },
+  {
+    "id": "elite_xm_002",
+    "name": "血煞傀儡",
+    "title": "血祭之偶",
+    "realmId": "realm_xuemo",
+    "type": "elite",
+    "powerIndex": 1900,
+    "health": 1000,
+    "externalAttack": 50,
+    "internalAttack": 10,
+    "defense": 40,
+    "initiative": 5,
+    "dodgeRate": 0,
+    "critRate": 8,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_xm_elite_reflect",
+        "type": "reflectDamage",
+        "description": "反震20%受到的物理伤害",
+        "params": {
+          "pct": 20
+        }
+      }
+    ],
+    "enemyType": "傀儡",
+    "description": "以血祭邪功炼制的巨型傀儡，以血煞之气灌注铁石铸成。皮坚如铁、力大无穷，又可反震近身攻击者。外功流修士碰之必伤，须以内力远程攻之方可破其外壳。"
+  },
+  {
+    "id": "elite_tj_001",
+    "name": "天机铜人阵",
+    "title": "七星铜人",
+    "realmId": "realm_tianji",
+    "type": "elite",
+    "powerIndex": 3200,
+    "health": 1200,
+    "externalAttack": 55,
+    "internalAttack": 30,
+    "defense": 45,
+    "initiative": 10,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_tj_elite_heal",
+        "type": "continuousHeal",
+        "description": "阵法运转时每回合恢复8%生命",
+        "params": {
+          "perTurn": 0,
+          "pct": 8
+        }
+      },
+      {
+        "id": "mec_tj_elite_disable_light",
+        "type": "disableLightness",
+        "description": "阵法范围内禁用轻功，闪避率归零",
+        "params": {
+          "target": "lightness"
+        }
+      }
+    ],
+    "enemyType": "机关",
+    "description": "天机台七星铜人阵，七具铜人以北斗方位排列。阵法运转时铜人之间互为援护、生生不息，又可禁制轻功令来者无处闪避。破阵须先断阵枢方可各个击破，否则铜人愈战愈强。"
+  },
+  {
+    "id": "elite_tj_002",
+    "name": "天机暗器使",
+    "title": "千机百变",
+    "realmId": "realm_tianji",
+    "type": "elite",
+    "powerIndex": 3000,
+    "health": 800,
+    "externalAttack": 60,
+    "internalAttack": 25,
+    "defense": 15,
+    "initiative": 28,
+    "dodgeRate": 35,
+    "critRate": 20,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_tj_elite_counter",
+        "type": "counterMelee",
+        "description": "近身攻击时反射暗器，造成30%物理伤害",
+        "params": {
+          "range": "melee",
+          "counterPct": 30,
+          "counterDamage": 0.3
+        }
+      }
+    ],
+    "enemyType": "天机阁高手",
+    "description": "天机阁暗器术第一人，千机百变、暗器如雨。一手铁蒺藜可同时射向七处要穴，又善布连环陷阱。身法极快、闪避极高，近身者反被暗器所伤。须以远程内力或范围攻击方可制之。"
+  },
+  {
+    "id": "elite_lh_001",
+    "name": "轮回武尊",
+    "title": "六道通晓",
+    "realmId": "realm_lunhui",
+    "type": "elite",
+    "powerIndex": 5500,
+    "health": 2000,
+    "externalAttack": 80,
+    "internalAttack": 70,
+    "defense": 50,
+    "initiative": 22,
+    "dodgeRate": 15,
+    "critRate": 12,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_lh_elite_enrage",
+        "type": "enrage",
+        "description": "血量低于30%时狂暴，攻击力+50%、先手+30%",
+        "params": {
+          "trigger": "30%hp",
+          "atkPct": 50,
+          "spdPct": 30
+        }
+      },
+      {
+        "id": "mec_lh_elite_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击吸血20%",
+        "params": {
+          "pct": 20
+        }
+      }
+    ],
+    "enemyType": "武灵",
+    "description": "轮回殿中修成武尊之境的武灵，通晓六道武学精要。前一招天人道阳刚掌力，下一招修罗道阴煞指力，变化莫测。力竭时狂暴催动六道之力，攻速暴增，是轮回殿中层的守护者。"
+  },
+  {
+    "id": "elite_lh_002",
+    "name": "轮回阵主",
+    "title": "阵法宗师",
+    "realmId": "realm_lunhui",
+    "type": "elite",
+    "powerIndex": 5800,
+    "health": 2200,
+    "externalAttack": 60,
+    "internalAttack": 85,
+    "defense": 45,
+    "initiative": 20,
+    "dodgeRate": 10,
+    "critRate": 10,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_elite",
+    "mechanics": [
+      {
+        "id": "mec_lh_elite_shield",
+        "type": "shield",
+        "description": "每4回合升起阵法护盾，免疫下次攻击",
+        "params": {
+          "intervalRounds": 4,
+          "damageReductionPct": 100
+        }
+      },
+      {
+        "id": "mec_lh_elite_innerdrain",
+        "type": "innerDrain",
+        "description": "每回合吸取内力30点",
+        "params": {
+          "perTurn": 30
+        }
+      }
+    ],
+    "enemyType": "阵灵",
+    "description": "轮回殿阵法的宗师级阵灵，可调动殿中一切阵法之力。运功时升起阵法护盾免疫攻击，又以内力吸取来者真元。与之交战如同与整座大殿为敌，非破阵不可胜。"
+  },
+  {
+    "id": "boss_gumu",
+    "name": "玉面婆婆",
+    "title": "古墓之主",
+    "realmId": "realm_gumu",
+    "type": "boss",
+    "powerIndex": 600,
+    "health": 800,
+    "externalAttack": 35,
+    "internalAttack": 45,
+    "defense": 20,
+    "initiative": 18,
+    "dodgeRate": 15,
+    "critRate": 10,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_boss",
+    "bossDropTableId": "drop_boss_gumu",
+    "mechanics": [
+      {
+        "id": "mec_boss_gumu_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击时吸取生命，恢复造成伤害的10%",
+        "params": {
+          "pct": 10
+        }
+      }
+    ],
+    "phases": [
+      {
+        "phase": 1,
+        "name": "正常形态",
+        "triggerCondition": "100%hp",
+        "attackMultiplier": 1.0,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_gumu_p1"
+      },
+      {
+        "phase": 2,
+        "name": "狂暴形态",
+        "triggerCondition": "60%hp",
+        "attackMultiplier": 1.5,
+        "defenseMultiplier": 0.8,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_gumu_enrage",
+            "type": "enrage",
+            "description": "狂暴：攻击力+50%，防御-20%，先手+20%",
+            "params": {
+              "trigger": "60%hp",
+              "atkPct": 50,
+              "spdPct": 20
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_gumu_p2"
+      },
+      {
+        "phase": 3,
+        "name": "临死反扑",
+        "triggerCondition": "30%hp",
+        "attackMultiplier": 2.0,
+        "defenseMultiplier": 0.5,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_gumu_lifesteal_boost",
+            "type": "lifesteal",
+            "description": "吸血效果提升至30%",
+            "params": {
+              "pct": 30
+            }
+          },
+          {
+            "id": "mec_boss_gumu_reflect",
+            "type": "reflectDamage",
+            "description": "临死反扑：反震30%受到的伤害",
+            "params": {
+              "pct": 30
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_gumu_p3"
+      }
+    ],
+    "lore": "玉面婆婆乃古墓之主，前朝绝世高人之遗孤。自幼于古墓中修炼，以阴柔内功养颜驻容，虽逾百岁面若少女。性情孤僻古怪，既不愿见外人也不容人犯其墓。一生守墓主遗命，等待有缘人传其武学。非诚心拜访者，皆化为墓中枯骨。",
+    "bossImageUrl": "assets/images/boss/boss_gumu.webp",
+    "enemyType": "Boss",
+    "description": "古墓幽影之主，面若少女实已百岁高龄的绝世高手。以阴柔内功见长，一掌可令周遭凝霜。性情古怪，既可对你以礼相待，也可转眼取你性命。"
+  },
+  {
+    "id": "boss_cangjing",
+    "name": "木人阵",
+    "title": "藏经阁终极守护",
+    "realmId": "realm_cangjing",
+    "type": "boss",
+    "powerIndex": 1800,
+    "health": 1500,
+    "externalAttack": 40,
+    "internalAttack": 30,
+    "defense": 35,
+    "initiative": 10,
+    "dodgeRate": 0,
+    "critRate": 5,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_boss",
+    "bossDropTableId": "drop_boss_cangjing",
+    "mechanics": [
+      {
+        "id": "mec_boss_cj_immune_physical",
+        "type": "immunePhysical",
+        "description": "物理免疫：完全免疫一切外功伤害",
+        "params": {
+          "damageType": "physical",
+          "immunePct": 100
+        }
+      }
+    ],
+    "phases": [
+      {
+        "phase": 1,
+        "name": "物理免疫形态",
+        "triggerCondition": "100%hp",
+        "attackMultiplier": 1.0,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_cj_p1"
+      },
+      {
+        "phase": 2,
+        "name": "内功弱点形态",
+        "triggerCondition": "60%hp",
+        "attackMultiplier": 1.2,
+        "defenseMultiplier": 0.5,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_cj_inner_weak",
+            "type": "immunePhysical",
+            "description": "转为内功弱点：物理免疫解除，内功防御降低50%",
+            "params": {
+              "damageType": "physical",
+              "immunePct": 0
+            }
+          }
+        ],
+        "removedMechanicIds": [
+          "mec_boss_cj_immune_physical"
+        ],
+        "narrationTemplateId": "narr_boss_cj_p2"
+      },
+      {
+        "phase": 3,
+        "name": "全属性提升形态",
+        "triggerCondition": "30%hp",
+        "attackMultiplier": 1.8,
+        "defenseMultiplier": 1.5,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_cj_enrage_all",
+            "type": "enrage",
+            "description": "全属性提升：攻击+80%、防御+50%",
+            "params": {
+              "trigger": "30%hp",
+              "atkPct": 80,
+              "spdPct": 30
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_cj_p3"
+      }
+    ],
+    "lore": "藏经阁终极守护——木人阵。此阵乃少林创派祖师亲手所设，以千年檀木铸成一百零八具木人，内置机关运转一百零八种绝学。阵法分三重变化：第一重物理免疫，外功难伤分毫；第二重转内功弱点，诱敌以内力攻之却暗藏杀机；第三重全属性提升，木人如活物般全力爆发。破阵者可入阁取经，败者化为木人之一。",
+    "bossImageUrl": "assets/images/boss/boss_cangjing.webp",
+    "enemyType": "Boss",
+    "description": "少林创派祖师所设的机关阵法，一百零八具檀木人内置绝学。三重变化层层递进，须以内功智取而非外力强攻。"
+  },
+  {
+    "id": "boss_xuemo",
+    "name": "血魔教主",
+    "title": "九幽血尊",
+    "realmId": "realm_xuemo",
+    "type": "boss",
+    "powerIndex": 3500,
+    "health": 3000,
+    "externalAttack": 60,
+    "internalAttack": 80,
+    "defense": 30,
+    "initiative": 18,
+    "dodgeRate": 12,
+    "critRate": 15,
+    "elementAffinity": "yin",
+    "dropTableId": "drop_boss",
+    "bossDropTableId": "drop_boss_xuemo",
+    "mechanics": [
+      {
+        "id": "mec_boss_xm_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击吸血20%，越战越强",
+        "params": {
+          "pct": 20
+        }
+      }
+    ],
+    "phases": [
+      {
+        "phase": 1,
+        "name": "血祭形态",
+        "triggerCondition": "100%hp",
+        "attackMultiplier": 1.0,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_xm_blood_pool",
+            "type": "lifesteal",
+            "description": "血祭：每回合结束恢复5%生命",
+            "params": {
+              "pct": 5
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_xm_p1"
+      },
+      {
+        "phase": 2,
+        "name": "血魔召唤形态",
+        "triggerCondition": "60%hp",
+        "attackMultiplier": 1.3,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_xm_summon",
+            "type": "summon",
+            "description": "召唤3只血魔教徒助战",
+            "params": {
+              "triggerHpPct": 60,
+              "summonIds": [
+                "enemy_xm_001"
+              ],
+              "count": 3
+            }
+          },
+          {
+            "id": "mec_boss_xm_blood_sacrifice",
+            "type": "lifesteal",
+            "description": "血祭强化：吸血提升至35%，并牺牲召唤物恢复自身生命",
+            "params": {
+              "pct": 35
+            }
+          }
+        ],
+        "removedMechanicIds": [
+          "mec_boss_xm_blood_pool"
+        ],
+        "narrationTemplateId": "narr_boss_xm_p2"
+      },
+      {
+        "phase": 3,
+        "name": "血魔真身",
+        "triggerCondition": "30%hp",
+        "attackMultiplier": 1.8,
+        "defenseMultiplier": 1.3,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_xm_reflect",
+            "type": "reflectDamage",
+            "description": "血魔真身：反震40%受到的伤害",
+            "params": {
+              "pct": 40
+            }
+          },
+          {
+            "id": "mec_boss_xm_enrage",
+            "type": "enrage",
+            "description": "血魔狂暴：攻击+80%",
+            "params": {
+              "trigger": "30%hp",
+              "atkPct": 80,
+              "spdPct": 30
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_xm_p3"
+      }
+    ],
+    "lore": "血魔教主，人称「九幽血尊」，修炼血祭邪功至化境。以万人之血铸就血魔真身，可吞噬一切血肉补己之身。性情残忍嗜杀，以血祭为乐，曾一人屠灭三大门派满门。其血祭功法分三重：血祭养身、血魔召唤、血魔真身。三重层层递进，愈战愈强，是武林公认的第一邪魔。",
+    "bossImageUrl": "assets/images/boss/boss_xuemo.webp",
+    "enemyType": "Boss",
+    "description": "修炼血祭邪功至化境的绝世魔头，以血养魔、以魔噬血。三重血功层层递进，愈战愈强，非以爆发秒杀不可制。"
+  },
+  {
+    "id": "boss_tianji",
+    "name": "天机老人",
+    "title": "机关术宗师",
+    "realmId": "realm_tianji",
+    "type": "boss",
+    "powerIndex": 5500,
+    "health": 4000,
+    "externalAttack": 70,
+    "internalAttack": 90,
+    "defense": 50,
+    "initiative": 25,
+    "dodgeRate": 20,
+    "critRate": 15,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_boss",
+    "bossDropTableId": "drop_boss_tianji",
+    "mechanics": [
+      {
+        "id": "mec_boss_tj_counter",
+        "type": "counterMelee",
+        "description": "近身攻击时机关反射暗器，造成40%伤害",
+        "params": {
+          "range": "melee",
+          "counterPct": 40,
+          "counterDamage": 0.4
+        }
+      }
+    ],
+    "phases": [
+      {
+        "phase": 1,
+        "name": "机关术形态",
+        "triggerCondition": "100%hp",
+        "attackMultiplier": 1.0,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_tj_shield",
+            "type": "shield",
+            "description": "机关护盾：每3回合升起铜壁，免疫下次攻击",
+            "params": {
+              "intervalRounds": 3,
+              "damageReductionPct": 100
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_tj_p1"
+      },
+      {
+        "phase": 2,
+        "name": "千变万化形态",
+        "triggerCondition": "60%hp",
+        "attackMultiplier": 1.4,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_tj_summon",
+            "type": "summon",
+            "description": "召唤2具铜人甲士助战",
+            "params": {
+              "triggerHpPct": 60,
+              "summonIds": [
+                "enemy_tj_001"
+              ],
+              "count": 2
+            }
+          },
+          {
+            "id": "mec_boss_tj_disable_light",
+            "type": "disableLightness",
+            "description": "机关术封锁：禁用轻功，闪避率归零",
+            "params": {
+              "target": "lightness"
+            }
+          }
+        ],
+        "removedMechanicIds": [
+          "mec_boss_tj_shield"
+        ],
+        "narrationTemplateId": "narr_boss_tj_p2"
+      },
+      {
+        "phase": 3,
+        "name": "天机终极形态",
+        "triggerCondition": "30%hp",
+        "attackMultiplier": 2.0,
+        "defenseMultiplier": 1.5,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_tj_enrage",
+            "type": "enrage",
+            "description": "天机爆发：攻击+100%、先手+50%",
+            "params": {
+              "trigger": "30%hp",
+              "atkPct": 100,
+              "spdPct": 50
+            }
+          },
+          {
+            "id": "mec_boss_tj_reflect",
+            "type": "reflectDamage",
+            "description": "终极机关：反震30%伤害",
+            "params": {
+              "pct": 30
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_tj_p3"
+      }
+    ],
+    "lore": "天机老人，天机阁阁主，机关术与武学结合的宗师。一生钻研机关术，将铜人、暗器、阵法融入武学，创出独步天下的天机武学。其人深不可测，招式千变万化，一招之间可转换数种兵器路数。天机台是他毕生心血所筑，台上每一寸都暗藏机关。能闯至台顶者，天下不足五人。",
+    "bossImageUrl": "assets/images/boss/boss_tianji.webp",
+    "enemyType": "Boss",
+    "description": "天机阁阁主，机关术与武学结合的宗师。招式千变万化，一招间可转换数种兵器路数。三阶段从机关护盾到千变万化到天机终极，步步杀机。"
+  },
+  {
+    "id": "boss_lunhui",
+    "name": "轮回殿主",
+    "title": "参透轮回之人",
+    "realmId": "realm_lunhui",
+    "type": "boss",
+    "powerIndex": 9000,
+    "health": 6000,
+    "externalAttack": 100,
+    "internalAttack": 120,
+    "defense": 60,
+    "initiative": 30,
+    "dodgeRate": 20,
+    "critRate": 15,
+    "elementAffinity": "neutral",
+    "dropTableId": "drop_boss",
+    "bossDropTableId": "drop_boss_lunhui",
+    "mechanics": [
+      {
+        "id": "mec_boss_lh_reflect",
+        "type": "reflectDamage",
+        "description": "反震25%受到的伤害",
+        "params": {
+          "pct": 25
+        }
+      },
+      {
+        "id": "mec_boss_lh_lifesteal",
+        "type": "lifesteal",
+        "description": "攻击吸血15%",
+        "params": {
+          "pct": 15
+        }
+      }
+    ],
+    "phases": [
+      {
+        "phase": 1,
+        "name": "轮回初相",
+        "triggerCondition": "100%hp",
+        "attackMultiplier": 1.0,
+        "defenseMultiplier": 1.0,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_lh_summon_p1",
+            "type": "summon",
+            "description": "召唤2只轮回武灵助战",
+            "params": {
+              "triggerHpPct": 100,
+              "summonIds": [
+                "enemy_lh_001"
+              ],
+              "count": 2
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_lh_p1"
+      },
+      {
+        "phase": 2,
+        "name": "六道轮回相",
+        "triggerCondition": "60%hp",
+        "attackMultiplier": 1.5,
+        "defenseMultiplier": 1.2,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_lh_inner_drain",
+            "type": "innerDrain",
+            "description": "六道轮回：每回合吸取内力50点",
+            "params": {
+              "perTurn": 50
+            }
+          },
+          {
+            "id": "mec_boss_lh_heal",
+            "type": "continuousHeal",
+            "description": "轮回自愈：每回合恢复8%生命",
+            "params": {
+              "perTurn": 0,
+              "pct": 8
+            }
+          }
+        ],
+        "removedMechanicIds": [
+          "mec_boss_lh_summon_p1"
+        ],
+        "narrationTemplateId": "narr_boss_lh_p2"
+      },
+      {
+        "phase": 3,
+        "name": "最终形态·万法归一",
+        "triggerCondition": "30%hp",
+        "attackMultiplier": 2.5,
+        "defenseMultiplier": 1.8,
+        "addedMechanics": [
+          {
+            "id": "mec_boss_lh_enrage_final",
+            "type": "enrage",
+            "description": "万法归一：攻击+150%、先手+50%",
+            "params": {
+              "trigger": "30%hp",
+              "atkPct": 150,
+              "spdPct": 50
+            }
+          },
+          {
+            "id": "mec_boss_lh_reflect_boost",
+            "type": "reflectDamage",
+            "description": "最终形态反震提升至50%",
+            "params": {
+              "pct": 50
+            }
+          },
+          {
+            "id": "mec_boss_lh_lifesteal_boost",
+            "type": "lifesteal",
+            "description": "最终形态吸血提升至40%",
+            "params": {
+              "pct": 40
+            }
+          },
+          {
+            "id": "mec_boss_lh_summon_final",
+            "type": "summon",
+            "description": "召唤4只轮回武灵",
+            "params": {
+              "triggerHpPct": 30,
+              "summonIds": [
+                "enemy_lh_001"
+              ],
+              "count": 4
+            }
+          }
+        ],
+        "removedMechanicIds": [],
+        "narrationTemplateId": "narr_boss_lh_p3"
+      }
+    ],
+    "lore": "轮回殿主，传说中参透六道轮回之秘的上古高人。已不可考其年代，或言千年前、或言万年前。其人集天下武学之大成，可化身万千、变化莫测。殿中六道轮回壁画即其毕生所悟，每一道对应一种武学至理。轮回殿主以反伤、吸血、召唤、六道轮回、万法归一五重境界层层递进，是当之无愧的天下第一高手。踏入轮回殿挑战殿主者，须有向死而生之觉悟，胜则参透轮回之秘，败则化为殿中武灵之一。",
+    "bossImageUrl": "assets/images/boss/boss_lunhui.webp",
+    "enemyType": "Boss",
+    "description": "参透六道轮回之秘的上古高人，集天下武学之大成。五重境界层层递进：反伤、吸血、召唤、六道轮回、万法归一。是当之无愧的天下第一高手。"
+  }
+]

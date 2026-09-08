@@ -1,0 +1,233 @@
+[
+  {
+    "id": "uq_w_001",
+    "name": "天罡剑",
+    "description": "传闻此剑乃上古铸剑师以天外陨铁融合天罡正气所铸，剑身隐现雷纹。持此剑者，外功可化为天罡真气，无视一切内功防御。曾有一剑客凭此剑独闯幽冥教总坛，七进七出，杀得邪众胆寒。后剑客隐世，此剑不知所踪，直至古墓遗迹中再度现世。",
+    "slot": "weapon",
+    "itemLevel": 45,
+    "uniqueEffects": [
+      {
+        "id": "fx_tiangang_true_damage",
+        "description": "外功伤害转化为真实伤害，无视目标一切防御",
+        "type": "damageConversion",
+        "params": {
+          "convertStat": "outerDamage",
+          "targetStat": "trueDamage",
+          "ignoreDefense": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_sharp",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "prefix_fierce",
+        "minVal": 20,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_strength",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_power",
+        "minVal": 12,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "body": 25,
+      "level": 18
+    }
+  },
+  {
+    "id": "uq_c_001",
+    "name": "玄冰玉佩",
+    "description": "隐仙谷先辈于万年玄冰中萃取精华，凝炼成此玉佩。佩之者周身寒气流转，内力如玄冰般阴柔绵长。每次出招皆有冰寒真气渗入对手经脉，令其身法迟滞。据传佩戴此佩者可同时修习阴阳两脉而不致走火入魔，是双修之人梦寐以求之物。",
+    "slot": "accessory",
+    "itemLevel": 40,
+    "uniqueEffects": [
+      {
+        "id": "fx_ice_chill",
+        "description": "每次命中附加冰寒效果，降低目标先手值5点，可叠加3层",
+        "type": "onHitDebuff",
+        "params": {
+          "stat": "initiative",
+          "reduction": 5,
+          "maxStacks": 3
+        }
+      },
+      {
+        "id": "fx_dual_meridian_immune",
+        "description": "经脉相克不再触发真气逆行（解锁双修流基础）",
+        "type": "meridianConflictImmune",
+        "params": {
+          "immune": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_chilling",
+        "minVal": 12,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_fortune",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 15,
+        "maxVal": 20
+      }
+    ],
+    "requirements": {
+      "wis": 20,
+      "level": 15
+    }
+  },
+  {
+    "id": "uq_a_001",
+    "name": "龙鳞宝甲",
+    "description": "以真龙退鳞编织而成，刀枪不入，水火不侵。此甲内蕴龙威，受击时龙鳞震动，可反震来犯之力，并凝成护体龙罡。昔年丐帮帮主身着此甲硬抗幽冥教三大护法联手围攻，毫发无伤，反震之力令护法口吐鲜血。此甲随帮主殉国后埋藏于龙脉深处。",
+    "slot": "armor",
+    "itemLevel": 45,
+    "uniqueEffects": [
+      {
+        "id": "fx_dragon_reflect",
+        "description": "受到伤害时30%概率反弹50%伤害予攻击者",
+        "type": "onHitReflect",
+        "params": {
+          "procChance": 0.3,
+          "reflectPercent": 50
+        }
+      },
+      {
+        "id": "fx_dragon_shield",
+        "description": "受击后获得护体龙罡，减免下次受到伤害20%，持续2回合",
+        "type": "onHitShield",
+        "params": {
+          "damageReductionPct": 20,
+          "durationRounds": 2
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_steadfast",
+        "minVal": 12,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_vitality",
+        "minVal": 20,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_reflection",
+        "minVal": 12,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_constitution",
+        "minVal": 20,
+        "maxVal": 30
+      }
+    ],
+    "requirements": {
+      "con": 25,
+      "level": 18
+    }
+  },
+  {
+    "id": "uq_w_002",
+    "name": "断魂鞭",
+    "description": "幽冥教护法以九阴之地百年蚕丝炼制，鞭身柔韧如蛇，专打穴道。每击中同一目标，鞭上阴毒便深入一分，伤害递增。曾有断魂鞭在手，十招之内连鞭武林高手三十六穴，无人能挡第二鞭。此鞭阴毒随连击累积，越战越强，是连击爆发流的至宝。",
+    "slot": "weapon",
+    "itemLevel": 42,
+    "uniqueEffects": [
+      {
+        "id": "fx_combo_escalation",
+        "description": "连续命中同一目标，每次伤害递增10%，上限+50%",
+        "type": "comboDamage",
+        "params": {
+          "incrementPct": 10,
+          "maxBonusPct": 50,
+          "resetOnMiss": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_chilling",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "prefix_swift",
+        "minVal": 10,
+        "maxVal": 15
+      },
+      {
+        "affixId": "suffix_agility",
+        "minVal": 6,
+        "maxVal": 8
+      },
+      {
+        "affixId": "suffix_precision",
+        "minVal": 10,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "agi": 22,
+      "level": 16
+    }
+  },
+  {
+    "id": "uq_t_001",
+    "name": "太玄残卷",
+    "description": "《太玄经》残卷之一，载有上古心法碎片。参悟此卷者，每回合结束时可积蓄真气，五层蓄满后爆发一轮毁天灭地之力。传闻集齐全部残卷可参悟太玄经全本，届时可达天人合一之境。此卷常藏于藏经洞深处，非有缘人不可得。",
+    "slot": "treasure",
+    "itemLevel": 50,
+    "uniqueEffects": [
+      {
+        "id": "fx_qi_accumulation",
+        "description": "每回合结束积蓄1层真气，5层满后下一招伤害翻倍并清零计数",
+        "type": "stackingBurst",
+        "params": {
+          "maxStacks": 5,
+          "burstMultiplier": 2.0,
+          "clearOnBurst": true
+        }
+      }
+    ],
+    "randomAffixes": [
+      {
+        "affixId": "prefix_mystic",
+        "minVal": 20,
+        "maxVal": 25
+      },
+      {
+        "affixId": "suffix_spirit",
+        "minVal": 15,
+        "maxVal": 20
+      },
+      {
+        "affixId": "suffix_dragon",
+        "minVal": 12,
+        "maxVal": 15
+      }
+    ],
+    "requirements": {
+      "wis": 28,
+      "level": 20
+    }
+  }
+]

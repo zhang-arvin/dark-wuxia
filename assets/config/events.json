@@ -1,0 +1,509 @@
+[
+  {
+    "id": "event_combat_001",
+    "type": "combat",
+    "realmId": "realm_gumu",
+    "name": "墓道伏击",
+    "description": "你穿过一道幽暗的墓道，石壁上的火把忽明忽暗。忽然一阵阴风袭来，暗处窜出数道身影——是盘踞此处的盗墓贼，正对你露出贪婪的笑意。",
+    "triggerConditions": [
+      "layer:1-3",
+      "probability:0.3"
+    ],
+    "enemyId": "enemy_gm_003",
+    "isAutoRun": false,
+    "narration": "盗墓贼自暗处窜出，手中短刀泛着寒光：「留下你身上的宝贝，饶你不死！」"
+  },
+  {
+    "id": "event_combat_002",
+    "type": "combat",
+    "realmId": "realm_gumu",
+    "name": "石门机关",
+    "description": "前方一道千斤石门缓缓升起，门后传来沉重的脚步声。一具石门守卫踏步而出，铁臂铜拳，挡住了去路。",
+    "triggerConditions": [
+      "layer:4-6",
+      "probability:0.25"
+    ],
+    "enemyId": "enemy_gm_002",
+    "isAutoRun": false,
+    "narration": "石门守卫的铁臂缓缓抬起，关节处发出咯吱声响，仿佛千年的沉睡正在苏醒。"
+  },
+  {
+    "id": "event_combat_003",
+    "type": "combat",
+    "realmId": "realm_gumu",
+    "name": "阴魂索命",
+    "description": "墓道深处飘出一缕幽蓝光芒，阴魂凝聚成形，发出凄厉的嘶号。你感到一股阴寒之力侵入经脉，气血凝滞。",
+    "triggerConditions": [
+      "layer:5-8",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_gm_004",
+    "isAutoRun": false,
+    "narration": "阴魂的嘶号如泣如诉，似有千百年的怨念在其中，直冲你的识海而来。"
+  },
+  {
+    "id": "event_combat_004",
+    "type": "combat",
+    "realmId": "realm_cangjing",
+    "name": "武僧拦路",
+    "description": "藏经阁第三层，一名武僧双手合十挡住去路：「施主，经阁重地，非有缘者不可入。若要强行，休怪贫僧无礼。」",
+    "triggerConditions": [
+      "layer:1-4",
+      "probability:0.3"
+    ],
+    "enemyId": "enemy_cj_001",
+    "isAutoRun": false,
+    "narration": "武僧沉腰坐马，周身罡气流转，一记罗汉拳蓄势待发。"
+  },
+  {
+    "id": "event_combat_005",
+    "type": "combat",
+    "realmId": "realm_cangjing",
+    "name": "经卷木人巡守",
+    "description": "你拐过一个书架转角，迎面撞上一具檀木机关人。木人双目亮起铜光，铁臂举起便朝你劈来。",
+    "triggerConditions": [
+      "layer:3-7",
+      "probability:0.25"
+    ],
+    "enemyId": "enemy_cj_002",
+    "isAutoRun": false,
+    "narration": "经卷木人的关节咯吱作响，铜骨铁臂如风车般旋转劈来。"
+  },
+  {
+    "id": "event_combat_006",
+    "type": "combat",
+    "realmId": "realm_cangjing",
+    "name": "撞破盗经",
+    "description": "你在一处暗阁中发现一名黑衣人正往怀中塞经卷，对方回头见你，脸色一变，阴冷的杀意自眼底升起。",
+    "triggerConditions": [
+      "layer:5-10",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_cj_003",
+    "isAutoRun": false,
+    "narration": "盗经邪修冷笑一声，掌心泛起阴煞之气：「看见了不该看的，就留下命来吧。」"
+  },
+  {
+    "id": "event_combat_007",
+    "type": "combat",
+    "realmId": "realm_xuemo",
+    "name": "血祭仪式",
+    "description": "你踏入一处血色洞窟，数名血魔教徒正围着血祭坛行功。见你闯入，教徒们齐齐转头，瞳孔中满是嗜血的疯狂。",
+    "triggerConditions": [
+      "layer:1-5",
+      "probability:0.3"
+    ],
+    "enemyId": "enemy_xm_001",
+    "isAutoRun": false,
+    "narration": "血魔教徒齐声嘶吼，如野兽般朝你扑来，周身血煞之气暴涨。"
+  },
+  {
+    "id": "event_combat_008",
+    "type": "combat",
+    "realmId": "realm_xuemo",
+    "name": "蛊虫突袭",
+    "description": "你穿过一条狭窄通道，忽然嗡嗡声大作。数十只血蛊虫自石壁缝隙中涌出，速度极快，直扑你的面门。",
+    "triggerConditions": [
+      "layer:4-10",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_xm_002",
+    "isAutoRun": false,
+    "narration": "血蛊虫的嗡鸣如针刺耳膜，数十道红光自暗处射来，令人头皮发麻。"
+  },
+  {
+    "id": "event_combat_009",
+    "type": "combat",
+    "realmId": "realm_xuemo",
+    "name": "血尸堵路",
+    "description": "前方通道被一具巨大的血尸堵住。它缓缓转身，浑浊的眼珠中满是嗜杀的凶光，一拳砸下，脚下石板碎裂。",
+    "triggerConditions": [
+      "layer:8-15",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_xm_003",
+    "isAutoRun": false,
+    "narration": "血尸一拳轰然砸下，地面龟裂碎石飞溅，它的嘴角咧开一个诡异的笑容。"
+  },
+  {
+    "id": "event_combat_010",
+    "type": "combat",
+    "realmId": "realm_tianji",
+    "name": "铜人列阵",
+    "description": "你登上天机台第一层，面前铜人甲士列阵以待。铜人齐齐转身，关节处铜光闪烁，铁臂缓缓抬起。",
+    "triggerConditions": [
+      "layer:1-5",
+      "probability:0.3"
+    ],
+    "enemyId": "enemy_tj_001",
+    "isAutoRun": false,
+    "narration": "铜人甲士的铁臂如千斤巨锤般举起，铜光在关节处闪烁不定。"
+  },
+  {
+    "id": "event_combat_011",
+    "type": "combat",
+    "realmId": "realm_tianji",
+    "name": "暗器机关鸟",
+    "description": "你穿过一道石桥，头顶传来嗡嗡振翅声。数只机关鸟自空中俯冲而下，腹中暗器齐射，铁蒺藜如雨点般倾泻。",
+    "triggerConditions": [
+      "layer:5-12",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_tj_002",
+    "isAutoRun": false,
+    "narration": "机关鸟的振翅声如蜂群掠过，铁蒺藜在空中划出道道寒光，如暴雨般倾泻而下。"
+  },
+  {
+    "id": "event_combat_012",
+    "type": "combat",
+    "realmId": "realm_tianji",
+    "name": "弟子截路",
+    "description": "天机台中层，一名天机弟子拦住去路。他手中铁蒺藜叮当作响，面上虽有敬意却绝不退缩：「前辈止步，台规不可违。」",
+    "triggerConditions": [
+      "layer:10-18",
+      "probability:0.25"
+    ],
+    "enemyId": "enemy_tj_004",
+    "isAutoRun": false,
+    "narration": "天机弟子拱手行礼，掌中却已扣住数枚铁蒺藜，目光沉稳如水。"
+  },
+  {
+    "id": "event_combat_013",
+    "type": "combat",
+    "realmId": "realm_lunhui",
+    "name": "壁画武灵",
+    "description": "你走过一面六道轮回壁画，画中武灵忽然眼珠转动，自壁画中踏出，招式变化莫测，前招阳刚后招阴柔。",
+    "triggerConditions": [
+      "layer:1-8",
+      "probability:0.3"
+    ],
+    "enemyId": "enemy_lh_001",
+    "isAutoRun": false,
+    "narration": "壁画武灵自石壁中缓缓踏出，周身光影流转，似佛似魔似鬼似畜，变幻不定。"
+  },
+  {
+    "id": "event_combat_014",
+    "type": "combat",
+    "realmId": "realm_lunhui",
+    "name": "心魔试炼",
+    "description": "一阵幻雾袭来，你感到识海一阵眩晕。眼前浮现出自己最深的执念所化心魔，它以你的招式、以你的破绽向你攻来。",
+    "triggerConditions": [
+      "layer:8-18",
+      "probability:0.2"
+    ],
+    "enemyId": "enemy_lh_002",
+    "isAutoRun": false,
+    "narration": "心魔的面容与你一模一样，它微笑着使出你最得意的一招——却比你的更快、更狠。"
+  },
+  {
+    "id": "event_combat_015",
+    "type": "combat",
+    "realmId": "any",
+    "name": "偶遇仇家",
+    "description": "行至一处偏僻角落，一名蒙面人挡住去路。对方冷笑：「踏破铁鞋无觅处，没想到在此遇上你。今日，便是了结之时！」",
+    "triggerConditions": [
+      "any_realm",
+      "probability:0.05"
+    ],
+    "enemyId": "enemy_gm_003",
+    "isAutoRun": false,
+    "narration": "蒙面人缓缓拔出短刀，刀身在昏暗中泛出幽蓝的寒光，杀意凛然。"
+  },
+  {
+    "id": "event_encounter_001",
+    "type": "encounter",
+    "realmId": "realm_gumu",
+    "name": "残卷拾遗",
+    "description": "你在墓道一角的碎石堆中，发现一卷泛黄的武学残卷。虽残缺不全，但上面的招式图解精妙非常，似是前朝高人的手稿。",
+    "triggerConditions": [
+      "layer:2-8",
+      "probability:0.15"
+    ],
+    "rewards": {
+      "type": "martial_art",
+      "martialArtId": "ma_out_002",
+      "experience": 50
+    },
+    "narration": "你小心展开残卷，上面的招式图解虽经千年风化仍清晰可辨——竟是一门失传已久的绝学！"
+  },
+  {
+    "id": "event_encounter_002",
+    "type": "encounter",
+    "realmId": "realm_gumu",
+    "name": "古墓遗宝",
+    "description": "在一处坍塌的墓室角落，你发现一只暗藏的石匣。匣中是一套前朝武者的护具，虽经岁月侵蚀却仍坚韧如新。",
+    "triggerConditions": [
+      "layer:5-9",
+      "probability:0.1"
+    ],
+    "rewards": {
+      "type": "equipment",
+      "equipmentId": "eq_a_002",
+      "quality": "rare"
+    },
+    "narration": "石匣缓缓打开，里面是一套古朴的软甲，甲面隐隐泛着铜光——这是前朝武者用过的护具！"
+  },
+  {
+    "id": "event_encounter_003",
+    "type": "encounter",
+    "realmId": "realm_cangjing",
+    "name": "藏经悟道",
+    "description": "你在一处偏僻的书架后找到一本无人翻阅的经卷。翻开细读，其中蕴含的内功心法精妙非常，你盘膝而坐，顿觉内力有所精进。",
+    "triggerConditions": [
+      "layer:3-12",
+      "probability:0.12"
+    ],
+    "rewards": {
+      "type": "martial_art",
+      "martialArtId": "ma_inn_003",
+      "experience": 100
+    },
+    "narration": "你盘膝运功，经卷中的心法如涓涓细流注入经脉，内力周天运转后竟精进了不少。"
+  },
+  {
+    "id": "event_encounter_004",
+    "type": "encounter",
+    "realmId": "realm_cangjing",
+    "name": "药王遗方",
+    "description": "书架夹层中藏着一卷药方，上面记载着一味珍稀丹药的炼制之法。你将药方收入怀中，日后或可炼制此丹。",
+    "triggerConditions": [
+      "layer:5-14",
+      "probability:0.1"
+    ],
+    "rewards": {
+      "type": "equipment",
+      "equipmentId": "eq_t_003",
+      "quality": "rare",
+      "silver": 200
+    },
+    "narration": "药方上的字迹苍劲有力，末尾盖着「药王谷」的朱砂大印——这竟是药王谷的失传秘方！"
+  },
+  {
+    "id": "event_encounter_005",
+    "type": "encounter",
+    "realmId": "realm_xuemo",
+    "name": "血池遗珍",
+    "description": "一处干涸的血祭坛底，你发现一枚被血气浸染的暗红珠子。珠中似有血光流转，握在手中竟觉内力隐隐有所增益。",
+    "triggerConditions": [
+      "layer:5-15",
+      "probability:0.1"
+    ],
+    "rewards": {
+      "type": "equipment",
+      "equipmentId": "eq_c_002",
+      "quality": "rare",
+      "silver": 500
+    },
+    "narration": "珠子入手冰凉刺骨，片刻后又变得温热，仿佛与你的经脉产生了某种共鸣——这是一枚血灵珠！"
+  },
+  {
+    "id": "event_encounter_006",
+    "type": "encounter",
+    "realmId": "realm_xuemo",
+    "name": "邪功残页",
+    "description": "一面血迹斑斑的石壁上，刻着几行诡异的功法口诀。虽明知是邪功，但其中蕴含的内力运用之妙令你大开眼界。",
+    "triggerConditions": [
+      "layer:8-18",
+      "probability:0.08"
+    ],
+    "rewards": {
+      "type": "martial_art",
+      "martialArtId": "ma_inn_004",
+      "experience": 150
+    },
+    "narration": "你默诵口诀，只觉一股阴寒之力自丹田涌起，虽非正道却内力运转之法别有蹊径，令你对内功有了新的领悟。"
+  },
+  {
+    "id": "event_encounter_007",
+    "type": "encounter",
+    "realmId": "realm_tianji",
+    "name": "天机残图",
+    "description": "你在一处废弃的机关室内找到一张机关设计图残页。图上密密麻麻标注着机关奥妙，研究之下你对暗器术有了更深的理解。",
+    "triggerConditions": [
+      "layer:3-15",
+      "probability:0.1"
+    ],
+    "rewards": {
+      "type": "martial_art",
+      "martialArtId": "ma_lig_001",
+      "experience": 200,
+      "silver": 300
+    },
+    "narration": "机关图上的标注精妙至极，你逐一细看，竟从中悟出数种身法变化，先手身法皆有所进。"
+  },
+  {
+    "id": "event_encounter_008",
+    "type": "encounter",
+    "realmId": "realm_tianji",
+    "name": "铜人宝骸",
+    "description": "一具破损的铜人甲士身旁散落着精铜碎片。你拾起几片，发现是上好的铸材，又从铜人体内摸出一枚暗藏的灵珠。",
+    "triggerConditions": [
+      "layer:10-22",
+      "probability:0.08"
+    ],
+    "rewards": {
+      "type": "equipment",
+      "equipmentId": "eq_c_004",
+      "quality": "rare",
+      "silver": 800
+    },
+    "narration": "灵珠自铜人体内滚出，泛着温润的光泽——原来这天机铜人竟以灵珠为机关核心！"
+  },
+  {
+    "id": "event_encounter_009",
+    "type": "encounter",
+    "realmId": "realm_lunhui",
+    "name": "轮回悟道",
+    "description": "你在一处轮回壁画前驻足，壁画中的六道轮回之理令你若有所悟。盘膝参悟片刻，竟觉经脉通畅、内力精进。",
+    "triggerConditions": [
+      "layer:5-25",
+      "probability:0.08"
+    ],
+    "rewards": {
+      "type": "meridian",
+      "meridianId": "mer_yin_1",
+      "qiSeeds": 3,
+      "experience": 300
+    },
+    "narration": "壁画中六道轮回之理如泉涌般灌入识海，你只觉经脉中真气自行运转，一处滞涩的经脉竟自行打通了！"
+  },
+  {
+    "id": "event_encounter_010",
+    "type": "encounter",
+    "realmId": "any",
+    "name": "游方郎中",
+    "description": "秘境中偶遇一名游方郎中，对方见你身上有伤，主动递来几枚丹药：「相逢即是有缘，这几枚丹药赠予少侠，权当结个善缘。」",
+    "triggerConditions": [
+      "any_realm",
+      "probability:0.05"
+    ],
+    "rewards": {
+      "type": "equipment",
+      "equipmentId": "eq_t_002",
+      "quality": "magic",
+      "silver": 100,
+      "experience": 50
+    },
+    "narration": "郎中从药箱中取出几枚丹药，丹香扑鼻：「金创药，止血生肌，少侠保重。」说罢飘然而去。"
+  },
+  {
+    "id": "event_choice_001",
+    "type": "choice",
+    "realmId": "realm_gumu",
+    "name": "古墓岔路",
+    "description": "墓道前方分出两条岔路。左路幽暗深邃，隐约有阴风从深处吹来；右路较宽却布满蛛网，壁上似有刻字。",
+    "triggerConditions": [
+      "layer:3",
+      "probability:0.5"
+    ],
+    "choices": [
+      {
+        "text": "走左路（阴风深处）",
+        "outcome": "combat",
+        "narration": "你踏入左路，阴风扑面而来。墓道深处飘出数道阴魂，凄厉嘶号着扑来——果然凶险！"
+      },
+      {
+        "text": "走右路（蛛网刻字）",
+        "outcome": "reward",
+        "narration": "你拨开蛛网前行，壁上刻着前朝高人的武学心得。细细研读之下，竟有所悟！"
+      }
+    ]
+  },
+  {
+    "id": "event_choice_002",
+    "type": "choice",
+    "realmId": "realm_cangjing",
+    "name": "藏经阁禁地",
+    "description": "你发现一处标着「禁地」的暗阁，门上贴着封印符箓。透过门缝，隐约可见内中有宝光流转，但封印符箓上的佛门真气令人心生警惕。",
+    "triggerConditions": [
+      "layer:8",
+      "probability:0.4"
+    ],
+    "choices": [
+      {
+        "text": "破封而入（强取宝物）",
+        "outcome": "combat_elite",
+        "narration": "你运功破开封印符箓，暗阁深处传来一声佛号：「施主既破封印，便留下来吧。」——护经首座拦住了去路！"
+      },
+      {
+        "text": "原路退回（不冒风险）",
+        "outcome": "safe",
+        "narration": "你权衡利弊，终究没有破封。虽失了宝物，却避过了一场凶险。"
+      }
+    ]
+  },
+  {
+    "id": "event_choice_003",
+    "type": "choice",
+    "realmId": "realm_xuemo",
+    "name": "血祭献祭",
+    "description": "前方一处血祭坛上，摆着数枚血灵珠。但祭坛周围刻着血祭阵法，若取珠子势必触动阵法，引来血魔教徒围攻。",
+    "triggerConditions": [
+      "layer:10",
+      "probability:0.4"
+    ],
+    "choices": [
+      {
+        "text": "强行取珠（引敌来战）",
+        "outcome": "combat_elite",
+        "narration": "你一把抓起血灵珠，阵法轰然启动！血魔护法自暗处现身，面露狞笑：「好胆！竟敢动我教血祭之物！」"
+      },
+      {
+        "text": "小心破阵（智取珠子）",
+        "outcome": "reward_risk",
+        "narration": "你仔细观察阵法纹路，以内力悄然化解阵枢。血灵珠入手时阵法未动，总算有惊无险。"
+      }
+    ]
+  },
+  {
+    "id": "event_choice_004",
+    "type": "choice",
+    "realmId": "realm_tianji",
+    "name": "天机赌局",
+    "description": "天机台一处偏厅，你发现一座精巧的机关赌台。台上摆着三个铜匣，标注着「武」「器」「丹」，机关上刻着：「选其一，各安天命。」",
+    "triggerConditions": [
+      "layer:15",
+      "probability:0.3"
+    ],
+    "choices": [
+      {
+        "text": "选「武」匣（赌武功秘籍）",
+        "outcome": "reward_martial",
+        "narration": "铜匣缓缓打开，里面是一卷武功秘籍的残页——天机赌局，你赌对了！"
+      },
+      {
+        "text": "选「器」匣（赌装备）",
+        "outcome": "reward_equipment",
+        "narration": "铜匣缓缓打开，里面是一件泛着光泽的兵器——天机赌局，你赌对了！"
+      },
+      {
+        "text": "选「丹」匣（赌丹药）",
+        "outcome": "reward_item",
+        "narration": "铜匣缓缓打开，里面是一枚散发着药香的丹药——天机赌局，你赌对了！"
+      }
+    ]
+  },
+  {
+    "id": "event_choice_005",
+    "type": "choice",
+    "realmId": "realm_lunhui",
+    "name": "轮回抉择",
+    "description": "你来到一处六道轮回壁画前，壁画中的六道之门缓缓开启。左门通向「天道」，散发着金色光芒；右门通向「修罗道」，泛着血色红光。两扇门后的机缘截然不同。",
+    "triggerConditions": [
+      "layer:20",
+      "probability:0.3"
+    ],
+    "choices": [
+      {
+        "text": "入天道之门（阳刚之机缘）",
+        "outcome": "reward_yang",
+        "narration": "你踏入天道之门，金色光芒将你包裹。一股浑厚阳刚之力灌注全身，经脉中阳脉真气暴涨！"
+      },
+      {
+        "text": "入修罗之门（阴柔之机缘）",
+        "outcome": "reward_yin",
+        "narration": "你踏入修罗之门，血色红光将你包裹。一股阴煞之力自丹田涌起，经脉中阴脉真气暴涨！"
+      }
+    ]
+  }
+]

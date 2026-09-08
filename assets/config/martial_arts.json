@@ -1,0 +1,137 @@
+[
+  {
+    "id": "ma_inn_001",
+    "name": "少阳神功",
+    "type": "inner",
+    "elementAffinity": "yang",
+    "tier": "入门",
+    "proficiencyBase": 20,
+    "description": "少林寺阳刚根基内功，修习者内力浑厚刚猛，下盘稳固。入门易精深难，是天下阳刚内功之正宗。初窥门径便可一拳击碎碑石，修至大成则罡气护体刀枪不入。"
+  },
+  {
+    "id": "ma_inn_002",
+    "name": "龙象般若功",
+    "type": "inner",
+    "elementAffinity": "yang",
+    "tier": "小成",
+    "proficiencyBase": 35,
+    "description": "密宗至高内功，每修成一层便增一龙一象之力。共十三层，修至高层者臂力惊天。此功刚猛无俦，一拳可碎石裂地，但修习极难，非根骨深厚者不可轻试。"
+  },
+  {
+    "id": "ma_inn_003",
+    "name": "太阴炼形诀",
+    "type": "inner",
+    "elementAffinity": "yin",
+    "tier": "入门",
+    "proficiencyBase": 20,
+    "description": "峨眉派阴柔根基内功，以月华淬炼经脉。修习者身法灵动飘逸，内力绵密如丝水。虽不如阳刚内功霸道，但胜在绵长不绝，持久作战不落下风。"
+  },
+  {
+    "id": "ma_inn_004",
+    "name": "玄冰真气",
+    "type": "inner",
+    "elementAffinity": "yin",
+    "tier": "小成",
+    "proficiencyBase": 35,
+    "description": "幽冥教至阴内功，以内力化为玄冰之寒。中掌者经脉凝滞，气血不畅。此功阴毒狠辣，修至大成可凝水成冰，伤人于无形。正道人士多避之不及。"
+  },
+  {
+    "id": "ma_inn_005",
+    "name": "太玄经",
+    "type": "inner",
+    "elementAffinity": "neutral",
+    "tier": "传说",
+    "proficiencyBase": 60,
+    "description": "传说中的至高内功，阴阳相济，刚柔并蓄。修成者内力生生不息，百毒不侵，可兼容天下一切武功而无相克之虞。此经失传已久，碎片散落各大秘境，集齐残卷方可参悟全本。"
+  },
+  {
+    "id": "ma_out_001",
+    "name": "降龙十八掌",
+    "type": "outer",
+    "elementAffinity": "yang",
+    "tier": "绝学",
+    "proficiencyBase": 40,
+    "description": "丐帮镇帮绝学，至刚至阳的掌法。一掌出则龙吟虎啸，掌风所至百兽伏首。十八掌式式不同，但皆以雄厚内力催动，刚猛霸道无出其右。天下阳刚外功之首。"
+  },
+  {
+    "id": "ma_out_002",
+    "name": "独孤九剑",
+    "type": "outer",
+    "elementAffinity": "neutral",
+    "tier": "大成",
+    "proficiencyBase": 45,
+    "description": "剑魔独孤求败所创，以无招胜有招。九剑破尽天下兵器，总诀式、破剑式、破刀式……式式寻敌破绽，后发先至。此剑法不拘兵器，悟性高者信手拈来皆可为剑。"
+  },
+  {
+    "id": "ma_out_003",
+    "name": "摧心掌",
+    "type": "outer",
+    "elementAffinity": "yin",
+    "tier": "小成",
+    "proficiencyBase": 30,
+    "description": "幽冥教阴毒掌法，掌力直透心脉。中掌者表面无伤，实则内腑碎裂。此掌阴狠隐秘，近身搏杀时最是致命。修至大成可隔空伤人于三尺之外。"
+  },
+  {
+    "id": "ma_lig_001",
+    "name": "踏雪无痕",
+    "type": "lightness",
+    "elementAffinity": "neutral",
+    "tier": "小成",
+    "proficiencyBase": 25,
+    "description": "武当轻功，修习者可踏雪无痕、水面行走。身法飘逸如风，先手值大增，闪避率极高。虽不以伤敌见长，但逃命保命天下第一，是持久战和游击战的根基。"
+  },
+  {
+    "id": "ma_lig_002",
+    "name": "凌波微步",
+    "type": "lightness",
+    "elementAffinity": "yin",
+    "tier": "大成",
+    "proficiencyBase": 40,
+    "description": "据传出自洛神图卷，步法暗合八卦易理。行步之间自动避开攻击，每一步皆有微步卸力之效。修成者于千军万马中如入无人之境，是轻功中的绝学。"
+  },
+  {
+    "id": "ma_man_001",
+    "name": "以柔克刚",
+    "type": "mantra",
+    "elementAffinity": "neutral",
+    "tier": "大成",
+    "proficiencyBase": 35,
+    "description": "道家心法，将外功伤害转化为内功伤害计算。令刚猛外功不再被内功防御克制，反而以内功算法结算，是外功流突破防御瓶颈的核心心法。改规则而非数值加成。"
+  },
+  {
+    "id": "ma_man_002",
+    "name": "先发制人",
+    "type": "mantra",
+    "elementAffinity": "yang",
+    "tier": "小成",
+    "proficiencyBase": 30,
+    "description": "兵家心法融入武学。先手值高于对手时，第一回合额外获得一次行动。令高身法角色开局即占先机，可先手压制或抢先运功。改规则：行动次数+1。"
+  },
+  {
+    "id": "ma_man_003",
+    "name": "杀意",
+    "type": "mantra",
+    "elementAffinity": "yang",
+    "tier": "小成",
+    "proficiencyBase": 25,
+    "description": "幽冥教杀道心法。每击杀一个敌人，永久叠加5%伤害加成，上限+50%。越杀越强，适合连刷和清场流。改规则：击杀成长机制。"
+  },
+  {
+    "id": "ma_man_004",
+    "name": "天人合一",
+    "type": "mantra",
+    "elementAffinity": "neutral",
+    "tier": "绝学",
+    "proficiencyBase": 50,
+    "description": "至高心法，参悟者与天地共鸣。经脉相克不再触发真气逆行，可同时修习阴阳经脉而不受惩罚。此心法解锁双修流，是全属性发展的终极被动。改规则：经脉冲突免疫。"
+  },
+  {
+    "id": "ma_man_005",
+    "name": "守拙",
+    "type": "mantra",
+    "elementAffinity": "yin",
+    "tier": "大成",
+    "proficiencyBase": 35,
+    "description": "道家守拙心法。受到致命伤害时不死，保留1点生命并进入运功状态2回合（无法攻击但闪避翻倍）。每场战斗仅触发一次。改规则：免死机制，令续航流多一条命。"
+  }
+]

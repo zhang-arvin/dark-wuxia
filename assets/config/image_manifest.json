@@ -1,0 +1,378 @@
+[
+  {
+    "id": "img_scene_gumu",
+    "type": "scene",
+    "path": "assets/images/scene/scene_gumu.webp",
+    "size": 800,
+    "priority": "must_have",
+    "description": "古墓幽影场景图：幽暗墓道，石壁上残刻武学图谱，火把忽明忽暗，空气中弥漫阴寒气息"
+  },
+  {
+    "id": "img_scene_cangjing",
+    "type": "scene",
+    "path": "assets/images/scene/scene_cangjing.webp",
+    "size": 800,
+    "priority": "must_have",
+    "description": "藏经阁场景图：层层叠叠的书架如迷宫排列，佛门经卷泛着微光，木人阵潜伏暗处"
+  },
+  {
+    "id": "img_scene_xuemo",
+    "type": "scene",
+    "path": "assets/images/scene/scene_xuemo.webp",
+    "size": 900,
+    "priority": "must_have",
+    "description": "血魔窟场景图：血色岩石地下窟穴，墙壁暗红结晶闪烁如鬼眼，血祭坛弥漫血腥气"
+  },
+  {
+    "id": "img_scene_tianji",
+    "type": "scene",
+    "path": "assets/images/scene/scene_tianji.webp",
+    "size": 900,
+    "priority": "must_have",
+    "description": "天机台场景图：绝顶之巅的天机台，四面悬空一线石桥相连，铜人阵列与机关密布"
+  },
+  {
+    "id": "img_scene_lunhui",
+    "type": "scene",
+    "path": "assets/images/scene/scene_lunhui.webp",
+    "size": 1000,
+    "priority": "must_have",
+    "description": "轮回殿场景图：六道轮回壁画栩栩如生，殿中机关阵法与武学融为一体，庄严而诡异"
+  },
+  {
+    "id": "img_boss_gumu",
+    "type": "boss",
+    "path": "assets/images/boss/boss_gumu.webp",
+    "size": 1200,
+    "priority": "must_have",
+    "description": "玉面婆婆Boss图：面若少女实已百岁高龄，阴柔内功周身流转，周遭凝霜"
+  },
+  {
+    "id": "img_boss_cangjing",
+    "type": "boss",
+    "path": "assets/images/boss/boss_cangjing.webp",
+    "size": 1200,
+    "priority": "must_have",
+    "description": "木人阵Boss图：一百零八具檀木人排列成阵，铜光闪烁、机关运转"
+  },
+  {
+    "id": "img_boss_xuemo",
+    "type": "boss",
+    "path": "assets/images/boss/boss_xuemo.webp",
+    "size": 1300,
+    "priority": "must_have",
+    "description": "血魔教主Boss图：血色魔甲覆盖全身，周身血煞之气流转，端坐血祭坛上"
+  },
+  {
+    "id": "img_boss_tianji",
+    "type": "boss",
+    "path": "assets/images/boss/boss_tianji.webp",
+    "size": 1300,
+    "priority": "must_have",
+    "description": "天机老人Boss图：老者端坐机关台上，身后铜人阵列、暗器机关密布，深不可测"
+  },
+  {
+    "id": "img_boss_lunhui",
+    "type": "boss",
+    "path": "assets/images/boss/boss_lunhui.webp",
+    "size": 1500,
+    "priority": "must_have",
+    "description": "轮回殿主Boss图：身披六道轮回光环，可化身万千，集天下武学之大成的上古高人"
+  },
+  {
+    "id": "img_icon_quality_normal",
+    "type": "icon",
+    "path": "assets/images/icon/quality_normal.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "凡品品质图标（白色边框）"
+  },
+  {
+    "id": "img_icon_quality_magic",
+    "type": "icon",
+    "path": "assets/images/icon/quality_magic.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "良品品质图标（蓝色边框）"
+  },
+  {
+    "id": "img_icon_quality_rare",
+    "type": "icon",
+    "path": "assets/images/icon/quality_rare.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "上品品质图标（黄色边框）"
+  },
+  {
+    "id": "img_icon_quality_unique",
+    "type": "icon",
+    "path": "assets/images/icon/quality_unique.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "暗金品质图标（橙色星标）"
+  },
+  {
+    "id": "img_icon_quality_divine",
+    "type": "icon",
+    "path": "assets/images/icon/quality_divine.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "神品品质图标（红色双星标）"
+  },
+  {
+    "id": "img_icon_quality_legendary",
+    "type": "icon",
+    "path": "assets/images/icon/quality_legendary.webp",
+    "size": 50,
+    "priority": "must_have",
+    "description": "传说品质图标（金色三星标）"
+  },
+  {
+    "id": "img_icon_slot_weapon",
+    "type": "icon",
+    "path": "assets/images/icon/slot_weapon.webp",
+    "size": 30,
+    "priority": "must_have",
+    "description": "兵器槽位图标"
+  },
+  {
+    "id": "img_icon_slot_armor",
+    "type": "icon",
+    "path": "assets/images/icon/slot_armor.webp",
+    "size": 30,
+    "priority": "must_have",
+    "description": "护体槽位图标"
+  },
+  {
+    "id": "img_icon_slot_accessory",
+    "type": "icon",
+    "path": "assets/images/icon/slot_accessory.webp",
+    "size": 30,
+    "priority": "must_have",
+    "description": "饰品槽位图标"
+  },
+  {
+    "id": "img_icon_slot_treasure",
+    "type": "icon",
+    "path": "assets/images/icon/slot_treasure.webp",
+    "size": 30,
+    "priority": "must_have",
+    "description": "奇物槽位图标"
+  },
+  {
+    "id": "img_eq_uq_w_001",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_001.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "天罡剑暗金图：剑身隐现雷纹，天外陨铁铸就"
+  },
+  {
+    "id": "img_eq_uq_w_002",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_002.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "断魂鞭暗金图：九阴之地百年蚕丝炼制，鞭身阴毒流转"
+  },
+  {
+    "id": "img_eq_uq_c_001",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_c_001.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "玄冰玉佩暗金图：万年玄冰萃取精华凝炼，寒气流转"
+  },
+  {
+    "id": "img_eq_uq_a_001",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_a_001.webp",
+    "size": 250,
+    "priority": "nice_to_have",
+    "description": "龙鳞宝甲暗金图：真龙退鳞编织，龙威流转"
+  },
+  {
+    "id": "img_eq_uq_t_001",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_t_001.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "太玄残卷暗金图：泛黄古卷，上古心法碎片"
+  },
+  {
+    "id": "img_eq_uq_w_003",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_003.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "噬血饮魂刀暗金图：暗红刀身，鬼面纹路隐现"
+  },
+  {
+    "id": "img_eq_uq_w_004",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_004.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "碧落黄泉笔暗金图：阴寒玄铁双笔，碧落黄泉判词"
+  },
+  {
+    "id": "img_eq_uq_c_002",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_c_002.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "阴阳玄冥鉴暗金图：阴阳双鱼纹玄铜古镜"
+  },
+  {
+    "id": "img_eq_uq_a_002",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_a_002.webp",
+    "size": 250,
+    "priority": "nice_to_have",
+    "description": "万劫不灭体暗金图：玄铁龙骨战甲，反伤符箓刻满"
+  },
+  {
+    "id": "img_eq_uq_w_005",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_005.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "千手观音拂尘暗金图：冰蚕丝与陨丝混编，千手齐出"
+  },
+  {
+    "id": "img_eq_uq_t_002",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_t_002.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "九转聚灵鼎暗金图：青铜小鼎，九转丹纹与聚灵阵法"
+  },
+  {
+    "id": "img_eq_uq_w_006",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_w_006.webp",
+    "size": 200,
+    "priority": "nice_to_have",
+    "description": "血饮魔刀暗金图：殷红刀身，魔纹流转"
+  },
+  {
+    "id": "img_eq_uq_a_003",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_a_003.webp",
+    "size": 250,
+    "priority": "nice_to_have",
+    "description": "凌虚仙衣暗金图：天蚕丝与鲛人泪珠编织，薄如蝉翼"
+  },
+  {
+    "id": "img_eq_uq_c_003",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_c_003.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "虎啸雷音珠暗金图：雷兽内丹为核心，虎啸雷鸣"
+  },
+  {
+    "id": "img_eq_uq_c_004",
+    "type": "equipment",
+    "path": "assets/images/equipment/uq_c_004.webp",
+    "size": 150,
+    "priority": "nice_to_have",
+    "description": "玄武镇灵印暗金图：玄武龟甲与镇灵黑石，刻「镇」字篆文"
+  },
+  {
+    "id": "img_icon_element_yang",
+    "type": "icon",
+    "path": "assets/images/icon/element_yang.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "阳刚元素图标（红色火焰）"
+  },
+  {
+    "id": "img_icon_element_yin",
+    "type": "icon",
+    "path": "assets/images/icon/element_yin.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "阴柔元素图标（蓝色冰晶）"
+  },
+  {
+    "id": "img_icon_element_neutral",
+    "type": "icon",
+    "path": "assets/images/icon/element_neutral.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "中和元素图标（金色太极）"
+  },
+  {
+    "id": "img_icon_meridian_yang",
+    "type": "icon",
+    "path": "assets/images/icon/meridian_yang.webp",
+    "size": 40,
+    "priority": "nice_to_have",
+    "description": "阳经脉图标"
+  },
+  {
+    "id": "img_icon_meridian_yin",
+    "type": "icon",
+    "path": "assets/images/icon/meridian_yin.webp",
+    "size": 40,
+    "priority": "nice_to_have",
+    "description": "阴经脉图标"
+  },
+  {
+    "id": "img_icon_difficulty_normal",
+    "type": "icon",
+    "path": "assets/images/icon/difficulty_normal.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "普通难度图标"
+  },
+  {
+    "id": "img_icon_difficulty_hard",
+    "type": "icon",
+    "path": "assets/images/icon/difficulty_hard.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "困难难度图标"
+  },
+  {
+    "id": "img_icon_difficulty_hell",
+    "type": "icon",
+    "path": "assets/images/icon/difficulty_hell.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "地狱难度图标"
+  },
+  {
+    "id": "img_icon_difficulty_inferno",
+    "type": "icon",
+    "path": "assets/images/icon/difficulty_inferno.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "炼狱难度图标"
+  },
+  {
+    "id": "img_icon_variant_normal",
+    "type": "icon",
+    "path": "assets/images/icon/variant_normal.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "普通变体图标"
+  },
+  {
+    "id": "img_icon_variant_cursed",
+    "type": "icon",
+    "path": "assets/images/icon/variant_cursed.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "被诅咒的变体图标"
+  },
+  {
+    "id": "img_icon_variant_ancient",
+    "type": "icon",
+    "path": "assets/images/icon/variant_ancient.webp",
+    "size": 30,
+    "priority": "nice_to_have",
+    "description": "古老的变体图标"
+  }
+]

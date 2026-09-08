@@ -1,0 +1,120 @@
+[
+  {
+    "id": "drop_normal",
+    "name": "普通秘境掉落表",
+    "rates": {
+      "normal": 55.0,
+      "magic": 28.0,
+      "rare": 12.0,
+      "unique": 3.0,
+      "divine": 0.5,
+      "legendary": 0.1
+    },
+    "equipmentPool": [
+      "eq_w_001",
+      "eq_w_002",
+      "eq_a_001",
+      "eq_a_002",
+      "eq_c_001",
+      "eq_c_002",
+      "eq_t_001",
+      "eq_t_002"
+    ],
+    "fortuneMultiplier": 100,
+    "pityThreshold": 200
+  },
+  {
+    "id": "drop_elite",
+    "name": "精英怪掉落表",
+    "rates": {
+      "normal": 35.0,
+      "magic": 35.0,
+      "rare": 20.0,
+      "unique": 7.0,
+      "divine": 1.5,
+      "legendary": 0.3
+    },
+    "equipmentPool": [
+      "eq_w_002",
+      "eq_w_003",
+      "eq_a_002",
+      "eq_a_003",
+      "eq_c_002",
+      "eq_c_003",
+      "eq_t_002",
+      "eq_t_003",
+      "uq_w_002",
+      "uq_c_001"
+    ],
+    "fortuneMultiplier": 150,
+    "pityThreshold": 100
+  },
+  {
+    "id": "drop_boss",
+    "name": "Boss掉落表",
+    "rates": {
+      "normal": 10.0,
+      "magic": 25.0,
+      "rare": 40.0,
+      "unique": 15.0,
+      "divine": 4.0,
+      "legendary": 1.0
+    },
+    "equipmentPool": [
+      "eq_w_003",
+      "eq_w_004",
+      "eq_w_005",
+      "eq_a_003",
+      "eq_a_004",
+      "eq_a_005",
+      "eq_c_003",
+      "eq_c_004",
+      "eq_c_005",
+      "eq_t_003",
+      "eq_t_004",
+      "eq_t_005",
+      "uq_w_001",
+      "uq_c_001",
+      "uq_a_001",
+      "uq_t_001"
+    ],
+    "fortuneMultiplier": 200,
+    "pityThreshold": 50
+  },
+  {
+    "id": "endless_drop",
+    "name": "虚空秘境无尽掉落表",
+    "rates": {
+      "normal": 5.0,
+      "magic": 20.0,
+      "rare": 35.0,
+      "unique": 25.0,
+      "divine": 10.0,
+      "legendary": 5.0
+    },
+    "equipmentPool": [
+      "eq_w_003",
+      "eq_w_004",
+      "eq_w_005",
+      "eq_a_003",
+      "eq_a_004",
+      "eq_a_005",
+      "eq_c_003",
+      "eq_c_004",
+      "eq_c_005",
+      "eq_t_003",
+      "eq_t_004",
+      "eq_t_005",
+      "uq_w_001",
+      "uq_w_002",
+      "uq_c_001",
+      "uq_a_001",
+      "uq_t_001"
+    ],
+    "fortuneMultiplier": 300,
+    "pityThreshold": 30,
+    "layerBonusScaling": "0.01*n",
+    "bonusDropEveryNLayer": 10,
+    "bossLayerMultiplier": 2.0
+  }
+]

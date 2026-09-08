@@ -1,0 +1,60 @@
+name: dark_wuxia
+description: 暗黑武侠 — 暗黑破坏神2刷装深度 × 武侠经脉策略
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ==================== 数据库存档 ====================
+  # SQLite (drift) — 结构化大数据存储
+  drift: ^2.16.0                    # 类型安全 ORM
+  drift_flutter: ^0.2.2             # drift 的 Flutter 集成
+  sqlite3_flutter_libs: ^0.5.24     # sqlite3 native 库
+
+  # ==================== 快速 KV 存储 ====================
+  # shared_preferences — 小数据快速存取
+  shared_preferences: ^2.2.3
+
+  # ==================== 文件/路径 ====================
+  path: ^1.9.0                     # 路径拼接
+  path_provider: ^2.1.4             # 应用文档目录
+
+  # ==================== 状态管理 ====================
+  # Riverpod
+  flutter_riverpod: ^2.5.1
+
+  # ==================== 路由 ====================
+  go_router: ^14.2.0
+
+  # ==================== 图片缓存 ====================
+  flutter_cache_manager: ^3.3.3
+
+  # ==================== 工具 ====================
+  uuid: ^4.4.0                      # UUID 生成 (装备 ID)
+  collection: ^1.18.0               # 集合工具
+
+  # ==================== 音效 ====================
+  # audioplayers — BGM 与 SFX 播放
+  audioplayers: ^5.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # ==================== drift 代码生成 ====================
+  drift_dev: ^2.16.0               # drift 代码生成器
+  build_runner: ^2.4.12             # Dart 构建工具
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/config/
+    - assets/sounds/

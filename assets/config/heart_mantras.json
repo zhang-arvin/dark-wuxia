@@ -1,0 +1,207 @@
+[
+  {
+    "id": "hm_001",
+    "name": "以柔克刚",
+    "category": "damageConversion",
+    "effectDescription": "外功伤害转化为内功伤害计算，令刚猛外功不再被内功防御克制。改规则而非数值加成。",
+    "params": {
+      "convertStat": "outerDamage",
+      "targetStat": "innerDamage",
+      "conversionPct": 100
+    },
+    "requiredWis": 20,
+    "requiredLevel": 10,
+    "requiredAlignment": "neutral",
+    "immuneToQiDeviation": false,
+    "conflictType": "pureDamage",
+    "synergyType": "innerDamage"
+  },
+  {
+    "id": "hm_002",
+    "name": "先发制人",
+    "category": "actionBonus",
+    "effectDescription": "先手值高于对手时，第一回合额外获得一次行动。令高身法角色开局即占先机，可先手压制或抢先运功。改规则：行动次数+1。",
+    "params": {
+      "trigger": "initiativeAdvantage",
+      "extraActions": 1,
+      "firstRoundOnly": true
+    },
+    "requiredWis": 18,
+    "requiredLevel": 8,
+    "requiredAlignment": "yang",
+    "immuneToQiDeviation": false,
+    "conflictType": "slow",
+    "synergyType": "initiative"
+  },
+  {
+    "id": "hm_003",
+    "name": "杀意",
+    "category": "stackingBonus",
+    "effectDescription": "每击杀一个敌人，永久叠加5%伤害加成，上限+50%。越杀越强，适合连刷和清场流。改规则：击杀成长机制。",
+    "params": {
+      "perKillBonusPct": 5,
+      "maxBonusPct": 50,
+      "permanent": true
+    },
+    "requiredWis": 15,
+    "requiredLevel": 6,
+    "requiredAlignment": "yang",
+    "immuneToQiDeviation": false,
+    "conflictType": "defense",
+    "synergyType": "combo"
+  },
+  {
+    "id": "hm_004",
+    "name": "天人合一",
+    "category": "meridianImmunity",
+    "effectDescription": "经脉相克不再触发真气逆行，可同时修习阴阳经脉而不受惩罚。此心法解锁双修流，是全属性发展的终极被动。改规则：经脉冲突免疫。",
+    "params": {
+      "immune": true,
+      "conflictType": "meridian"
+    },
+    "requiredWis": 30,
+    "requiredLevel": 20,
+    "requiredAlignment": "neutral",
+    "immuneToQiDeviation": true,
+    "conflictType": "none",
+    "synergyType": "dualCultivation"
+  },
+  {
+    "id": "hm_005",
+    "name": "守拙",
+    "category": "ruleChange",
+    "effectDescription": "受到致命伤害时不死，保留1点生命并进入运功状态2回合（无法攻击但闪避翻倍）。每场战斗仅触发一次。改规则：免死机制，令续航流多一条命。",
+    "params": {
+      "trigger": "lethalDamage",
+      "survivalHp": 1,
+      "invulnerableRounds": 2,
+      "dodgeMultiplier": 2.0,
+      "oncePerBattle": true
+    },
+    "requiredWis": 22,
+    "requiredLevel": 12,
+    "requiredAlignment": "yin",
+    "immuneToQiDeviation": false,
+    "conflictType": "burst",
+    "synergyType": "sustain"
+  },
+  {
+    "id": "hm_006",
+    "name": "金刚不坏",
+    "category": "ruleChange",
+    "effectDescription": "修成者周身罡气流转，受击时自动反震25%伤害予攻击者。来犯之力愈强，反震愈烈。改规则：受击自动反震，是反伤流修士的终极被动。",
+    "params": {
+      "reflectPct": 25,
+      "reflectType": "automatic",
+      "scalesWithDamage": true
+    },
+    "requiredWis": 25,
+    "requiredLevel": 15,
+    "requiredAlignment": "yang",
+    "immuneToQiDeviation": false,
+    "conflictType": "armorPen",
+    "synergyType": "reflect"
+  },
+  {
+    "id": "hm_007",
+    "name": "万物归元",
+    "category": "damageConversion",
+    "effectDescription": "将一切伤害类型统一转化为内力伤害计算，无视物理/内功/元素之分。令修习者不再受任何伤害类型克制的困扰，是全属性BD的终极心法。改规则：伤害类型统一化。",
+    "params": {
+      "convertAllTo": "innerDamage",
+      "ignoreElementAffinity": true,
+      "ignoreDamageType": true
+    },
+    "requiredWis": 35,
+    "requiredLevel": 25,
+    "requiredAlignment": "neutral",
+    "immuneToQiDeviation": true,
+    "conflictType": "elementType",
+    "synergyType": "allType"
+  },
+  {
+    "id": "hm_008",
+    "name": "连击不绝",
+    "category": "actionBonus",
+    "effectDescription": "每次攻击命中后，30%概率额外追击一次（追击伤害为50%）。连续命中同一目标时追击概率递增5%，上限+50%。改规则：攻击概率追击，是连击流的核心心法。",
+    "params": {
+      "procChance": 0.3,
+      "strikeDamagePct": 50,
+      "comboIncrementPct": 5,
+      "maxProcChance": 0.8
+    },
+    "requiredWis": 20,
+    "requiredLevel": 12,
+    "requiredAlignment": "yin",
+    "immuneToQiDeviation": false,
+    "conflictType": "singleStrike",
+    "synergyType": "combo"
+  },
+  {
+    "id": "hm_009",
+    "name": "修罗心法",
+    "category": "ruleChange",
+    "effectDescription": "化身修罗，攻击力随生命降低而提升。生命每降10%，伤害加成+5%，上限+50%。愈濒死愈凶猛，是狂暴流的终极被动。改规则：低血高伤机制。",
+    "params": {
+      "hpLossPerPct": 10,
+      "damageBonusPerPct": 5,
+      "maxBonusPct": 50
+    },
+    "requiredWis": 22,
+    "requiredLevel": 14,
+    "requiredAlignment": "yang",
+    "immuneToQiDeviation": false,
+    "conflictType": "defense",
+    "synergyType": "lifesteal"
+  },
+  {
+    "id": "hm_010",
+    "name": "归元心法",
+    "category": "ruleChange",
+    "effectDescription": "万法归元，受击时将50%伤害转化为真气消耗。真气耗尽后方损及生命，是防御流的终极护盾。改规则：真气护体机制。",
+    "params": {
+      "convertToInnerPct": 50,
+      "innerShieldType": "automatic"
+    },
+    "requiredWis": 25,
+    "requiredLevel": 16,
+    "requiredAlignment": "yin",
+    "immuneToQiDeviation": false,
+    "conflictType": "berserk",
+    "synergyType": "innerPool"
+  },
+  {
+    "id": "hm_011",
+    "name": "凌波心法",
+    "category": "actionBonus",
+    "effectDescription": "凌波微步，每次成功闪避后，下一次攻击必定暴击。连续闪避3次后获得一次额外行动。改规则：闪避反击机制，是闪避流的核心心法。",
+    "params": {
+      "guaranteeCritOnDodge": true,
+      "dodgeCountForExtraAction": 3,
+      "extraActions": 1
+    },
+    "requiredWis": 20,
+    "requiredLevel": 12,
+    "requiredAlignment": "yin",
+    "immuneToQiDeviation": false,
+    "conflictType": "hitRate",
+    "synergyType": "dodge"
+  },
+  {
+    "id": "hm_012",
+    "name": "血河心法",
+    "category": "damageConversion",
+    "effectDescription": "修血河之道，所有伤害的30%转化为生命回复。击杀敌人时恢复20%最大生命。以战养战，是吸血流的终极被动。改规则：全伤吸血机制。",
+    "params": {
+      "lifeStealPct": 30,
+      "killHealPct": 20,
+      "appliesToAllDamage": true
+    },
+    "requiredWis": 28,
+    "requiredLevel": 18,
+    "requiredAlignment": "neutral",
+    "immuneToQiDeviation": false,
+    "conflictType": "reflect",
+    "synergyType": "lifesteal"
+  }
+]
